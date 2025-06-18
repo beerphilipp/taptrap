@@ -2,6 +2,8 @@
 
 # TapTrap: Animation-Driven Tapjacking on Android
 
+> 🚧 **Work in Progress:** This project is currently a work-in-progress. Instructions may be wrong or incomplete.
+
 This repository contains the artifacts of the paper "TapTrap: Animation-Driven Tapjacking on Android", to be presented at [USENIX 2025](https://www.usenix.org/conference/usenixsecurity25).
 
 [![Paper](https://img.shields.io/badge/Paper-blue.svg?logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIyNHB4IiBmaWxsPSIjZmZmIj48cGF0aCBkPSJNMzIwLTI0MGgzMjB2LTgwSDMyMHY4MFptMC0xNjBoMzIwdi04MEgzMjB2ODBaTTI0MC04MHEtMzMgMC01Ni41LTIzLjVUMTYwLTE2MHYtNjQwcTAtMzMgMjMuNS01Ni41VDI0MC04ODBoMzIwbDI0MCAyNDB2NDgwcTAgMzMtMjMuNSA1Ni41VDcyMC04MEgyNDBabTI4MC01MjB2LTIwMEgyNDB2NjQwaDQ4MHYtNDQwSDUyMFpNMjQwLTgwMHYyMDAtMjAwIDY0MC02NDBaIi8+PC9zdmc+)](https://taptrap.click/paper)
