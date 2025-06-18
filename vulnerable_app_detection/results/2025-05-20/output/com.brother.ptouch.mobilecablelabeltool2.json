@@ -1,0 +1,106 @@
+{
+    "apk_path": "/home/experiments/apks/android/tapjacking/free_18_12_24_merged/com.brother.ptouch.mobilecablelabeltool2_merged.apk",
+    "target_sdk": 34,
+    "package_name": "com.brother.ptouch.mobilecablelabeltool2",
+    "is_enabled": true,
+    "permission": null,
+    "protected_confirmation": false,
+    "activities": [
+        {
+            "activity_name": "com.brother.ptouch.mobilecablelabeltool2.module.home.HomeActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><action ns0:name=\"android.intent.action.SEARCH\" /><category ns0:name=\"android.intent.category.LAUNCHER\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.brother.ptouch.mobilecablelabeltool2.module.startup.StartUpActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.brother.ptouch.mobilecablelabeltool2.module.editlabel.EditLabelActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.brother.ptouch.mobilecablelabeltool2.module.editlabel.SharedFileReceiveActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><data ns0:scheme=\"content\" /><data ns0:host=\"*\" /><data ns0:mimeType=\"*/*\" /><data ns0:pathPattern=\".*\\.lbx\" /><data ns0:pathPattern=\".*\\.LBX\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.SEND\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><data ns0:mimeType=\"application/octet-stream\" /><data ns0:mimeType=\"application/x-zip\" /><data ns0:mimeType=\"application/zip\" /><data ns0:mimeType=\"application/json\" /><data ns0:mimeType=\"text/csv\" /><data ns0:mimeType=\"text/comma-separated-values\" /><data ns0:mimeType=\"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet\" /><data ns0:mimeType=\"application/vnd.ms-excel\" /><data ns0:mimeType=\"application/vnd.ms-excel.sheet.macroenabled.12\" /><data ns0:mimeType=\"application/vnd.ms-excel.sheet.macroEnabled.12\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><data ns0:mimeType=\"application/octet-stream\" /><data ns0:mimeType=\"application/x-zip\" /><data ns0:mimeType=\"application/zip\" /><data ns0:mimeType=\"application/json\" /><data ns0:mimeType=\"text/csv\" /><data ns0:mimeType=\"text/comma-separated-values\" /><data ns0:mimeType=\"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet\" /><data ns0:mimeType=\"application/vnd.ms-excel\" /><data ns0:mimeType=\"application/vnd.ms-excel.sheet.macroenabled.12\" /><data ns0:mimeType=\"application/vnd.ms-excel.sheet.macroEnabled.12\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.play.core.common.PlayCoreDialogWrapperActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        }
+    ],
+    "not_found_activities": [],
+    "override_animation_calls": [
+        "Lcom/google/android/material/transition/platform/MaterialContainerTransformSharedElementCallback$2; onTransitionEnd (Landroid/transition/Transition;)V",
+        "Landroidx/navigation/ActivityNavigator; navigate (Landroidx/navigation/ActivityNavigator$Destination; Landroid/os/Bundle; Landroidx/navigation/NavOptions; Landroidx/navigation/Navigator$Extras;)Landroidx/navigation/NavDestination;",
+        "Landroidx/navigation/NavController; handleDeepLink (Landroid/content/Intent;)Z",
+        "Landroidx/navigation/ActivityNavigator$Companion; applyPopAnimationsToPendingTransition (Landroid/app/Activity;)V"
+    ],
+    "start_time": 1747828639.581244,
+    "end_time": 1747828738.8430426,
+    "exception": false
+}

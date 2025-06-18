@@ -1,0 +1,111 @@
+{
+    "apk_path": "/home/experiments/apks/android/tapjacking/free_18_12_24_merged/jp.co.canon.ic.caca_merged.apk",
+    "target_sdk": 32,
+    "package_name": "jp.co.canon.ic.caca",
+    "is_enabled": true,
+    "permission": null,
+    "protected_confirmation": false,
+    "activities": [
+        {
+            "activity_name": "jp.co.canon.ic.caca.view.activity.LaunchActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTop",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.LAUNCHER\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "jp.co.canon.ic.caca.view.activity.CameraActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTop",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "jp.co.canon.ic.caca.view.activity.CameraSubActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTop",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "jp.co.canon.ic.caca.view.activity.MainActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTop",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.gms.common.api.GoogleApiActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        }
+    ],
+    "not_found_activities": [],
+    "override_animation_calls": [
+        "Ljp/co/canon/ic/caca/view/activity/CameraSubActivity; finish ()V",
+        "Ljp/co/canon/ic/caca/view/activity/CameraActivity; finish ()V",
+        "Ljp/co/canon/ic/caca/view/activity/CameraSubActivity; onCreate (Landroid/os/Bundle;)V",
+        "Ljp/co/canon/ic/caca/view/activity/CameraActivity; finish ()V",
+        "Landroidx/navigation/ActivityNavigator; navigate (Landroidx/navigation/ActivityNavigator$Destination; Landroid/os/Bundle; Landroidx/navigation/NavOptions; Landroidx/navigation/Navigator$Extras;)Landroidx/navigation/NavDestination;",
+        "Landroidx/navigation/NavController; handleDeepLink (Landroid/content/Intent;)Z",
+        "Ljp/co/canon/ic/caca/view/activity/CameraActivity; onCreate (Landroid/os/Bundle;)V",
+        "Landroidx/navigation/ActivityNavigator$Companion; applyPopAnimationsToPendingTransition (Landroid/app/Activity;)V",
+        "Ljp/co/canon/ic/caca/view/activity/CameraSubActivity; finish ()V"
+    ],
+    "start_time": 1747763936.0930002,
+    "end_time": 1747763979.5762367,
+    "exception": false
+}

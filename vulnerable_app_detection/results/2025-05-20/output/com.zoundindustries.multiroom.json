@@ -1,0 +1,961 @@
+{
+    "apk_path": "/home/experiments/apks/android/tapjacking/free_18_12_24_merged/com.zoundindustries.multiroom.apk",
+    "target_sdk": 26,
+    "package_name": "com.zoundindustries.multiroom",
+    "is_enabled": true,
+    "permission": null,
+    "protected_confirmation": false,
+    "activities": [
+        {
+            "activity_name": "com.zoundindustries.multiroom.SplashscreenActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.LAUNCHER\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.setup.normalSetup.ScanNewSpeakersActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/zoundindustries/multiroom/setup/normalSetup/ScanNewSpeakersActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.apps_lib.multiroom.setup.normalSetup.ConfigureFriendlyNameActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.apps_lib.multiroom.setup.normalSetup.ConfigureWiFiActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.apps_lib.multiroom.setup.normalSetup.ConfigureWiFiPasswordActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.apps_lib.multiroom.setup.normalSetup.SetupFinalizingActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.apps_lib.multiroom.setup.normalSetup.SetupSuccessActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.apps_lib.multiroom.setup.normalSetup.SetupFailedActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.apps_lib.multiroom.setup.tutorial.SetupTutorialActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.apps_lib.multiroom.setup.presets.PresetsFinalActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.apps_lib.multiroom.setup.presets.ChoosePresetsTypeActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.setup.presets.SpotifyAuthenticationActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"urbanears\" ns0:host=\"spotify-callback\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.setup.presets.SpotifyLinkingSuccessActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.setup.presets.SetPresetsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.setup.presets.PresetsListActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.setup.normalSetup.FinalSetupActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.myHome.HomeActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.source.SourcesActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.source.apps.SpotifyAppActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.source.apps.GoogleCastAppActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.source.apps.AirplayAppActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.nowPlaying.NowPlayingFragment",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.castTos.CastTosIntroductionActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.castTos.CastTermsAndConditionsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.settings.solo.speakerList.SettingsSpeakerListActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.settings.solo.speaker.SettingsSpeakerActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.settings.solo.googleCast.GoogleCastSettingsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V",
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.settings.solo.aboutSpeaker.AboutSpeakerActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.settings.solo.equalizer.EqualizerActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.volume.VolumeActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V",
+                "Lcom/zoundindustries/multiroom/volume/VolumeActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.browse_ir.BrowseIRActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V",
+                "Lcom/zoundindustries/multiroom/browse_ir/BrowseIRActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.presets.spotify.replacePresets.ReplacePresetsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.apps_lib.multiroom.setup.update.UpdateActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.about.AboutScreenActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.apps_lib.multiroom.setup.normalSetup.HiddenSSIDActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.apps_lib.multiroom.setup.normalSetup.HiddenSSIDAuthTypeChooserActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.apps_lib.multiroom.setup.normalSetup.HiddenSSIDEncTypeChooserActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.help.HelpActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.help.QuickGuideActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.help.PresentationActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.settings.multi.streamingQuality.StreamingQualityActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.setup.presets.PresetsAddingFailedActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.settings.solo.dateTime.TimeZoneSettingsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.apps_lib.multiroom.webview.EmbeddedWebViewActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.about.EndUserLicenceActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.about.FreeAndOpenSourceSoftwareActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.help.ContactActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.help.OnlineManualActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.apps_lib.multiroom.setup.normalSetup.TroubleshootingActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.settings.SettingsSoloMultiSwitchActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.settings.multi.MultiSpeakersActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.zoundindustries.multiroom.settings.solo.ChangeFriendlyNameActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/apps_lib/multiroom/UEActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.spotify.sdk.android.authentication.LoginActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        }
+    ],
+    "not_found_activities": [],
+    "override_animation_calls": [
+        "Lcom/apps_lib/multiroom/UEActivityBase; onBackPressed ()V",
+        "Lcom/zoundindustries/multiroom/browse_ir/BrowseIRActivity; closeBrowseActivity ()V",
+        "Lcom/zoundindustries/multiroom/setup/normalSetup/ScanNewSpeakersActivity; onBackPressed ()V",
+        "Lcom/zoundindustries/multiroom/volume/VolumeActivity; onBackPressed ()V",
+        "Lcom/apps_lib/multiroom/NavigationHelper; goToHome (Landroid/app/Activity;)V",
+        "Lcom/apps_lib/multiroom/NavigationHelper; setTransition (Landroid/app/Activity; Lcom/apps_lib/multiroom/NavigationHelper$AnimationType;)V",
+        "Lcom/apps_lib/multiroom/NavigationHelper; setTransition (Landroid/app/Activity; Lcom/apps_lib/multiroom/NavigationHelper$AnimationType;)V",
+        "Lcom/apps_lib/multiroom/NavigationHelper; setTransition (Landroid/app/Activity; Lcom/apps_lib/multiroom/NavigationHelper$AnimationType;)V",
+        "Lcom/apps_lib/multiroom/NavigationHelper; setTransition (Landroid/app/Activity; Lcom/apps_lib/multiroom/NavigationHelper$AnimationType;)V",
+        "Lcom/r0adkll/slidr/Slidr$1; onClosed ()V",
+        "Lcom/apps_lib/multiroom/NavigationHelper; goToHomeAndClearActivityStack (Landroid/app/Activity;)V",
+        "Lcom/r0adkll/slidr/Slidr$2; onClosed ()V"
+    ],
+    "start_time": 1747886923.8092456,
+    "end_time": 1747886942.4996877,
+    "exception": false
+}

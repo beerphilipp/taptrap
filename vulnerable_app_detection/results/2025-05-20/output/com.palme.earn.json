@@ -1,0 +1,54 @@
+{
+    "apk_path": "/home/experiments/apks/android/tapjacking/free_18_12_24_merged/com.palme.earn_merged.apk",
+    "target_sdk": 35,
+    "package_name": "com.palme.earn",
+    "is_enabled": true,
+    "permission": null,
+    "protected_confirmation": false,
+    "activities": [
+        {
+            "activity_name": "com.palme.earn.ui.mainscreen.MainActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.LAUNCHER\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.gms.common.api.GoogleApiActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        }
+    ],
+    "not_found_activities": [],
+    "override_animation_calls": [
+        "Landroidx/navigation/NavController; handleDeepLink (Landroid/content/Intent;)Z",
+        "Lcom/google/android/material/transition/platform/MaterialContainerTransformSharedElementCallback$2; onTransitionEnd (Landroid/transition/Transition;)V",
+        "Landroidx/navigation/ActivityNavigator; navigate (Landroidx/navigation/ActivityNavigator$Destination; Landroid/os/Bundle; Landroidx/navigation/NavOptions; Landroidx/navigation/Navigator$Extras;)Landroidx/navigation/NavDestination;",
+        "Landroidx/navigation/ActivityNavigator$Companion; applyPopAnimationsToPendingTransition (Landroid/app/Activity;)V"
+    ],
+    "start_time": 1747752892.1830356,
+    "end_time": 1747753023.6297545,
+    "exception": false
+}

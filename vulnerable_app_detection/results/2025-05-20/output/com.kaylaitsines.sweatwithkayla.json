@@ -1,0 +1,2603 @@
+{
+    "apk_path": "/home/experiments/apks/android/tapjacking/free_18_12_24_merged/com.kaylaitsines.sweatwithkayla.apk",
+    "target_sdk": 34,
+    "package_name": "com.kaylaitsines.sweatwithkayla",
+    "is_enabled": true,
+    "permission": null,
+    "protected_confirmation": false,
+    "activities": [
+        {
+            "activity_name": "com.spotify.sdk.android.authentication.LoginActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.SweatSplashActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.LAUNCHER\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"sweatwithkayla\" ns0:host=\"promo30\" /><data ns0:scheme=\"sweat\" ns0:host=\"deeplink\" ns0:path=\"/sweatnation\" /><data ns0:scheme=\"sweat\" ns0:host=\"deeplink\" ns0:path=\"/app\" /><data ns0:scheme=\"sweat\" ns0:host=\"deeplink\" ns0:path=\"/app/challenge_offer_2020\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:autoVerify=\"true\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"https\" ns0:host=\"sweat.onelink.me\" ns0:pathPrefix=\"/gNkX\" /><data ns0:scheme=\"https\" ns0:host=\"sweat.onelink.me\" ns0:pathPrefix=\"/7zBt\" /><data ns0:scheme=\"https\" ns0:host=\"sweat.onelink.me\" ns0:pathPrefix=\"/8y7U\" /><data ns0:scheme=\"https\" ns0:host=\"sweat.onelink.me\" ns0:pathPrefix=\"/AYKI\" /><data ns0:scheme=\"https\" ns0:host=\"sweat.onelink.me\" ns0:pathPrefix=\"/yxnt\" /><data ns0:scheme=\"https\" ns0:host=\"sweat.onelink.me\" ns0:pathPrefix=\"/0Fm1\" /><data ns0:scheme=\"https\" ns0:host=\"sweat.onelink.me\" ns0:pathPrefix=\"/o6yE\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:autoVerify=\"true\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"https\" ns0:host=\"forum.sweat.com\" ns0:path=\"/\" /><data ns0:scheme=\"https\" ns0:host=\"forum.sweat.com\" ns0:pathPrefix=\"/d/\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:autoVerify=\"true\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"https\" ns0:host=\"forum.sweat.com\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:autoVerify=\"true\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/dashboard\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/food\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/food/meals\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/food/shopping-list\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/food/recipe\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/food/recipe-collection\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/invite-friends/workout-dashboard\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/invite-friends/profile\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/invite-friends/sweat-summary\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/profile/manage-my-program\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/progress\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/settings\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/settings/my-subscription\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/settings/program-preferences\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/settings/friend-referrals\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/sub-category-workouts\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/workout\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/blogs\" ns0:pathPattern=\"/blogs/.*\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/education\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:pathPattern=\"/education/chapter/.*\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:pathPattern=\"/education/article/.*\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/summary\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/livechat\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/planner\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/planner/timeline\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/planner/settings\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/trainer\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/program\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/challengeprogram\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/programs\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/workouts/search\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/log-workout\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/achievements\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/enable-push-prompt\" /><data ns0:scheme=\"https\" ns0:host=\"app.sweat.com\" ns0:path=\"/series\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V",
+                "Lcom/kaylaitsines/sweatwithkayla/SweatSplashActivity; overridePendingTransition (I I)V",
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.community.BlogActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.community.SubChapterDetailActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.community.SubChapterActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.community.LikeUserListActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.community.NotificationsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.communityevent.EventDescriptionPopupActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTop",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.communityevent.ChooseAProgramActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.communityevent.EventProgramConfirmationActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.communityevent.EventCompleteActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.communityevent.EventOffboardingActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.dashboard.workoutphase.ProgramCompleteActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTop",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.dashboard.workoutphase.PostProgramSelectionActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTop",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.login.LoginPageActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.login.SignupPageActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.dashboard.NewTodayActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.dashboard.rate.RateFeedbackActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.dashboard.MoreChallengesActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.dashboard.ProgramAgnosticMoreChallengesActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.dashboard.ChallengeHistoryActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.dashboard.CollectionWorkoutActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.workout.summary.WorkoutSummaryActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.planner.RehabSelectionActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.planner.SettingActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTop",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.workout.activeworkout.RestOverviewActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTop",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.workout.assessments.onerm.OneRmAssessmentIntroductionActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.workout.assessments.onerm.OneRmManualInputActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.foodandnutrition.RecipeCollectionActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.foodandnutrition.RecipeOverviewActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.foodandnutrition.RecipeValidator",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.foodandnutrition.searchandfilter.RecipeSearchActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.food.FoodSettingActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.food.RecipeActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.food.ShoppingListActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.food.PurchaseListActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.ProgressIntroActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.login.IntroTourActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.food.FoodIntroActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.CommunityIntroActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.community.CreatePostActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.community.SelectTagsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.community.PostDetailActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.community.SingleTagActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.community.PostRepliesActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.ImageSaveActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.ImageCroppingActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.CameraActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.workout.cardio.CardioActiveWorkoutActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTop",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V",
+                "Lcom/kaylaitsines/sweatwithkayla/workout/cardio/CardioActiveWorkoutActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.SupportActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.workout.activeworkout.TestWorkoutCategoryActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.workout.activeworkout.WorkoutOverviewActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTop",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V",
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.workout.activeworkout.WarmUpSelectionActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.workout.activeworkout.WarmUpDetailActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V",
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.workout.activeworkout.ActiveWorkoutActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTop",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V",
+                "Lcom/kaylaitsines/sweatwithkayla/workout/activeworkout/ActiveWorkoutActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.workout.activeworkout.longform.LongFormActiveWorkoutActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTop",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.workout.activeworkout.IntraWorkoutActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTop",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.workout.activeworkout.WorkoutSettingsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTop",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.workout.activeworkout.WorkoutFeedbackActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTop",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.referrals.view.ReferralHistoryActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.referrals.view.ReferFriendsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.referrals.view.ContactListActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.settings.SettingsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.settings.OtherSettingsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.settings.ProfileActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.settings.DeleteAccountActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.settings.GettingStartedChecklistActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.settings.TutorialCollectionActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.settings.MySubscriptionActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.settings.SubscriptionCancellationActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.settings.ManageProgramActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.workout.assessments.AssessmentResultsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.workout.activeworkout.EndWorkoutActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTop",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.workout.activeworkout.QuitWorkoutActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTop",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.workout.cardio.CardioOverviewActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTop",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.payment.ui.screens.PaymentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V",
+                "Lcom/kaylaitsines/sweatwithkayla/payment/ui/screens/PaymentActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.workout.CompleteTrophyActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.onboarding.PostPregnancySurveyActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.onboarding.prenatal.PrenatalSurveyActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.onboarding.OnboardingRefactorUserSurveyActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.onboarding.OnboardingProgramConfirmationActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.onboarding.OnboardingRefactorProgramSelectionActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.ui.ImagePickerActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.ui.ImageViewerActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.WebViewActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTop",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.workout.music.PlaylistDetailActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.workout.music.MusicPopupActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.facebook.FacebookActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.health.HealthEducateActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.GuestLoginActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.NameSaveActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.onboarding.WelcomeToSweatVideoActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.onboarding.TutorialActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.AutoWeekRollOverActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.planner.LogPastWorkoutActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.trainer.TrainerBioActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.program.ViewAllProgramsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.trainer.ViewAllTrainersActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.health.GdprConsentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.settings.ManagePrivacyActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.UsernameSaveActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.dashboard.series.ViewAllSeriesActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.ui.components.library.ComponentsLibraryActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.ui.components.library.TagsAndBadgesActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.ui.components.library.ButtonsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.ui.components.library.ImagesActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.ui.components.library.NavigationBarActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.ui.components.library.NavigationBarExampleActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.ui.components.library.ControlsAndIndicatorsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.ui.components.library.ModalsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.ui.components.library.TextFieldsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.ui.components.library.HeadlineActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.ui.components.library.TabBarActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.ui.components.library.BottomSheetsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.ui.components.library.TableCellsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.ui.components.library.TabsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.ui.components.library.ToolBarsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.AppOutageActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.achievements.AchievementsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.ProgressActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.achievements.AchievementBadgeActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.workout.activeworkout.substitution.equipmentprofile.EquipmentProfileActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.workout.activeworkout.PrenatalWorkoutSafelyWarningActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.dashboard.series.ui.CollectionWorkoutSeriesActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.dashboard.search.WorkoutSearchActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.support.LocalisedMessagingActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/support/LocalisedMessagingActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.kaylaitsines.sweatwithkayla.playground.TestComposeActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "zendesk.classic.messaging.MessagingActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.karumi.dexter.DexterActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.facebook.CustomTabMainActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.facebook.CustomTabActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"fbconnect\" ns0:host=\"cct.com.kaylaitsines.sweatwithkayla\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.gms.auth.api.signin.internal.SignInHubActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.braze.ui.BrazeWebViewActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.braze.ui.activities.BrazeFeedActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.braze.ui.activities.ContentCardsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.braze.push.NotificationTrampolineActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleInstance",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.android.billingclient.api.ProxyBillingActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.gms.common.api.GoogleApiActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "androidx.compose.ui.tooling.PreviewActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.spotify.sdk.android.authentication.AuthCallbackActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"@7F130263\" ns0:host=\"@7F130262\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.play.core.common.PlayCoreDialogWrapperActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        }
+    ],
+    "not_found_activities": [],
+    "override_animation_calls": [
+        "Lcom/kaylaitsines/sweatwithkayla/workout/music/MusicFragment; showPlaylistDetail (Lcom/kaylaitsines/sweatwithkayla/entities/music/SweatPlaylist;)V",
+        "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; setShowTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; setCloseTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/SweatActivity; restartToDashboard (Z)V",
+        "Lcom/kaylaitsines/sweatwithkayla/AppOutageActivity; setShowTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/AppOutageActivity; setCloseTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/GuestLoginActivity; setCloseTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/GuestLoginActivity; setShowTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/NameSaveActivity; setCloseTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/NameSaveActivity; setShowTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/SweatSplashActivity; finalizeSplash ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/SweatSplashActivity; lambda$startApp$11 (Lcom/kaylaitsines/sweatwithkayla/entities/activeworkout/session/WorkoutSession;)V",
+        "Lcom/kaylaitsines/sweatwithkayla/SweatSplashActivity; loadPage ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/SweatSplashActivity; startApp ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/SweatSplashActivity; startApp ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/SweatSplashActivity; loadPage ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/SweatSplashActivity; goToDashboard ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/SweatSplashActivity; lambda$startApp$12 ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/SweatSplashActivity; lambda$startApp$10 ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/SweatSplashActivity; loadPage ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/WebViewActivity; setCloseTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/WebViewActivity; setShowTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/achievements/AchievementBadgeActivity; setCloseTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/achievements/AchievementBadgeActivity; setShowTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/community/NotificationsActivity; setShowTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/community/NotificationsActivity; setCloseTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/communityevent/EventDescriptionPopupActivity; setShowTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/communityevent/EventDescriptionPopupActivity; setCloseTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/dashboard/rate/RateFeedbackActivity; setCloseTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/dashboard/rate/RateFeedbackActivity; setShowTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/health/GdprConsentActivity; setCloseTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/health/GdprConsentActivity; setShowTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/health/HealthEducateActivity; setCloseTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/health/HealthEducateActivity; setShowTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/payment/ui/screens/PaymentActivity; setCloseTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/payment/ui/screens/PaymentActivity; finish ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/payment/ui/screens/PaymentActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lcom/kaylaitsines/sweatwithkayla/payment/ui/screens/PaymentActivity; setShowTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/planner/LogPastWorkoutActivity; setCloseTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/planner/LogPastWorkoutActivity; setShowTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/referrals/view/ReferFriendsActivity; setShowTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/referrals/view/ReferFriendsActivity; setCloseTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/referrals/view/ReferFriendsActivity; setShowTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/referrals/view/ReferFriendsActivity; setCloseTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/support/LocalisedMessagingActivity; finish ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/support/LocalisedMessagingActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lcom/kaylaitsines/sweatwithkayla/workout/activeworkout/ActiveWorkoutActivity$3; onSettings ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/workout/activeworkout/ActiveWorkoutActivity; onActivityResult (I I Landroid/content/Intent;)V",
+        "Lcom/kaylaitsines/sweatwithkayla/workout/activeworkout/RestOverviewActivity; openSetting ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/workout/activeworkout/WorkoutOverviewActivity; openSetting ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/workout/cardio/CardioActiveWorkoutActivity; onActivityResult (I I Landroid/content/Intent;)V",
+        "Lcom/kaylaitsines/sweatwithkayla/workout/music/MusicPopupActivity; setCloseTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/workout/music/MusicPopupActivity; setShowTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/workout/music/MusicPopupActivity; setCloseTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/workout/music/MusicPopupActivity; setShowTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/workout/music/PlaylistDetailActivity; setCloseTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/workout/music/PlaylistDetailActivity; setShowTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/workout/music/PlaylistDetailActivity$3; onNext (Lcom/kaylaitsines/sweatwithkayla/entities/music/SweatTrack;)V",
+        "Lcom/kaylaitsines/sweatwithkayla/workout/music/PlaylistDetailActivity; setCloseTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/workout/music/PlaylistDetailActivity; setShowTransition ()V",
+        "Lcom/kaylaitsines/sweatwithkayla/workout/music/PlaylistDetailActivity; lambda$init$3 (Landroid/view/View;)V",
+        "Lcom/google/android/material/transition/platform/MaterialContainerTransformSharedElementCallback$2; onTransitionEnd (Landroid/transition/Transition;)V",
+        "Lcom/kaylaitsines/sweatwithkayla/workout/activeworkout/ActiveWorkoutActivity; startWorkout (Landroid/app/Activity; I I Z)V"
+    ],
+    "start_time": 1747793774.620784,
+    "end_time": 1747793891.6160388,
+    "exception": false
+}

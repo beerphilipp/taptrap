@@ -1,0 +1,1974 @@
+{
+    "apk_path": "/home/experiments/apks/android/tapjacking/free_18_12_24_merged/com.metech.firefly.apk",
+    "target_sdk": 34,
+    "package_name": "com.metech.firefly",
+    "is_enabled": true,
+    "permission": null,
+    "protected_confirmation": false,
+    "activities": [
+        {
+            "activity_name": "com.metech.firefly.view.activity.SplashScreenAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleInstance",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.LAUNCHER\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.URLSchemeAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><data ns0:scheme=\"fireflyz\" /><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><data ns0:scheme=\"http\" ns0:host=\"www.fireflyz.com.my\" ns0:pathPrefix=\"/app\" /><data ns0:scheme=\"https\" ns0:host=\"www.fireflyz.com.my\" ns0:pathPrefix=\"/app\" /><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.HomeAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.shared.SelectRouteAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.booking.BookingContactDetailsAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V",
+                "Lcom/metech/firefly/view/activity/shared/ContactDetailsAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.booking.BookingPassengerDetailsAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V",
+                "Lcom/metech/firefly/view/activity/shared/PassengerDetailsAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.booking.SelectRouteArrivalAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.booking.SelectRouteDepartAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.booking.SearchFlightAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.flighthotel.FHSearchAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.flighthotel.FHSelectAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.flighthotel.FHDateAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.flighthotel.FHWebviewAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.manage.CFWebviewAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.booking.BookingSelectDateAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.booking.BookingSelectDepartAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V",
+                "Lcom/metech/firefly/view/activity/shared/SelectFlightAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.booking.BookingSelectReturnAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V",
+                "Lcom/metech/firefly/view/activity/shared/SelectFlightAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.booking.BookingPaymentAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.booking.BookingSummaryAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.booking.BookingWebviewAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.booking.FlightItineraryAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.booking.BookingPopupSummaryAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.booking.addons.BookingAddOnsAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V",
+                "Lcom/metech/firefly/view/activity/shared/AddOnsAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.booking.addons.BookingEditAddOnsAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V",
+                "Lcom/metech/firefly/view/activity/shared/EditAddOnsAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.booking.addons.BookingEditAddOnsInsuranceAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.booking.addons.BookingEditAddOnsSeatAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V",
+                "Lcom/metech/firefly/view/activity/shared/EditAddOnsSeatAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.booking.addons.BookingAddOnsBaggageAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V",
+                "Lcom/metech/firefly/view/activity/booking/addons/BookingAddOnsBaggageAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.booking.addons.BookingAddOnsLoungeAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V",
+                "Lcom/metech/firefly/view/activity/booking/addons/BookingAddOnsLoungeAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.booking.addons.BookingAddOnsSportAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V",
+                "Lcom/metech/firefly/view/activity/booking/addons/BookingAddOnsSportAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.booking.addons.BookingAddOnsMealAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V",
+                "Lcom/metech/firefly/view/activity/booking/addons/BookingAddOnsMealAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.manage.manage_addon.ManageAddOnsBaggageAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V",
+                "Lcom/metech/firefly/view/activity/manage/manage_addon/ManageAddOnsBaggageAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.manage.manage_addon.ManageAddOnsSportAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V",
+                "Lcom/metech/firefly/view/activity/manage/manage_addon/ManageAddOnsSportAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.manage.manage_addon.ManageAddOnsMealAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V",
+                "Lcom/metech/firefly/view/activity/manage/manage_addon/ManageAddOnsMealAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.manage.manage_addon.ManageAddOnsLoungeAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V",
+                "Lcom/metech/firefly/view/activity/manage/manage_addon/ManageAddOnsLoungeAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.manage.ManageBookingListAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.manage.AgentManageBookingListAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.manage.ManageBookingItineraryAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.manage.ManageFlightAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.manage.ManagePaymentAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.checkin.CheckInPaymentAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.checkin.CheckInWebviewAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.checkin.CheckInAddonAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V",
+                "Lcom/metech/firefly/view/activity/shared/AddOnsAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.checkin.CheckInAddOnsBaggageAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V",
+                "Lcom/metech/firefly/view/activity/checkin/CheckInAddOnsBaggageAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.checkin.CFCheckInWebViewAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.manage.ManageContactDetailsAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V",
+                "Lcom/metech/firefly/view/activity/shared/ContactDetailsAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.manage.ManagePassengerDetailsAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V",
+                "Lcom/metech/firefly/view/activity/shared/PassengerDetailsAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.manage.ManageSelectDateAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.manage.ManageSelectDepartAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V",
+                "Lcom/metech/firefly/view/activity/shared/SelectFlightAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.manage.ManageSelectReturnAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V",
+                "Lcom/metech/firefly/view/activity/shared/SelectFlightAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.manage.ManageWebviewAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.manage.ManagePopupSummaryAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.manage.manage_addon.ManageInsuranceAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.manage.manage_addon.ManageAddonAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V",
+                "Lcom/metech/firefly/view/activity/shared/AddOnsAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.manage.manage_addon.ManageEditAddOnsAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V",
+                "Lcom/metech/firefly/view/activity/shared/EditAddOnsAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.checkin.CheckInEditAddOnsAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V",
+                "Lcom/metech/firefly/view/activity/shared/EditAddOnsAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.manage.manage_addon.ManageSeatAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V",
+                "Lcom/metech/firefly/view/activity/shared/EditAddOnsSeatAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.checkin.MobileCheckInAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.checkin.MobileCheckInPassengerAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.checkin.MobileCheckInListAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.checkin.MobileCheckInConfirm",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.checkin.MobileCheckInFlightListAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.checkin.MobileCheckInSuccess",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.boardingpass.BoardingPassAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.boardingpass.BoardingPassListAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.boardingpass.BoardingPassInfoAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.boardingpass.BoardingPassBarCodeAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.boardingpass.BoardingPassBarcode2dAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.manage.ManageBookingAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.manage.AgentManageBookingAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.LoginAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.LoginAgentAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.ForgotPasswordAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.ForgotPasswordAgentAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.ResetPasswordAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.RegisterAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.booking.addons.InsuranceBenefitAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.OtpPhoneNumberAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.OtpNumberAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.drawer.HelpAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.drawer.SupportAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.drawer.HelpFaqAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.drawer.ContactUsAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.drawer.ContactUsAct2",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.drawer.ChangePasswordAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.drawer.TncAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.drawer.PrivacyPolicyAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.drawer.LanguageAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.drawer.GccAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.drawer.MacAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.drawer.FamilyFriendManageAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.InboxListAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.InboxViewAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.DeviceListAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.drawer.FamilyFriendEditNewAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.drawer.FamilyFriendListAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.drawer.ProfileInformationAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.drawer.ProfileInformationAct2",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.metech.firefly.view.activity.HtmlViewerAct",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/metech/firefly/view/activity/AAct; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.adobe.marketing.mobile.assurance.AssuranceFullScreenTakeoverActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.adobe.marketing.mobile.assurance.AssuranceErrorDisplayActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.adobe.marketing.mobile.assurance.AssuranceQuickConnectActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.useinsider.insider.InsiderActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.useinsider.insider.InsiderInappActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTop",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.useinsider.insider.InsiderLoginActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"insiderflyfirefly\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.gms.common.api.GoogleApiActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.play.core.common.PlayCoreDialogWrapperActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        }
+    ],
+    "not_found_activities": [],
+    "override_animation_calls": [
+        "Lcom/adobe/marketing/mobile/assurance/AssuranceFullScreenTakeoverActivity; dismiss ()V",
+        "Lcom/metech/firefly/view/activity/AAct; optOnBackPressed ()V",
+        "Lcom/metech/firefly/view/activity/AAct; optStartActivity ()V",
+        "Lcom/metech/firefly/view/activity/booking/BookingSummaryAct; lambda$onBind$0$com-metech-firefly-view-activity-booking-BookingSummaryAct (Landroid/view/View;)V",
+        "Lcom/metech/firefly/view/activity/booking/addons/BookingAddOnsBaggageAct; onClick (Landroid/view/View;)V",
+        "Lcom/metech/firefly/view/activity/booking/addons/BookingAddOnsLoungeAct; onClick (Landroid/view/View;)V",
+        "Lcom/metech/firefly/view/activity/booking/addons/BookingAddOnsMealAct; onClick (Landroid/view/View;)V",
+        "Lcom/metech/firefly/view/activity/booking/addons/BookingAddOnsSportAct; onClick (Landroid/view/View;)V",
+        "Lcom/metech/firefly/view/activity/checkin/CheckInAddOnsBaggageAct; onClick (Landroid/view/View;)V",
+        "Lcom/metech/firefly/view/activity/manage/manage_addon/ManageAddOnsBaggageAct; onClick (Landroid/view/View;)V",
+        "Lcom/metech/firefly/view/activity/manage/manage_addon/ManageAddOnsLoungeAct; onClick (Landroid/view/View;)V",
+        "Lcom/metech/firefly/view/activity/manage/manage_addon/ManageAddOnsMealAct; onClick (Landroid/view/View;)V",
+        "Lcom/metech/firefly/view/activity/manage/manage_addon/ManageAddOnsSportAct; onClick (Landroid/view/View;)V",
+        "Lcom/metech/firefly/view/activity/shared/AddOnsAct; onClick (Landroid/view/View;)V",
+        "Lcom/metech/firefly/view/activity/shared/AddOnsAct; onClick (Landroid/view/View;)V",
+        "Lcom/metech/firefly/view/activity/shared/ContactDetailsAct; onClick (Landroid/view/View;)V",
+        "Lcom/metech/firefly/view/activity/shared/ContactDetailsAct; onClick (Landroid/view/View;)V",
+        "Lcom/metech/firefly/view/activity/shared/EditAddOnsAct; onClick (Landroid/view/View;)V",
+        "Lcom/metech/firefly/view/activity/shared/EditAddOnsSeatAct; onClick (Landroid/view/View;)V",
+        "Lcom/metech/firefly/view/activity/shared/PassengerDetailsAct; onClick (Landroid/view/View;)V",
+        "Lcom/metech/firefly/view/activity/shared/PassengerDetailsAct; onClick (Landroid/view/View;)V",
+        "Lcom/metech/firefly/view/activity/shared/PaymentAct$26; onClick (Landroid/view/View;)V",
+        "Lcom/metech/firefly/view/activity/shared/PopupSummaryAct; optOnBackPressed ()V",
+        "Lcom/metech/firefly/view/activity/shared/SelectFlightAct; onClick (Landroid/view/View;)V",
+        "Lcom/metech/firefly/view/activity/shared/SelectFlightAct; onClick (Landroid/view/View;)V",
+        "Lcom/adobe/marketing/mobile/assurance/AssuranceSessionPresentationManager; onActivityStarted (Landroid/app/Activity;)V",
+        "Lcom/google/android/material/transition/platform/MaterialContainerTransformSharedElementCallback$2; onTransitionEnd (Landroid/transition/Transition;)V",
+        "Lcom/useinsider/insider/InsiderInappActivity; a ()V",
+        "Lcom/adobe/marketing/mobile/assurance/AssuranceFullScreenTakeover; show (Landroid/app/Activity;)V",
+        "Lcom/useinsider/insider/InsiderCore; e (Lcom/useinsider/insider/InsiderEvent;)V",
+        "Lcom/adobe/marketing/mobile/assurance/AssuranceSessionPresentationManager; showErrorDisplay (Lcom/adobe/marketing/mobile/assurance/AssuranceConstants$AssuranceConnectionError;)V",
+        "Lcom/useinsider/insider/o; n ()V"
+    ],
+    "start_time": 1747801922.2330709,
+    "end_time": 1747802022.614557,
+    "exception": false
+}

@@ -1,0 +1,1272 @@
+{
+    "apk_path": "/home/experiments/apks/android/tapjacking/free_18_12_24_merged/com.vorwerk.cookidoo_merged.apk",
+    "target_sdk": 34,
+    "package_name": "com.vorwerk.cookidoo",
+    "is_enabled": true,
+    "permission": null,
+    "protected_confirmation": false,
+    "activities": [
+        {
+            "activity_name": "com.cookidoo.android.presentation.splash.SplashScreenActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.LAUNCHER\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_SPLASH\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.presentation.splash.DeepLinkActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:autoVerify=\"true\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.at\" ns0:pathPattern=\"/recipes/recipe/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.at\" ns0:pathPattern=\"/customer-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.at\" ns0:pathPattern=\"/created-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.at\" ns0:pathPattern=\"/created-recipes/add-to-cookidoo\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.at\" ns0:pathPattern=\"/served\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.at\" ns0:pathPattern=\"/shareCollection\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.at\" ns0:pathPattern=\"/internalurl\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.at\" ns0:pathPattern=\"/whatsnew\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.com.au\" ns0:pathPattern=\"/recipes/recipe/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.com.au\" ns0:pathPattern=\"/customer-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.com.au\" ns0:pathPattern=\"/created-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.com.au\" ns0:pathPattern=\"/created-recipes/add-to-cookidoo\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.com.au\" ns0:pathPattern=\"/served\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.com.au\" ns0:pathPattern=\"/shareCollection\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.com.au\" ns0:pathPattern=\"/internalurl\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.com.au\" ns0:pathPattern=\"/whatsnew\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.be\" ns0:pathPattern=\"/recipes/recipe/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.be\" ns0:pathPattern=\"/customer-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.be\" ns0:pathPattern=\"/created-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.be\" ns0:pathPattern=\"/created-recipes/add-to-cookidoo\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.be\" ns0:pathPattern=\"/served\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.be\" ns0:pathPattern=\"/shareCollection\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.be\" ns0:pathPattern=\"/internalurl\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.be\" ns0:pathPattern=\"/whatsnew\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.ch\" ns0:pathPattern=\"/recipes/recipe/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.ch\" ns0:pathPattern=\"/customer-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.ch\" ns0:pathPattern=\"/created-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.ch\" ns0:pathPattern=\"/created-recipes/add-to-cookidoo\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.ch\" ns0:pathPattern=\"/served\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.ch\" ns0:pathPattern=\"/shareCollection\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.ch\" ns0:pathPattern=\"/internalurl\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.ch\" ns0:pathPattern=\"/whatsnew\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.cz\" ns0:pathPattern=\"/recipes/recipe/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.cz\" ns0:pathPattern=\"/customer-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.cz\" ns0:pathPattern=\"/created-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.cz\" ns0:pathPattern=\"/created-recipes/add-to-cookidoo\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.cz\" ns0:pathPattern=\"/served\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.cz\" ns0:pathPattern=\"/shareCollection\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.cz\" ns0:pathPattern=\"/internalurl\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.cz\" ns0:pathPattern=\"/whatsnew\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.de\" ns0:pathPattern=\"/recipes/recipe/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.de\" ns0:pathPattern=\"/customer-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.de\" ns0:pathPattern=\"/created-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.de\" ns0:pathPattern=\"/created-recipes/add-to-cookidoo\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.de\" ns0:pathPattern=\"/served\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.de\" ns0:pathPattern=\"/shareCollection\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.de\" ns0:pathPattern=\"/internalurl\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.de\" ns0:pathPattern=\"/whatsnew\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.es\" ns0:pathPattern=\"/recipes/recipe/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.es\" ns0:pathPattern=\"/customer-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.es\" ns0:pathPattern=\"/created-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.es\" ns0:pathPattern=\"/created-recipes/add-to-cookidoo\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.es\" ns0:pathPattern=\"/served\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.es\" ns0:pathPattern=\"/shareCollection\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.es\" ns0:pathPattern=\"/internalurl\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.es\" ns0:pathPattern=\"/whatsnew\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.fr\" ns0:pathPattern=\"/recipes/recipe/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.fr\" ns0:pathPattern=\"/customer-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.fr\" ns0:pathPattern=\"/created-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.fr\" ns0:pathPattern=\"/created-recipes/add-to-cookidoo\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.fr\" ns0:pathPattern=\"/served\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.fr\" ns0:pathPattern=\"/shareCollection\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.fr\" ns0:pathPattern=\"/internalurl\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.fr\" ns0:pathPattern=\"/whatsnew\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.it\" ns0:pathPattern=\"/recipes/recipe/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.it\" ns0:pathPattern=\"/customer-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.it\" ns0:pathPattern=\"/created-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.it\" ns0:pathPattern=\"/created-recipes/add-to-cookidoo\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.it\" ns0:pathPattern=\"/served\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.it\" ns0:pathPattern=\"/shareCollection\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.it\" ns0:pathPattern=\"/internalurl\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.it\" ns0:pathPattern=\"/whatsnew\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.mx\" ns0:pathPattern=\"/recipes/recipe/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.mx\" ns0:pathPattern=\"/customer-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.mx\" ns0:pathPattern=\"/created-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.mx\" ns0:pathPattern=\"/created-recipes/add-to-cookidoo\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.mx\" ns0:pathPattern=\"/served\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.mx\" ns0:pathPattern=\"/shareCollection\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.mx\" ns0:pathPattern=\"/internalurl\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.mx\" ns0:pathPattern=\"/whatsnew\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.pl\" ns0:pathPattern=\"/recipes/recipe/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.pl\" ns0:pathPattern=\"/customer-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.pl\" ns0:pathPattern=\"/created-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.pl\" ns0:pathPattern=\"/created-recipes/add-to-cookidoo\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.pl\" ns0:pathPattern=\"/served\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.pl\" ns0:pathPattern=\"/shareCollection\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.pl\" ns0:pathPattern=\"/internalurl\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.pl\" ns0:pathPattern=\"/whatsnew\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.pt\" ns0:pathPattern=\"/recipes/recipe/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.pt\" ns0:pathPattern=\"/customer-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.pt\" ns0:pathPattern=\"/created-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.pt\" ns0:pathPattern=\"/created-recipes/add-to-cookidoo\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.pt\" ns0:pathPattern=\"/served\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.pt\" ns0:pathPattern=\"/shareCollection\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.pt\" ns0:pathPattern=\"/internalurl\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.pt\" ns0:pathPattern=\"/whatsnew\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.tw\" ns0:pathPattern=\"/recipes/recipe/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.tw\" ns0:pathPattern=\"/customer-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.tw\" ns0:pathPattern=\"/created-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.tw\" ns0:pathPattern=\"/created-recipes/add-to-cookidoo\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.tw\" ns0:pathPattern=\"/served\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.tw\" ns0:pathPattern=\"/shareCollection\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.tw\" ns0:pathPattern=\"/internalurl\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.tw\" ns0:pathPattern=\"/whatsnew\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.co.uk\" ns0:pathPattern=\"/recipes/recipe/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.co.uk\" ns0:pathPattern=\"/customer-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.co.uk\" ns0:pathPattern=\"/created-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.co.uk\" ns0:pathPattern=\"/created-recipes/add-to-cookidoo\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.co.uk\" ns0:pathPattern=\"/served\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.co.uk\" ns0:pathPattern=\"/shareCollection\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.co.uk\" ns0:pathPattern=\"/internalurl\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.co.uk\" ns0:pathPattern=\"/whatsnew\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.thermomix.com\" ns0:pathPattern=\"/recipes/recipe/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.thermomix.com\" ns0:pathPattern=\"/customer-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.thermomix.com\" ns0:pathPattern=\"/created-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.thermomix.com\" ns0:pathPattern=\"/created-recipes/add-to-cookidoo\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.thermomix.com\" ns0:pathPattern=\"/served\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.thermomix.com\" ns0:pathPattern=\"/shareCollection\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.thermomix.com\" ns0:pathPattern=\"/internalurl\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.thermomix.com\" ns0:pathPattern=\"/whatsnew\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.ca\" ns0:pathPattern=\"/recipes/recipe/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.ca\" ns0:pathPattern=\"/customer-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.ca\" ns0:pathPattern=\"/created-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.ca\" ns0:pathPattern=\"/created-recipes/add-to-cookidoo\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.ca\" ns0:pathPattern=\"/served\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.ca\" ns0:pathPattern=\"/shareCollection\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.ca\" ns0:pathPattern=\"/internalurl\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.ca\" ns0:pathPattern=\"/whatsnew\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.com.tr\" ns0:pathPattern=\"/recipes/recipe/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.com.tr\" ns0:pathPattern=\"/customer-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.com.tr\" ns0:pathPattern=\"/created-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.com.tr\" ns0:pathPattern=\"/created-recipes/add-to-cookidoo\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.com.tr\" ns0:pathPattern=\"/served\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.com.tr\" ns0:pathPattern=\"/shareCollection\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.com.tr\" ns0:pathPattern=\"/internalurl\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.com.tr\" ns0:pathPattern=\"/whatsnew\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.international\" ns0:pathPattern=\"/recipes/recipe/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.international\" ns0:pathPattern=\"/customer-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.international\" ns0:pathPattern=\"/created-recipes/.*/.*\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.international\" ns0:pathPattern=\"/created-recipes/add-to-cookidoo\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.international\" ns0:pathPattern=\"/served\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.international\" ns0:pathPattern=\"/shareCollection\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.international\" ns0:pathPattern=\"/internalurl\" /><data ns0:scheme=\"https\" ns0:host=\"cookidoo.international\" ns0:pathPattern=\"/whatsnew\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:autoVerify=\"true\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:host=\"explore\" /><data ns0:host=\"shareCollection\" /><data ns0:scheme=\"@7F130061\" /><data ns0:pathPattern=\".*\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.presentation.splash.DynamicLinkDeepLinkActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:autoVerify=\"true\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"https\" ns0:host=\"@7F130046\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.presentation.splash.NotificationCenterDeepLinkActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.presentation.home.HomeActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_HOME\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.presentation.debug.DebugMenuActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_DEBUG_MENU\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.presentation.debug.FsbXmlFontStylesActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_FSB_XML_STYLES\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.presentation.debug.FsbComposeFontStylesActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_FSB_COMPOSE_STYLES\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.presentation.debug.FsbXmlColorsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_FSB_XML_COLORS\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.presentation.debug.FsbComposeColorsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_FSB_COMPOSE_COLORS\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.presentation.onboarding.OnboardingActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_APP_TOUR\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.presentation.forceupdate.ForceUpdateActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_FORCE_UPDATE\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.presentation.whatsnew.WhatsNewActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_WHATS_NEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.presentation.debug.FSBButtonsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_OPEN_FSB_BUTTON\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.presentation.debug.LegacyFSBButtonsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_OPEN_FSB_LEGACY_BUTTON\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.presentation.debug.FSBDialogActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_OPEN_FSB_DIALOG\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.presentation.debug.FSBLegacyDialogActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_OPEN_FSB_LEGACY_DIALOG\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.accountweb.presentation.login.legacy.LoginLegacyActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_LOGIN_LEGACY\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.accountweb.presentation.login.legacy.LoginErrorInfoActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_LOGIN_ERROR_INFORMATION\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.accountweb.presentation.login.codegrant.LoginCodeGrantActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_LOGIN_CODE_GRANT\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.accountweb.presentation.login.codegrant.LoginCodeGrantWebViewActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_LOGIN_CODE_GRANT_WEB\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.accountweb.presentation.login.wechat.WeChatWebViewActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_LOGIN_WECHAT_WEB\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.accountweb.presentation.login.registration.RegistrationWebViewActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_REGISTRATION\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.accountweb.presentation.login.ForgotPasswordActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_FORGOT_PASSWORD\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.accountweb.presentation.login.localization.LocalizationConfigActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_SELECT_LOCALE\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.recipe.presentation.RecipeDetailActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_RECIPE_DETAIL\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.recipe.presentation.tmversion.TMCompatibleVersionsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_TM_VERSIONS\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.recipe.presentation.servingsize.ServingSizeOptionsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_SERVING_SIZE_OPTIONS\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.recipe.presentation.servingsize.scaling.ServingSizeScalingExplanationActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_SERVING_SIZE_SCALING_EXPLANATION\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.myrecipes.presentation.collection.CollectionActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_COLLECTION\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.myrecipes.presentation.collection.manager.CollectionManagerActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_COLLECTION_MANAGER\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.myrecipes.presentation.list.add.AddToCollectionActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_ADD_TO_COLLECTION\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.myrecipes.presentation.list.move.MoveRecipeActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_MOVE_RECIPE\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.myrecipes.presentation.collection.import.CollectionImportActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_COLLECTION_IMPORT\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.myrecipes.presentation.search.MyRecipeSearchActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_MY_RECIPE_SEARCH\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.planner.presentation.add.AddToPlannerActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_ADD_TO_PLANNER\" /><action ns0:name=\"com.vorwerk.cookidoo.ACTION_MOVE_ANOTHER_DAY\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.planner.presentation.calendar.datepicker.DatePickerActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_PLANNER_DATEPICKER\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.planner.presentation.PlannerActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_MY_WEEK\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.profile.presentation.dataprotection.DataProtectionWebViewActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_DATA_PROTECTION\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.profile.presentation.mainprofile.ProfileMainActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_PROFILE\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.profile.presentation.more.ProfileMoreActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_PROFILE_MORE\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.profile.presentation.membership.profile.ui.ProfileMembershipActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_PROFILE_MEMBERSHIP\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.profile.presentation.editprofile.ProfileEditActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_PROFILE_EDIT\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.profile.presentation.changepassword.ChangePasswordActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_CHANGE_PASSWORD\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.profile.presentation.avatar.ChooseAvatarActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_CHOOSE_AVATAR\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.profile.presentation.deleteaccount.DeleteAccountActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_DELETE_ACCOUNT\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.profile.presentation.more.notification.ProfileNotificationSettingsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_PROFILE_NOTIFICATION_SETTINGS\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.profile.presentation.membership.inapppurchase.ui.InAppPurchaseActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_IN_APP_PURCHASE\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.customerrecipes.presentation.create.CreateCustomerRecipeActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_CUSTOMER_RECIPES_CREATE_RECIPE\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.customerrecipes.presentation.import.ImportCustomerRecipeActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_CUSTOMER_RECIPES_IMPORT_RECIPE\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.customerrecipes.presentation.addtocookidoo.AddCustomerRecipeToCookidooActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_CUSTOMER_RECIPES_ADD_TO_COOKIDOO\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.customerrecipes.presentation.ImportRecipeErrorActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_CUSTOMER_RECIPES_IMPORT_RECIPE_ERROR\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.customerrecipes.presentation.detail.CustomerRecipeDetailActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_CUSTOMER_RECIPE_DETAIL\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.customerrecipes.presentation.edit.CustomerRecipeEditActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_CUSTOMER_RECIPE_EDIT\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.customerrecipes.presentation.edit.picture.CustomerRecipePictureEditActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_EDIT_CUSTOMER_RECIPE_PICTURE\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.customerrecipes.presentation.edit.picture.CreatedRecipePictureConfirmationActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_CREATED_RECIPE_PICTURE_CONFIRMATION\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.customerrecipes.presentation.edit.sub.CustomerRecipeEditSubWebViewActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_CUSTOMER_RECIPE_EDIT_SUB_WEB_VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.customerrecipes.presentation.scaling.CustomerRecipeScalingActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_CUSTOMER_RECIPES_RECIPE_SCALING\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.customerrecipes.presentation.edit.CustomerRecipeEditErrorActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_CUSTOMER_RECIPE_EDIT_ERROR\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.customerrecipes.presentation.report.CreatedRecipeReportActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_CREATED_RECIPE_REPORT\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.customerrecipes.presentation.detail.sharing.CreatedRecipeSharingActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_CREATED_RECIPE_SHARING\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.foundation.presentation.webview.WebViewActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_WEB_VIEW\" /><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_WEB_VIEW_FOR_TOKEN\" /><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_WEB_VIEW_MODAL_FOR_TOKEN\" /><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_WEB_VIEW_FOR_LEGAL_UPDATE\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.foundation.presentation.webview.SubWebViewActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_SUB_WEB_VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.foundation.presentation.editpicture.PictureEditActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_EDIT_PICTURE\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.foundation.presentation.served.CookidooServedActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_COOKIDOO_SERVED\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.foundation.presentation.notificationcenter.view.NotificationCenterActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_NOTIFICATION_CENTER\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cookidoo.android.foundation.presentation.cookingcenter.CookingCenterActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.vorwerk.cookidoo.ACTION_START_COOKING_CENTER\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.android.billingclient.api.ProxyBillingActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.android.billingclient.api.ProxyBillingActivityV2",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.gms.common.api.GoogleApiActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        }
+    ],
+    "not_found_activities": [],
+    "override_animation_calls": [
+        "Lcom/cookidoo/android/planner/presentation/calendar/datepicker/DatePickerActivity; s3 (Z Ljava/util/Date;)V",
+        "Lcom/cookidoo/android/planner/presentation/add/AddToPlannerActivity; D1 (Z)V"
+    ],
+    "start_time": 1747869161.1197968,
+    "end_time": 1747869271.1804252,
+    "exception": false
+}

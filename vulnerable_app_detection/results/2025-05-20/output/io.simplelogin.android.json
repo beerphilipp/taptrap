@@ -1,0 +1,177 @@
+{
+    "apk_path": "/home/experiments/apks/android/tapjacking/free_18_12_24_merged/io.simplelogin.android.apk",
+    "target_sdk": 34,
+    "package_name": "io.simplelogin.android",
+    "is_enabled": true,
+    "permission": null,
+    "protected_confirmation": false,
+    "activities": [
+        {
+            "activity_name": "io.simplelogin.android.module.startup.StartupActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.LAUNCHER\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.SENDTO\" /><data ns0:scheme=\"mailto\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><data ns0:scheme=\"mailto\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "io.simplelogin.android.module.home.HomeActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"@7F120105\" ns0:host=\"*\" ns0:path=\"/link\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lio/simplelogin/android/module/home/HomeActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "io.simplelogin.android.module.startup.LocalAuthActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "io.simplelogin.android.module.login.LoginActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"@7F120105\" ns0:host=\"*\" ns0:path=\"/login\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "io.simplelogin.android.module.login.VerificationActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lio/simplelogin/android/module/login/VerificationActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "io.simplelogin.android.module.login.SignUpActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lio/simplelogin/android/module/login/SignUpActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "io.simplelogin.android.module.login.AboutActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lio/simplelogin/android/module/login/AboutActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "io.simplelogin.android.module.share.ShareActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.SEND\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><data ns0:mimeType=\"text/*\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        }
+    ],
+    "not_found_activities": [],
+    "override_animation_calls": [
+        "Lio/simplelogin/android/module/login/AboutActivity; onPause ()V",
+        "Lio/simplelogin/android/module/home/HomeActivity; onPause ()V",
+        "Lio/simplelogin/android/module/login/LoginActivity; onCreate$lambda$3 (Lio/simplelogin/android/module/login/LoginActivity; Landroid/view/View;)V",
+        "Lio/simplelogin/android/module/login/LoginActivity; onCreate$lambda$7 (Lio/simplelogin/android/module/login/LoginActivity; Landroid/view/View;)V",
+        "Lio/simplelogin/android/module/login/LoginActivity; finalizeLogin (Lio/simplelogin/android/utils/model/UserInfo;)V",
+        "Lio/simplelogin/android/module/login/LoginActivity; startVerificationActivity (Lio/simplelogin/android/utils/enums/VerificationMode;)V",
+        "Lio/simplelogin/android/module/login/SignUpActivity; onPause ()V",
+        "Lio/simplelogin/android/module/login/VerificationActivity; onPause ()V",
+        "Lio/simplelogin/android/module/startup/StartupActivity; startLocalAuthActivity ()V",
+        "Lio/simplelogin/android/module/startup/StartupActivity; startLoginActivity ()V",
+        "Lio/simplelogin/android/module/startup/StartupActivity; startHomeActivity (Lio/simplelogin/android/utils/model/UserInfo;)V",
+        "Lcom/google/android/material/transition/platform/MaterialContainerTransformSharedElementCallback$2; onTransitionEnd (Landroid/transition/Transition;)V",
+        "Landroidx/navigation/NavController; handleDeepLink (Landroid/content/Intent;)Z",
+        "Landroidx/navigation/ActivityNavigator; navigate (Landroidx/navigation/ActivityNavigator$Destination; Landroid/os/Bundle; Landroidx/navigation/NavOptions; Landroidx/navigation/Navigator$Extras;)Landroidx/navigation/NavDestination;",
+        "Landroidx/navigation/ActivityNavigator$Companion; applyPopAnimationsToPendingTransition (Landroid/app/Activity;)V"
+    ],
+    "start_time": 1747849871.1269698,
+    "end_time": 1747849987.1239648,
+    "exception": false
+}

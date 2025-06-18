@@ -1,0 +1,53 @@
+{
+    "apk_path": "/home/experiments/apks/android/tapjacking/free_18_12_24_merged/com.polarisoffice.tools.hwptopdf_merged.apk",
+    "target_sdk": 34,
+    "package_name": "com.polarisoffice.tools.hwptopdf",
+    "is_enabled": true,
+    "permission": null,
+    "protected_confirmation": false,
+    "activities": [
+        {
+            "activity_name": "com.polarisoffice.tools.hwptopdf.main.MainActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.LAUNCHER\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><data ns0:scheme=\"content\" /><data ns0:mimeType=\"application/x-hwp\" /><data ns0:mimeType=\"application/hwp\" /><data ns0:mimeType=\"application/hangul\" /><data ns0:mimeType=\"application/haansofthwp\" /><data ns0:mimeType=\"application/vnd.hancom.hwp\" /><data ns0:mimeType=\"application/x-hwpx\" /><data ns0:mimeType=\"application/hwpx\" /><data ns0:mimeType=\"application/vnd.hancom.hwpx\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><data ns0:scheme=\"content\" /><data ns0:pathPattern=\"/.*\\.hwp\" ns0:maxSdkVersion=\"30\" /><data ns0:pathPattern=\"/.*\\.hwpx\" ns0:maxSdkVersion=\"30\" /><data ns0:minSdkVersion=\"31\" ns0:pathSuffix=\".hwp\" /><data ns0:minSdkVersion=\"31\" ns0:pathSuffix=\".hwpx\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.gms.common.api.GoogleApiActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        }
+    ],
+    "not_found_activities": [],
+    "override_animation_calls": [
+        "Lcom/google/android/gms/internal/measurement/x5; f (Lf4/z; Lf4/w; Lt0/l; Lt0/c; Lbb/c; Lbb/c; Lbb/c; Lbb/c; Lh0/k; I I)V"
+    ],
+    "start_time": 1747842462.8398347,
+    "end_time": 1747842483.5678022,
+    "exception": false
+}

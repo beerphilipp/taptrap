@@ -1,0 +1,545 @@
+{
+    "apk_path": "/home/experiments/apks/android/tapjacking/free_18_12_24_merged/at.oeamtc.android.apk",
+    "target_sdk": 33,
+    "package_name": "at.oeamtc.android",
+    "is_enabled": true,
+    "permission": null,
+    "protected_confirmation": false,
+    "activities": [
+        {
+            "activity_name": "at.oeamtc.android.onboard.LicenceAgreementActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "at.oeamtc.android.StartActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.LAUNCHER\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:autoVerify=\"true\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"http\" /><data ns0:scheme=\"https\" /><data ns0:host=\"www.oeamtc.at\" ns0:pathPattern=\"/livestatus/.*\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "at.oeamtc.android.new.WhatsNewActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lat/oeamtc/android/new/WhatsNewActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "at.oeamtc.android.onboarding.OnboardingScreenActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "at.oeamtc.android.MainActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"appoeamtc\" ns0:host=\"app\" /><data ns0:scheme=\"oeamtc\" ns0:host=\"app\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:autoVerify=\"true\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"http\" /><data ns0:scheme=\"https\" /><data ns0:host=\"www.oeamtc.at\" ns0:pathPattern=\"/livestatus/.*\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "at.oeamtc.android.webfeature.WebFeatureActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "at.oeamtc.clubcard.ClubCardActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lat/oeamtc/clubcard/ClubCardActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "at.oeamtc.fusion.user.authentication.UserAuthenticationActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "at.oeamtc.settings.account.SettingsAccountActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "at.oeamtc.smr.ui.options.route.PublicRouteStopsOptionsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lat/oeamtc/smr/ui/options/route/PublicRouteStopsOptionsActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "at.oeamtc.smr.ui.search.RouteSearchActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lat/oeamtc/smr/ui/search/RouteSearchActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "at.oeamtc.smr.ui.route.OptionsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lat/oeamtc/smr/ui/route/OptionsActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "at.oeamtc.smr.ui.route.SavedRouteActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lat/oeamtc/smr/ui/route/SavedRouteActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "at.oeamtc.smr.ui.options.ParkingProvidersActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lat/oeamtc/smr/ui/options/MultiSelectionActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "at.oeamtc.smr.ui.options.settings.FuelTypesActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lat/oeamtc/smr/ui/options/settings/FuelTypesActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "at.oeamtc.smr.ui.options.GasStationOperatorsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lat/oeamtc/smr/ui/options/MultiSelectionActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "at.oeamtc.smr.ui.options.route.AccessibilityOptionsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lat/oeamtc/smr/ui/options/route/AccessibilityOptionsActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "at.oeamtc.smr.ui.favorites.SelectFromFavoritesActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "at.oeamtc.smr.ui.favorites.UpdateFavoriteActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lat/oeamtc/smr/ui/favorites/UpdateFavoriteActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "at.oeamtc.smr.ui.gasprices.ReportGasPriceActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lat/oeamtc/smr/ui/gasprices/ReportGasPriceActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "at.oeamtc.smr.ui.route.UpdateSavedRouteActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lat/oeamtc/smr/ui/route/UpdateSavedRouteActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "at.oeamtc.smr.ui.gasprices.SelectReportGasPriceActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lat/oeamtc/smr/ui/gasprices/SelectReportGasPriceActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "at.oeamtc.smr.ui.options.CountryAvoidanceSelectionActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lat/oeamtc/smr/ui/options/MultiSelectionActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "at.oeamtc.smr.ui.trafficreport.TrafficReportActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lat/oeamtc/smr/ui/trafficreport/TrafficReportActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "at.oeamtc.smr.ui.route.FuelCostsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "androidx.compose.ui.tooling.PreviewActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.libraries.places.widget.AutocompleteActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.gms.common.api.GoogleApiActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        }
+    ],
+    "not_found_activities": [],
+    "override_animation_calls": [
+        "Lat/oeamtc/android/new/WhatsNewActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lat/oeamtc/clubcard/ClubCardActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lat/oeamtc/clubcard/ClubCardActivity; onBackPressed ()V",
+        "Lat/oeamtc/smr/ui/options/MultiSelectionActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lat/oeamtc/smr/ui/options/MultiSelectionActivity; onBackPressed ()V",
+        "Lat/oeamtc/smr/ui/options/route/AccessibilityOptionsActivity; onBackPressed ()V",
+        "Lat/oeamtc/smr/ui/options/route/AccessibilityOptionsActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lat/oeamtc/smr/ui/options/route/PublicRouteStopsOptionsActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lat/oeamtc/smr/ui/options/route/PublicRouteStopsOptionsActivity; onBackPressed ()V",
+        "Lat/oeamtc/smr/ui/favorites/UpdateFavoriteActivity; finish ()V",
+        "Lat/oeamtc/smr/ui/favorites/UpdateFavoriteActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lat/oeamtc/smr/ui/gasprices/ReportGasPriceActivity; finish ()V",
+        "Lat/oeamtc/smr/ui/gasprices/ReportGasPriceActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lat/oeamtc/smr/ui/gasprices/SelectReportGasPriceActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lat/oeamtc/smr/ui/gasprices/SelectReportGasPriceActivity; finish ()V",
+        "Lat/oeamtc/smr/ui/options/settings/FuelTypesActivity; finish ()V",
+        "Lat/oeamtc/smr/ui/options/settings/FuelTypesActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lat/oeamtc/smr/ui/route/OptionsActivity; finish ()V",
+        "Lat/oeamtc/smr/ui/route/OptionsActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lat/oeamtc/smr/ui/route/SavedRouteActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lat/oeamtc/smr/ui/route/SavedRouteActivity; finish ()V",
+        "Lat/oeamtc/smr/ui/route/UpdateSavedRouteActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lat/oeamtc/smr/ui/route/UpdateSavedRouteActivity; finish ()V",
+        "Lat/oeamtc/smr/ui/search/RouteSearchActivity; finish ()V",
+        "Lat/oeamtc/smr/ui/search/RouteSearchActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lat/oeamtc/smr/ui/trafficreport/TrafficReportActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lcom/google/android/material/transition/platform/MaterialContainerTransformSharedElementCallback$2; onTransitionEnd (Landroid/transition/Transition;)V",
+        "Landroidx/navigation/ActivityNavigator; navigate (Landroidx/navigation/ActivityNavigator$Destination; Landroid/os/Bundle; Landroidx/navigation/NavOptions; Landroidx/navigation/Navigator$Extras;)Landroidx/navigation/NavDestination;",
+        "Landroidx/navigation/ActivityNavigator$Companion; applyPopAnimationsToPendingTransition (Landroid/app/Activity;)V",
+        "Landroidx/navigation/NavController; handleDeepLink (Landroid/content/Intent;)Z"
+    ],
+    "start_time": 1747850626.5402503,
+    "end_time": 1747850821.9503717,
+    "exception": false
+}

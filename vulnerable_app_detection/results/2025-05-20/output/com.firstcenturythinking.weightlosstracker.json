@@ -1,0 +1,78 @@
+{
+    "apk_path": "/home/experiments/apks/android/tapjacking/free_18_12_24_merged/com.firstcenturythinking.weightlosstracker_merged.apk",
+    "target_sdk": 34,
+    "package_name": "com.firstcenturythinking.weightlosstracker",
+    "is_enabled": true,
+    "permission": null,
+    "protected_confirmation": false,
+    "activities": [
+        {
+            "activity_name": "com.firstcenturythinking.trackingtemplate.activities.SplashActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.LAUNCHER\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.firstcenturythinking.trackingtemplate.activities.HomeActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"http\" ns0:host=\"apps.firstcenturythinking.com\" ns0:pathPrefix=\"@7F120021\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"http\" ns0:host=\"activities.fct.com\" ns0:pathPrefix=\"/home\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.firstcenturythinking.trackingtemplate.activities.HistoryLogActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        }
+    ],
+    "not_found_activities": [],
+    "override_animation_calls": [
+        "Lcom/firstcenturythinking/trackingtemplate/activities/HomeActivity; onBackPressed ()V",
+        "Lcom/firstcenturythinking/trackingtemplate/activities/HistoryLogActivity; r0 (Landroid/app/Activity; Ljava/lang/Integer;)V",
+        "Lcom/firstcenturythinking/trackingtemplate/activities/HomeActivity; w0 (Landroid/app/Activity; Lcom/firstcenturythinking/trackingtemplate/GlobalApp$a; Ljava/lang/Boolean; Ljava/lang/Boolean;)V",
+        "Lcom/firstcenturythinking/trackingtemplate/activities/HomeActivity; w0 (Landroid/app/Activity; Lcom/firstcenturythinking/trackingtemplate/GlobalApp$a; Ljava/lang/Boolean; Ljava/lang/Boolean;)V",
+        "Lcom/firstcenturythinking/trackingtemplate/activities/HistoryLogActivity; onBackPressed ()V"
+    ],
+    "start_time": 1747867274.8692608,
+    "end_time": 1747867284.7482588,
+    "exception": false
+}

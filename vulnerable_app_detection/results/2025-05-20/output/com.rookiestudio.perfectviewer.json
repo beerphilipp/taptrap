@@ -1,0 +1,385 @@
+{
+    "apk_path": "/home/experiments/apks/android/tapjacking/free_18_12_24_merged/com.rookiestudio.perfectviewer.apk",
+    "target_sdk": 33,
+    "package_name": "com.rookiestudio.perfectviewer",
+    "is_enabled": true,
+    "permission": null,
+    "protected_confirmation": false,
+    "activities": [
+        {
+            "activity_name": "com.rookiestudio.perfectviewer.TStartup",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTop",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.LAUNCHER\" /><category ns0:name=\"android.intent.category.LEANBACK_LAUNCHER\" /><category ns0:name=\"android.intent.category.MULTIWINDOW_LAUNCHER\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><data ns0:host=\"*\" /><data ns0:scheme=\"file\" /><data ns0:scheme=\"smb\" /><data ns0:scheme=\"ftp\" /><data ns0:scheme=\"sftp\" /><data ns0:scheme=\"content\" /><data ns0:mimeType=\"*/*\" /><data ns0:pathPattern=\".*\\.zip\" /><data ns0:pathPattern=\".*\\.rar\" /><data ns0:pathPattern=\".*\\.7z\" /><data ns0:pathPattern=\".*\\.lzh\" /><data ns0:pathPattern=\".*\\.tar\" /><data ns0:pathPattern=\".*\\.buka\" /><data ns0:pathPattern=\".*\\.cbz\" /><data ns0:pathPattern=\".*\\.cbr\" /><data ns0:pathPattern=\".*\\.cb7\" /><data ns0:pathPattern=\".*\\.cbt\" /><data ns0:pathPattern=\".*\\.arj\" /><data ns0:pathPattern=\".*\\.iso\" /><data ns0:pathPattern=\".*\\.pdf\" /><data ns0:pathPattern=\".*\\.jpg\" /><data ns0:pathPattern=\".*\\.jpeg\" /><data ns0:pathPattern=\".*\\.webp\" /><data ns0:pathPattern=\".*\\.png\" /><data ns0:pathPattern=\".*\\.tif\" /><data ns0:pathPattern=\".*\\.tiff\" /><data ns0:pathPattern=\".*\\.bmp\" /><data ns0:pathPattern=\".*\\.gif\" /><data ns0:pathPattern=\".*\\.txt\" /><data ns0:pathPattern=\".*\\.epub\" /><data ns0:pathPattern=\".*\\.html\" /><data ns0:pathPattern=\".*\\.htm\" /><data ns0:pathPattern=\".*\\.xps\" /><data ns0:pathPattern=\".*\\.oxps\" /><data ns0:pathPattern=\".*\\.djvu\" /><data ns0:pathPattern=\".*\\.djv\" /><data ns0:pathPattern=\".*\\.mobi\" /><data ns0:pathPattern=\".*\\.pdb\" /><data ns0:pathPattern=\".*\\.prc\" /><data ns0:pathPattern=\".*\\.azw\" /><data ns0:pathPattern=\".*\\.azw3\" /><data ns0:pathPattern=\".*\\.fb2\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><data ns0:host=\"*\" /><data ns0:scheme=\"file\" /><data ns0:scheme=\"smb\" /><data ns0:scheme=\"ftp\" /><data ns0:scheme=\"sftp\" /><data ns0:scheme=\"content\" /><data ns0:mimeType=\"image/jpeg\" /><data ns0:mimeType=\"image/png\" /><data ns0:mimeType=\"image/gif\" /><data ns0:mimeType=\"image/tiff\" /><data ns0:mimeType=\"image/bmp\" /><data ns0:mimeType=\"image/webp\" /><data ns0:mimeType=\"application/octet-stream\" /><data ns0:mimeType=\"application/vnd.comicbook+zip\" /><data ns0:mimeType=\"application/vnd.comicbook+rar\" /><data ns0:mimeType=\"application/comicbook+zip\" /><data ns0:mimeType=\"application/comicbook+rar\" /><data ns0:mimeType=\"application/x-cbr\" /><data ns0:mimeType=\"application/x-cbz\" /><data ns0:mimeType=\"application/x-cb7\" /><data ns0:mimeType=\"application/x-cbt\" /><data ns0:mimeType=\"application/zip\" /><data ns0:mimeType=\"application/x-zip-compressed\" /><data ns0:mimeType=\"application/vnd.rar\" /><data ns0:mimeType=\"application/x-rar-compressed\" /><data ns0:mimeType=\"application/tar\" /><data ns0:mimeType=\"application/lzh\" /><data ns0:mimeType=\"application/x-lzh\" /><data ns0:mimeType=\"application/arj\" /><data ns0:mimeType=\"application/pdf\" /><data ns0:mimeType=\"application/x-pdf\" /><data ns0:mimeType=\"application/buka\" /><data ns0:mimeType=\"application/7z\" /><data ns0:mimeType=\"application/x-7z-compressed\" /><data ns0:mimeType=\"application/x-iso9660-image\" /><data ns0:mimeType=\"image/vnd.djvu\" /><data ns0:mimeType=\"image/x-djvu\" /><data ns0:mimeType=\"text/plain\" /><data ns0:mimeType=\"text/html\" /><data ns0:mimeType=\"application/vnd.ms-xpsdocument\" /><data ns0:mimeType=\"application/epub+zip\" /><data ns0:mimeType=\"application/x-fictionbook+xml\" /><data ns0:mimeType=\"application/x-fictionbook\" /><data ns0:mimeType=\"application/x-fb2\" /><data ns0:mimeType=\"application/azw\" /><data ns0:mimeType=\"application/azw3\" /><data ns0:mimeType=\"application/x-mobi8-ebook\" /><data ns0:mimeType=\"application/x-kindle-application\" /><data ns0:mimeType=\"application/application/vnd.amazon.ebook\" /><data ns0:mimeType=\"application/x-mobipocket-ebook\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><data ns0:host=\"*\" /><data ns0:scheme=\"file\" /><data ns0:scheme=\"smb\" /><data ns0:scheme=\"ftp\" /><data ns0:scheme=\"sftp\" /><data ns0:scheme=\"content\" /><data ns0:pathPattern=\".*zip\" /><data ns0:pathPattern=\".*rar\" /><data ns0:pathPattern=\".*7z\" /><data ns0:pathPattern=\".*lzh\" /><data ns0:pathPattern=\".*tar\" /><data ns0:pathPattern=\".*buka\" /><data ns0:pathPattern=\".*cbz\" /><data ns0:pathPattern=\".*cbr\" /><data ns0:pathPattern=\".*cb7\" /><data ns0:pathPattern=\".*cbt\" /><data ns0:pathPattern=\".*arj\" /><data ns0:pathPattern=\".*iso\" /><data ns0:pathPattern=\".*pdf\" /><data ns0:pathPattern=\".*jpg\" /><data ns0:pathPattern=\".*jpeg\" /><data ns0:pathPattern=\".*webp\" /><data ns0:pathPattern=\".*png\" /><data ns0:pathPattern=\".*tif\" /><data ns0:pathPattern=\".*tiff\" /><data ns0:pathPattern=\".*bmp\" /><data ns0:pathPattern=\".*gif\" /><data ns0:pathPattern=\".*txt\" /><data ns0:pathPattern=\".*epub\" /><data ns0:pathPattern=\".*html\" /><data ns0:pathPattern=\".*htm\" /><data ns0:pathPattern=\".*xps\" /><data ns0:pathPattern=\".*oxps\" /><data ns0:pathPattern=\".*djvu\" /><data ns0:pathPattern=\".*djv\" /><data ns0:pathPattern=\".*fb2\" /><data ns0:pathPattern=\".*pdb\" /><data ns0:pathPattern=\".*prc\" /><data ns0:pathPattern=\".*mobi\" /><data ns0:pathPattern=\".*azw\" /><data ns0:pathPattern=\".*azw3\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.SET_WALLPAPER\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/rookiestudio/perfectviewer/TStartup; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.rookiestudio.perfectviewer.viewer.TViewerMain",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/rookiestudio/perfectviewer/MyActionBarActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.rookiestudio.perfectviewer.viewer.TViewerMain1",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/rookiestudio/perfectviewer/MyActionBarActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.rookiestudio.perfectviewer.TFileBrowser",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/rookiestudio/perfectviewer/MyActionBarActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.rookiestudio.perfectviewer.TBookshelf",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/rookiestudio/perfectviewer/MyActionBarActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.rookiestudio.perfectviewer.TDownloadManager",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/rookiestudio/perfectviewer/MyActionBarActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.rookiestudio.perfectviewer.TFavoritesBrowser",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/rookiestudio/perfectviewer/MyActionBarActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.rookiestudio.perfectviewer.preferences.TPreferencesManagement",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/rookiestudio/perfectviewer/MyActionBarActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.rookiestudio.perfectviewer.TQuickBarCustomize",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/rookiestudio/perfectviewer/MyActionBarActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.rookiestudio.perfectviewer.TBookshelfFolderManagement",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/rookiestudio/perfectviewer/MyActionBarActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.rookiestudio.perfectviewer.THardwareKeyManagement",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/rookiestudio/perfectviewer/MyActionBarActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.rookiestudio.perfectviewer.preferences.TPreferencesMain",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/rookiestudio/perfectviewer/MyActionBarActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.rookiestudio.perfectviewer.plugin.TPluginInitActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><data ns0:scheme=\"db-1fenzzxxwhbq99w\" /><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><data ns0:scheme=\"amzn\" ns0:host=\"com.rookiestudio.perfectviewer\" /><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><data ns0:scheme=\"boxauth\" /><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><data ns0:scheme=\"yandexdisk\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.cooliris.media.CropImage",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.rookiestudio.perfectviewer.AuthActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.rookiestudio.wizard.QuickSetupActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/rookiestudio/perfectviewer/MyActionBarActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.rookiestudio.perfectviewer.CrashHandler",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/rookiestudio/perfectviewer/MyActionBarActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.google.android.gms.ads.AdActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.gms.common.api.GoogleApiActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "androidx.biometric.DeviceCredentialHandlerActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        }
+    ],
+    "not_found_activities": [
+        "com.rookiestudio.perfectviewer.AuthActivity",
+        "com.google.android.gms.ads.AdActivity"
+    ],
+    "override_animation_calls": [
+        "Lcom/rookiestudio/perfectviewer/MyActionBarActivity; onStart ()V",
+        "Lcom/rookiestudio/perfectviewer/MyActionBarActivity; onPause ()V",
+        "Lcom/rookiestudio/perfectviewer/TStartup; DoStartActivity ()Z",
+        "Lcom/rookiestudio/perfectviewer/TStartup; onCreate (Landroid/os/Bundle;)V",
+        "Lcom/rookiestudio/perfectviewer/utils/Util20; TurnOffWindowAnimation (Landroid/app/Activity;)V",
+        "Lcom/rookiestudio/perfectviewer/plugin/TPluginSource; StartPluginInit (Landroid/app/Activity; Ljava/lang/Runnable;)V",
+        "Lcom/google/android/material/transition/platform/MaterialContainerTransformSharedElementCallback$2; onTransitionEnd (Landroid/transition/Transition;)V"
+    ],
+    "start_time": 1747787609.0022292,
+    "end_time": 1747787668.9401665,
+    "exception": false
+}

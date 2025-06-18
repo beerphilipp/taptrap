@@ -1,0 +1,2207 @@
+syntax = "proto2";
+
+option java_package = "com.aurora.gplayapi";
+option java_multiple_files = true;
+
+message AndroidAppDeliveryData {
+  optional int64 downloadSize = 1;
+  optional string sha1 = 2;
+  optional string downloadUrl = 3;
+  repeated AppFileMetadata additionalFile = 4;
+  repeated HttpCookie downloadAuthCookie = 5;
+  optional bool forwardLocked = 6;
+  optional int64 refundTimeout = 7;
+  optional bool serverInitiated = 8 [default = true];
+  optional int64 postInstallRefundWindowMillis = 9;
+  optional bool immediateStartNeeded = 10;
+  optional AndroidAppPatchData patchData = 11;
+  optional EncryptionParams encryptionParams = 12;
+  optional string compressedDownloadUrl = 13;
+  optional int64 compressedSize = 14;
+  repeated SplitDeliveryData splitDeliveryData = 15;
+  optional int32 installLocation = 16;
+  optional int64 type = 17;
+  optional CompressedAppData compressedAppData = 18;
+  optional string sha256 = 19;
+}
+
+message SplitDeliveryData {
+  optional string name = 1;
+  optional int64 downloadSize = 2;
+  optional int64 compressedSize = 3;
+  optional string sha1 = 4;
+  optional string downloadUrl = 5;
+  optional string compressedDownloadUrl = 6;
+  optional AndroidAppPatchData patchData = 7;
+  optional CompressedAppData compressedAppData = 8;
+  optional string sha256 = 9;
+}
+
+message AndroidAppPatchData {
+  optional int32 baseVersionCode = 1;
+  optional string baseSha1 = 2;
+  optional string downloadUrl = 3;
+  optional int32 patchFormat = 4[default = 1];
+  optional int64 maxPatchSize = 5;
+}
+
+message CompressedAppData{
+  optional int64 type = 1;
+  optional int64 size = 2;
+  optional string downloadUrl = 3;
+}
+
+message AppFileMetadata {
+  optional int32 fileType = 1;
+  optional int32 versionCode = 2;
+  optional int64 size = 3;
+  optional string downloadUrl = 4;
+  optional AndroidAppPatchData patchData = 5;
+  optional int64 compressedSize = 6;
+  optional string compressedDownloadUrl = 7;
+  optional string sha1 = 8;
+}
+
+message EncryptionParams {
+  optional int32 version = 1;
+  optional string encryptionKey = 2;
+  optional string hMacKey = 3;
+}
+
+message HttpCookie {
+  optional string name = 1;
+  optional string value = 2;
+}
+
+message Address {
+  optional string name = 1;
+  optional string addressLine1 = 2;
+  optional string addressLine2 = 3;
+  optional string city = 4;
+  optional string state = 5;
+  optional string postalCode = 6;
+  optional string postalCountry = 7;
+  optional string dependentLocality = 8;
+  optional string sortingCode = 9;
+  optional string languageCode = 10;
+  optional string phoneNumber = 11;
+  optional bool deprecatedIsReduced = 12;
+  optional string firstName = 13;
+  optional string lastName = 14;
+  optional string email = 15;
+}
+
+message BrowseLink {
+  optional string name = 1;
+  optional string dataUrl = 3;
+  optional bytes serverLogsCookie = 4;
+  optional Image icon = 5;
+}
+
+message BrowseResponse {
+  optional string contentsUrl = 1;
+  optional string promoUrl = 2;
+  repeated BrowseLink category = 3;
+  repeated BrowseLink breadcrumb = 4;
+  repeated QuickLink quickLink = 5;
+  optional bytes serverLogsCookie = 6;
+  optional string title = 7;
+  optional int32 backendId = 8;
+  optional BrowseTab browseTab = 9;
+  optional int32 landingTabIndex = 10;
+  optional int32 quickLinkTabIndex = 11;
+  optional int32 quickLinkFallbackTabIndex = 12;
+  optional bool isFamilySafe = 14;
+  optional string shareUrl = 18;
+}
+
+message DirectPurchase {
+  optional string detailsUrl = 1;
+  optional string purchaseItemId = 2;
+  optional string parentItemId = 3;
+  optional int32 offerType = 4[default = 1];
+}
+
+message RedeemGiftCard {
+  optional string prefillCode = 1;
+  optional string partnerPayload = 2;
+}
+
+message ResolvedLink {
+  optional string detailsUrl = 1;
+  optional string browseUrl = 2;
+  optional string searchUrl = 3;
+  optional DirectPurchase directPurchase = 4;
+  optional string homeUrl = 5;
+  optional RedeemGiftCard redeemGiftCard = 6;
+  optional bytes serverLogsCookie = 7;
+  optional DocId DocId = 8;
+  optional string wishlistUrl = 9;
+  optional int32 backend = 10;
+  optional string query = 11;
+  optional string myAccountUrl = 12;
+  optional HelpCenter helpCenter = 13;
+}
+
+message HelpCenter {
+  optional string contextId = 1;
+}
+
+message QuickLink {
+  optional string name = 1;
+  optional Image image = 2;
+  optional ResolvedLink link = 3;
+  optional bool displayRequired = 4;
+  optional bytes serverLogsCookie = 5;
+  optional int32 backendId = 6;
+  optional bool prismStyle = 7;
+}
+
+message BrowseTab {
+  optional string title = 1;
+  optional bytes serverLogsCookie = 2;
+  optional string listUrl = 3;
+  repeated BrowseLink browseLink = 4;
+  repeated QuickLink quickLink = 5;
+  optional string quickLinkTitle = 6;
+  optional string categoriesTitle = 7;
+  optional int32 backendId = 8;
+  optional string highlightsBannerUrl = 9;
+}
+
+message BuyResponse {
+  optional PurchaseNotificationResponse purchaseResponse = 1;
+  optional group CheckoutInfo = 2 {
+    optional LineItem item = 3;
+    repeated LineItem subItem = 4;
+    repeated group CheckoutOption = 5 {
+      optional string formOfPayment = 6;
+      optional string encodedAdjustedCart = 7;
+      optional string instrumentId = 15;
+      repeated LineItem item = 16;
+      repeated LineItem subItem = 17;
+      optional LineItem total = 18;
+      repeated string footerHtml = 19;
+      optional int32 instrumentFamily = 29;
+      repeated int32 deprecatedInstrumentInapplicableReason = 30;
+      optional bool selectedInstrument = 32;
+      optional LineItem summary = 33;
+      repeated string footnoteHtml = 35;
+      optional Instrument instrument = 43;
+      optional string purchaseCookie = 45;
+      repeated string disabledReason = 48;
+    }
+    optional string deprecatedCheckoutUrl = 10;
+    optional string addInstrumentUrl = 11;
+    repeated string footerHtml = 20;
+    repeated int32 eligibleInstrumentFamily = 31;
+    repeated string footnoteHtml = 36;
+    repeated Instrument eligibleInstrument = 44;
+  }
+  optional string continueViaUrl = 8;
+  optional string purchaseStatusUrl = 9;
+  optional string checkoutServiceId = 12;
+  optional bool checkoutTokenRequired = 13;
+  optional string baseCheckoutUrl = 14;
+  repeated string tosCheckboxHtml = 37;
+  optional int32 iabPermissionError = 38;
+  optional PurchaseStatusResponse purchaseStatusResponse = 39;
+  optional string purchaseCookie = 46;
+  optional Challenge challenge = 49;
+  optional string addInstrumentPromptHtml = 50;
+  optional string confirmButtonText = 51;
+  optional string permissionErrorTitleText = 52;
+  optional string permissionErrorMessageText = 53;
+  optional bytes serverLogsCookie = 54;
+  optional string encodedDeliveryToken = 55;
+  optional string unknownToken = 56;
+}
+
+message LineItem {
+  optional string name = 1;
+  optional string description = 2;
+  optional Offer offer = 3;
+  optional Money amount = 4;
+}
+
+message Money {
+  optional int64 micros = 1;
+  optional string currencyCode = 2;
+  optional string formattedAmount = 3;
+}
+
+message PurchaseNotificationResponse {
+  optional int32 status = 1;
+  optional DebugInfo debugInfo = 2;
+  optional string localizedErrorMessage = 3;
+  optional string purchaseId = 4;
+}
+
+message PurchaseStatusResponse {
+  optional int32 status = 1;
+  optional string statusMsg = 2;
+  optional string statusTitle = 3;
+  optional string briefMessage = 4;
+  optional string infoUrl = 5;
+  optional LibraryUpdate libraryUpdate = 6;
+  optional Instrument rejectedInstrument = 7;
+  optional AndroidAppDeliveryData appDeliveryData = 8;
+}
+
+message PurchaseHistoryDetails {
+  optional int64 purchaseTimestampMillis = 2;
+  optional string purchaseDetailsHtml = 3;
+  optional Offer offer = 5;
+  optional string purchaseStatus = 6;
+  optional string titleBylineHtml = 7;
+  optional bytes clientRefundContext = 8;
+  optional Image purchaseDetailsImage = 9;
+}
+
+message BillingProfileResponse {
+  optional int32 result = 1;
+  optional BillingProfile billingProfile = 2;
+  optional string userMessageHtml = 3;
+}
+
+message CheckInstrumentResponse {
+  optional bool userHasValidInstrument = 1;
+  optional bool checkoutTokenRequired = 2;
+  repeated Instrument instrument = 4;
+  repeated Instrument eligibleInstrument = 5;
+}
+
+message InstrumentSetupInfoResponse {
+  repeated InstrumentSetupInfo setupInfo = 1;
+  optional bool checkoutTokenRequired = 2;
+}
+
+message RedeemGiftCardRequest {
+  optional string giftCardPin = 1;
+  optional Address address = 2;
+  repeated string acceptedLegalDocumentId = 3;
+  optional string checkoutToken = 4;
+}
+
+message RedeemGiftCardResponse {
+  optional int32 result = 1;
+  optional string userMessageHtml = 2;
+  optional string balanceHtml = 3;
+  optional AddressChallenge addressChallenge = 4;
+  optional bool checkoutTokenRequired = 5;
+}
+
+message UpdateInstrumentRequest {
+  optional Instrument instrument = 1;
+  optional string checkoutToken = 2;
+}
+
+message UpdateInstrumentResponse {
+  optional int32 result = 1;
+  optional string instrumentId = 2;
+  optional string userMessageHtml = 3;
+  repeated InputValidationError errorInputField = 4;
+  optional bool checkoutTokenRequired = 5;
+  optional RedeemedPromoOffer redeemedOffer = 6;
+}
+
+message InitiateAssociationResponse {
+  optional string userToken = 1;
+}
+
+message VerifyAssociationResponse {
+  optional int32 status = 1;
+  optional Address billingAddress = 2;
+  optional CarrierTos carrierTos = 3;
+  optional string carrierErrorMessage = 4;
+}
+
+message AddressChallenge {
+  optional string responseAddressParam = 1;
+  optional string responseCheckboxesParam = 2;
+  optional string title = 3;
+  optional string descriptionHtml = 4;
+  repeated FormCheckbox checkbox = 5;
+  optional Address address = 6;
+  repeated InputValidationError errorInputField = 7;
+  optional string errorHtml = 8;
+  repeated int32 requiredField = 9;
+  repeated Country supportedCountry = 10;
+}
+
+message AuthenticationChallenge {
+  optional int32 authenticationType = 1;
+  optional string responseAuthenticationTypeParam = 2;
+  optional string responseRetryCountParam = 3;
+  optional string pinHeaderText = 4;
+  optional string pinDescriptionTextHtml = 5;
+  optional string gaiaHeaderText = 6;
+  optional string gaiaDescriptionTextHtml = 7;
+  optional string gaiaFooterTextHtml = 8;
+  optional FormCheckbox gaiaOptOutCheckbox = 9;
+  optional string gaiaOptOutDescriptionTextHtml = 10;
+}
+
+message Challenge {
+  optional AddressChallenge addressChallenge = 1;
+  optional AuthenticationChallenge authenticationChallenge = 2;
+  optional WebViewChallenge webViewChallenge = 3;
+}
+
+message Country {
+  optional string regionCode = 1;
+  optional string displayName = 2;
+}
+
+message FormCheckbox {
+  optional string description = 1;
+  optional bool checked = 2;
+  optional bool required = 3;
+  optional string id = 4;
+}
+
+message InputValidationError {
+  optional int32 inputField = 1;
+  optional string errorMessage = 2;
+}
+
+message WebViewChallenge {
+  optional string startUrl = 1;
+  optional string targetUrlRegexp = 2;
+  optional string cancelButtonDisplayLabel = 3;
+  optional string responseTargetUrlParam = 4;
+  optional string cancelUrlRegexp = 5;
+  optional string title = 6;
+}
+
+message AddCreditCardPromoOffer {
+  optional string headerText = 1;
+  optional string descriptionHtml = 2;
+  optional Image image = 3;
+  optional string introductoryTextHtml = 4;
+  optional string offerTitle = 5;
+  optional string noActionDescription = 6;
+  optional string termsAndConditionsHtml = 7;
+}
+
+message AvailablePromoOffer {
+  optional AddCreditCardPromoOffer addCreditCardOffer = 1;
+}
+
+message CheckPromoOfferResponse {
+  repeated AvailablePromoOffer availableOffer = 1;
+  optional RedeemedPromoOffer redeemedOffer = 2;
+  optional bool checkoutTokenRequired = 3;
+}
+
+message RedeemedPromoOffer {
+  optional string headerText = 1;
+  optional string descriptionHtml = 2;
+  optional Image image = 3;
+}
+
+message DocId {
+  optional string backendDocId = 1;
+  optional int32 type = 2[default = 1];
+  optional int32 backend = 3;
+}
+
+message Install {
+  optional fixed64 androidId = 1;
+  optional int32 version = 2;
+  optional bool bundled = 3;
+  optional bool pending = 4;
+  optional int64 lastUpdated = 5;
+}
+
+message GroupLicenseKey {
+  optional fixed64 dasher_customer_id = 1;
+  optional DocId docId = 2;
+  optional int32 licensed_offer_type = 3 [default = 1];
+  optional int32 type = 4;
+  optional int32 rental_period_days = 5;
+}
+
+message LicenseTerms {
+  optional GroupLicenseKey groupLicenseKey = 1;
+}
+
+message Offer {
+  optional int64 micros = 1;
+  optional string currencyCode = 2;
+  optional string formattedAmount = 3;
+  repeated Offer convertedPrice = 4;
+  optional bool checkoutFlowRequired = 5;
+  optional int64 fullPriceMicros = 6;
+  optional string formattedFullAmount = 7;
+  optional int32 offerType = 8[default = 1];
+  optional RentalTerms rentalTerms = 9;
+  optional int64 onSaleDate = 10;
+  repeated string promotionLabel = 11;
+  optional SubscriptionTerms subscriptionTerms = 12;
+  optional string formattedName = 13;
+  optional string formattedDescription = 14;
+  optional bool preorder = 15;
+  optional int32 onSaleDateDisplayTimeZoneOffsetMillis = 16;
+  optional int32 licensedOfferType = 17;
+  optional SubscriptionContentTerms subscriptionContentTerms = 18;
+  optional string offerId = 19;
+  optional int64 preorderFulfillmentDisplayDate = 20;
+  optional LicenseTerms licenseTerms = 21;
+  optional bool sale = 22;
+  optional VoucherTerms voucherTerms = 23;
+  repeated OfferPayment offerPayment = 24;
+  optional bool repeatLastPayment = 25;
+  optional string buyButtonLabel = 26;
+  optional bool instantPurchaseEnabled = 27;
+  optional int64 saleEndTimestamp = 30;
+  optional string saleMessage = 31;
+}
+
+message MonthAndDay {
+  optional uint32 month = 1;
+  optional uint32 day = 2;
+}
+
+message OfferPaymentPeriod {
+  optional TimePeriod duration = 1;
+  optional MonthAndDay start = 2;
+  optional MonthAndDay end = 3;
+}
+
+message OfferPaymentOverride {
+  optional int64 micros = 1;
+  optional MonthAndDay start = 2;
+  optional MonthAndDay end = 3;
+}
+
+message OfferPayment {
+  optional int64 micros = 1;
+  optional string currencyCode = 2;
+  optional OfferPaymentPeriod offerPaymentPeriod = 3;
+  repeated OfferPaymentOverride offerPaymentOverride = 4;
+}
+
+message VoucherTerms {
+}
+
+message RentalTerms {
+  optional int32 dEPRECATEDGrantPeriodSeconds = 1;
+  optional int32 dEPRECATEDActivatePeriodSeconds = 2;
+  optional TimePeriod grantPeriod = 3;
+  optional TimePeriod activatePeriod = 4;
+}
+
+message SignedData {
+  optional string signedData = 1;
+  optional string signature = 2;
+}
+
+message SubscriptionContentTerms {
+  optional DocId requiredSubscription = 1;
+}
+
+message GroupLicenseInfo {
+  optional int32 licensedOfferType = 1;
+  optional fixed64 gaiaGroupId = 2;
+}
+
+message LicensedDocumentInfo {
+  repeated fixed64 gaiaGroupId = 1;
+}
+
+message OwnershipInfo {
+  optional int64 initiationTimestamp = 1;
+  optional int64 validUntilTimestamp = 2;
+  optional bool autoRenewing = 3;
+  optional int64 refundTimeoutTimestamp = 4;
+  optional int64 postDeliveryRefundWindowMillis = 5;
+  optional SignedData developerPurchaseInfo = 6;
+  optional bool preOrdered = 7;
+  optional bool hidden = 8;
+  optional RentalTerms rentalTerms = 9;
+  optional GroupLicenseInfo groupLicenseInfo = 10;
+  optional LicensedDocumentInfo licensedDocumentInfo = 11;
+  optional int32 quantity = 12;
+  optional int64 libraryExpirationTimestamp = 14;
+}
+
+message SubscriptionTerms {
+  optional TimePeriod recurringPeriod = 1;
+  optional TimePeriod trialPeriod = 2;
+}
+
+message TimePeriod {
+  optional int32 unit = 1;
+  optional int32 count = 2;
+}
+
+message BillingAddressSpec {
+  optional int32 billingAddressType = 1;
+  repeated int32 requiredField = 2;
+}
+
+message BillingProfile {
+  repeated Instrument instrument = 1;
+  optional string selectedExternalInstrumentId = 2;
+  repeated BillingProfileOption billingProfileOption = 3;
+}
+
+message BillingProfileOption {
+  optional int32 type = 1;
+  optional string displayTitle = 2;
+  optional string externalInstrumentId = 3;
+  optional TopupInfo topupInfo = 4;
+  optional CarrierBillingInstrumentStatus carrierBillingInstrumentStatus = 5;
+}
+
+message CarrierBillingCredentials {
+  optional string value = 1;
+  optional int64 expiration = 2;
+}
+
+message CarrierBillingInstrument {
+  optional string instrumentKey = 1;
+  optional string accountType = 2;
+  optional string currencyCode = 3;
+  optional int64 transactionLimit = 4;
+  optional string subscriberIdentifier = 5;
+  optional EncryptedSubscriberInfo encryptedSubscriberInfo = 6;
+  optional CarrierBillingCredentials credentials = 7;
+  optional CarrierTos acceptedCarrierTos = 8;
+}
+
+message CarrierBillingInstrumentStatus {
+  optional CarrierTos carrierTos = 1;
+  optional bool associationRequired = 2;
+  optional bool passwordRequired = 3;
+  optional PasswordPrompt carrierPasswordPrompt = 4;
+  optional int32 apiVersion = 5;
+  optional string name = 6;
+  optional DeviceAssociation deviceAssociation = 7;
+  optional string carrierSupportPhoneNumber = 8;
+}
+
+message CarrierTos {
+  optional CarrierTosEntry dcbTos = 1;
+  optional CarrierTosEntry piiTos = 2;
+  optional bool needsDcbTosAcceptance = 3;
+  optional bool needsPiiTosAcceptance = 4;
+}
+
+message CarrierTosEntry {
+  optional string url = 1;
+  optional string version = 2;
+}
+
+message CreditCardInstrument {
+  optional int32 type = 1;
+  optional string escrowHandle = 2;
+  optional string lastDigits = 3;
+  optional int32 expirationMonth = 4;
+  optional int32 expirationYear = 5;
+  repeated EfeParam escrowEfeParam = 6;
+}
+
+message DeviceAssociation {
+  optional string userTokenRequestMessage = 1;
+  optional string userTokenRequestAddress = 2;
+}
+
+message DisabledInfo {
+  optional int32 disabledReason = 1;
+  optional string disabledMessageHtml = 2;
+  optional string errorMessage = 3;
+}
+
+message EfeParam {
+  optional int32 key = 1;
+  optional string value = 2;
+}
+
+message Instrument {
+  optional string instrumentId = 1;
+  optional Address billingAddress = 2;
+  optional CreditCardInstrument creditCard = 3;
+  optional CarrierBillingInstrument carrierBilling = 4;
+  optional BillingAddressSpec billingAddressSpec = 5;
+  optional int32 instrumentFamily = 6;
+  optional CarrierBillingInstrumentStatus carrierBillingStatus = 7;
+  optional string displayTitle = 8;
+  optional TopupInfo topupInfoDeprecated = 9;
+  optional int32 version = 10;
+  optional StoredValueInstrument storedValue = 11;
+  repeated DisabledInfo disabledInfo = 12;
+}
+
+message InstrumentSetupInfo {
+  optional int32 instrumentFamily = 1;
+  optional bool supported = 2;
+  optional AddressChallenge addressChallenge = 3;
+  optional Money balance = 4;
+  repeated string footerHtml = 5;
+}
+
+message PasswordPrompt {
+  optional string prompt = 1;
+  optional string forgotPasswordUrl = 2;
+}
+
+message StoredValueInstrument {
+  optional int32 type = 1;
+  optional Money balance = 2;
+  optional TopupInfo topupInfo = 3;
+}
+
+message TopupInfo {
+  optional string optionsContainerDocIdDeprecated = 1;
+  optional string optionsListUrl = 2;
+  optional string subtitle = 3;
+  optional DocId optionsContainerDocId = 4;
+}
+
+message ConsumePurchaseResponse {
+  optional LibraryUpdate libraryUpdate = 1;
+  optional int32 status = 2;
+}
+
+message ContainerMetadata {
+  optional string browseUrl = 1;
+  optional string nextPageUrl = 2;
+  optional double relevance = 3;
+  optional int64 estimatedResults = 4;
+  optional string analyticsCookie = 5;
+  optional bool ordered = 6;
+  repeated ContainerView containerView = 7;
+  optional Image leftIcon = 8;
+}
+
+message ContainerView {
+  optional bool selected = 1;
+  optional string title = 2;
+  optional string listUrl = 3;
+  optional bytes serverLogsCookie = 4;
+}
+
+message FlagContentResponse {
+}
+
+message ClientDownloadRequest {
+  message ApkInfo {
+    optional string packageName = 1;
+    optional int32 versionCode = 2;
+  }
+  message CertificateChain {
+    message Element {
+      optional bytes certificate = 1;
+      optional bool parsedSuccessfully = 2;
+      optional bytes subject = 3;
+      optional bytes issuer = 4;
+      optional bytes fingerprint = 5;
+      optional int64 expiryTime = 6;
+      optional int64 startTime = 7;
+    }
+    repeated Element element = 1;
+  }
+  message Digests {
+    optional bytes sha256 = 1;
+    optional bytes sha1 = 2;
+    optional bytes md5 = 3;
+  }
+  message Resource {
+    optional string url = 1;
+    optional int32 type = 2;
+    optional bytes remoteIp = 3;
+    optional string referrer = 4;
+  }
+  message SignatureInfo {
+    repeated CertificateChain certificateChain = 1;
+    optional bool trusted = 2;
+  }
+  optional string url = 1;
+  optional Digests digests = 2;
+  optional int64 length = 3;
+  repeated Resource resources = 4;
+  optional SignatureInfo signature = 5;
+  optional bool userInitiated = 6;
+  repeated string clientAsn = 8;
+  optional string fileBasename = 9;
+  optional int32 downloadType = 10;
+  optional string locale = 11;
+  optional ApkInfo apkInfo = 12;
+  optional fixed64 androidId = 13;
+  repeated string originatingPackages = 15;
+  optional SignatureInfo originatingSignature = 17;
+}
+
+message ClientDownloadResponse {
+  message MoreInfo {
+    optional string description = 1;
+    optional string url = 2;
+  }
+  optional int32 verdict = 1;
+  optional MoreInfo moreInfo = 2;
+  optional bytes token = 3;
+}
+
+message ClientDownloadStatsRequest {
+  optional int32 userDecision = 1;
+  optional bytes token = 2;
+}
+
+message DebugInfo {
+  repeated string message = 1;
+  repeated group Timing = 2 {
+    optional string name = 3;
+    optional double timeInMs = 4;
+  }
+}
+
+message DebugSettingsResponse {
+  optional string playCountryOverride = 1;
+  optional string playCountryDebugInfo = 2;
+}
+
+message DeliveryResponse {
+  optional int32 status = 1[default = 1];
+  optional AndroidAppDeliveryData appDeliveryData = 2;
+}
+
+message BulkDetailsEntry {
+  optional Item item = 1;
+}
+
+message BulkDetailsRequest {
+  repeated string DocId = 1;
+  optional bool includeChildDocs = 2[default = true];
+  optional bool includeDetails = 3;
+  optional string sourcePackageName = 4;
+  repeated int32 installedVersionCode = 7;
+}
+
+message BulkDetailsResponse {
+  repeated BulkDetailsEntry entry = 1;
+}
+
+message DetailsResponse {
+  optional string analyticsCookie = 2;
+  optional Review userReview = 3;
+  optional Item item = 4;
+  optional string footerHtml = 5;
+  optional bytes serverLogsCookie = 6;
+  repeated DiscoveryBadge discoveryBadge = 7;
+  optional bool enableReviews = 8 [default = true];
+  optional Features features = 12;
+  optional string detailsStreamUrl = 13;
+  optional string userReviewUrl = 14;
+  optional string postAcquireDetailsStreamUrl = 17;
+}
+
+message DiscoveryBadge {
+  optional string label = 1;
+  optional Image image = 2;
+  optional int32 backgroundColor = 3;
+  optional DiscoveryBadgeLink badgeContainer1 = 4;
+  optional bytes serverLogsCookie = 5;
+  optional bool isPlusOne = 6;
+  optional float aggregateRating = 7;
+  optional int32 userStarRating = 8;
+  optional string downloadCount = 9;
+  optional string downloadUnits = 10;
+  optional string contentDescription = 11;
+  optional PlayerBadge playerBadge = 12;
+  optional bytes familyAgeRangeBadge = 13;
+  optional bytes familyCategoryBadge = 14;
+}
+
+message PlayerBadge {
+  optional Image overlayIcon = 1;
+}
+
+message DiscoveryBadgeLink {
+  optional Link link = 1;
+  optional string userReviewsUrl = 2;
+  optional string criticReviewsUrl = 3;
+}
+
+message Features {
+  repeated Feature featurePresence = 1;
+  repeated Feature featureRating = 2;
+}
+
+message Feature {
+  optional string label = 1;
+  optional string value = 3;
+}
+
+message DeviceConfigurationProto {
+  optional int32 touchScreen = 1;
+  optional int32 keyboard = 2;
+  optional int32 navigation = 3;
+  optional int32 screenLayout = 4;
+  optional bool hasHardKeyboard = 5;
+  optional bool hasFiveWayNavigation = 6;
+  optional int32 screenDensity = 7;
+  optional int32 glEsVersion = 8;
+  repeated string systemSharedLibrary = 9;
+  repeated string systemAvailableFeature = 10;
+  repeated string nativePlatform = 11;
+  optional int32 screenWidth = 12;
+  optional int32 screenHeight = 13;
+  repeated string systemSupportedLocale = 14;
+  repeated string glExtension = 15;
+  optional int32 deviceClass = 16;
+  optional int32 maxApkDownloadSizeMb = 17[default = 50];
+  optional int32 smallestScreenWidthDP = 18;
+  optional int32 lowRamDevice = 19[default = 0];
+  optional int64 totalMemoryBytes = 20[default = 8354971648];
+  optional int32 maxNumOf_CPUCores = 21[default = 8];
+  repeated DeviceFeature deviceFeature = 26;
+  optional int32 unknown28 = 28[default = 0];
+  optional int32 unknown30 = 30[default = 4];
+}
+
+message DeviceFeature{
+  optional string name = 1;
+  optional int32 value = 2;
+}
+
+message Document {
+  optional DocId DocId = 1;
+  optional DocId fetchDocId = 2;
+  optional DocId sampleDocId = 3;
+  optional string title = 4;
+  optional string url = 5;
+  repeated string snippet = 6;
+  optional Offer priceDeprecated = 7;
+  optional Availability availability = 9;
+  repeated Image image = 10;
+  repeated Document child = 11;
+  optional AggregateRating aggregateRating = 13;
+  repeated Offer offer = 14;
+  repeated TranslatedText translatedSnippet = 15;
+  repeated DocumentVariant documentVariant = 16;
+  repeated string categoryId = 17;
+  repeated Document decoration = 18;
+  repeated Document parent = 19;
+  optional string privacyPolicyUrl = 20;
+  optional string consumptionUrl = 21;
+  optional int32 estimatedNumChildren = 22;
+  optional string subtitle = 23;
+}
+
+message DocumentVariant {
+  optional int32 variationType = 1;
+  optional Rule rule = 2;
+  optional string title = 3;
+  repeated string snippet = 4;
+  optional string recentChanges = 5;
+  repeated TranslatedText autoTranslation = 6;
+  repeated Offer offer = 7;
+  optional int64 channelId = 9;
+  repeated Document child = 10;
+  repeated Document decoration = 11;
+  repeated Image image = 12;
+  repeated string categoryId = 13;
+  optional string subtitle = 14;
+}
+
+message SectionImage {
+  repeated ImageContainer imageContainer = 1;
+}
+
+message ImageContainer {
+  optional Image image = 4;
+}
+
+message Image {
+  optional int32 imageType = 1;
+  optional group Dimension = 2 {
+    optional int32 width = 3;
+    optional int32 height = 4;
+    optional int32 aspectRatio = 18;
+  }
+  optional string imageUrl = 5;
+  optional string altTextLocalized = 6;
+  optional string secureUrl = 7;
+  optional int32 positionInSequence = 8;
+  optional bool supportsFifeUrlOptions = 9;
+  optional group Citation = 10 {
+    optional string titleLocalized = 11;
+    optional string url = 12;
+  }
+  optional int32 durationSeconds = 14;
+  optional string fillColorRGB = 15;
+  optional bool autogen = 16;
+  optional Attribution attribution = 17;
+  optional string backgroundColorRgb = 19;
+  optional ImagePalette palette = 20;
+  optional int32 deviceClass = 21;
+  optional bool supportsFifeMonogramOption = 22;
+  optional string imageUrlAlt = 28;
+}
+
+message Attribution {
+  optional string sourceTitle = 1;
+  optional string sourceUrl = 2;
+  optional string licenseTitle = 3;
+  optional string licenseUrl = 4;
+}
+
+message ImagePalette {
+  optional string lightVibrantRGB = 1;
+  optional string vibrantRGB = 2;
+  optional string darkVibrantRGB = 3;
+  optional string lightMutedRGB = 4;
+  optional string mutedRGB = 5;
+  optional string darkMutedRGB = 6;
+}
+
+message TranslatedText {
+  optional string text = 1;
+  optional string sourceLocale = 2;
+  optional string targetLocale = 3;
+}
+
+message PlusOneData {
+  optional bool setByUser = 1;
+  optional int64 total = 2;
+  optional int64 circlesTotal = 3;
+  repeated PlusPerson circlesPeople = 4;
+}
+
+message PlusPerson {
+  optional string displayName = 2;
+  optional string profileImageUrl = 4;
+}
+
+message AppDetails {
+  optional string developerName = 1;
+  optional int32 majorVersionNumber = 2;
+  optional int32 versionCode = 3;
+  optional string versionString = 4;
+  optional string title = 5;
+  repeated string appCategory = 7;
+  optional int32 contentRating = 8;
+  optional int64 infoDownloadSize = 9;
+  repeated string permission = 10;
+  optional string developerEmail = 11;
+  optional string developerWebsite = 12;
+  optional string infoDownload = 13;
+  optional string packageName = 14;
+  optional string recentChangesHtml = 15;
+  optional string infoUpdatedOn = 16;
+  repeated FileMetadata file = 17;
+  optional string appType = 18;
+  repeated string certificateHash = 19;
+  optional bool variesWithDevice = 21 [default = true];
+  repeated CertificateSet certificateSet = 22;
+  repeated string autoAcquireFreeAppIfHigherVersionAvailableTag = 23;
+  optional bool hasInstantLink = 24;
+  repeated string splitId = 25;
+  optional bool gamepadRequired = 26;
+  optional bool externallyHosted = 27;
+  optional bool everExternallyHosted = 28;
+  optional string installNotes = 30;
+  optional int32 installLocation = 31;
+  optional int32 targetSdkVersion = 32;
+  optional string hasPreregistrationPromoCode = 33;
+  optional Dependencies dependencies = 34;
+  optional TestingProgramInfo testingProgramInfo = 35;
+  optional EarlyAccessInfo earlyAccessInfo = 36;
+  optional EditorChoice editorChoice = 41;
+  optional string instantLink = 43;
+  optional string developerAddress = 45;
+  optional Publisher publisher = 46;
+  optional string categoryName = 48;
+  optional int64 downloadCount = 53;
+  optional string downloadLabelDisplay = 61;
+  optional string inAppProduct = 67;
+  optional string downloadLabelAbbreviated = 77;
+  optional string downloadLabel = 78;
+  optional Compatibility compatibility = 82;
+}
+
+message Compatibility {
+  repeated ActiveDevice activeDevices = 1;
+}
+
+message ActiveDevice {
+  optional string requiredOS = 1;
+  optional string name = 2;
+}
+
+message ModifyLibrary{
+  optional string id = 1;
+  optional string packageToAdd = 2;
+  optional string packageToRemove = 3;
+}
+
+message Publisher{
+  optional PublisherStream publisherStream = 2;
+}
+
+message PublisherStream{
+  optional string moreUrl = 3;
+  optional string query = 11;
+}
+
+message EditorChoice{
+  repeated string bulletins = 1;
+  optional string description = 2;
+  optional SubStream stream = 3;
+  optional string title = 4;
+  optional string subtitle = 5;
+}
+
+message CertificateSet {
+  optional string certificateHash = 1;
+  optional string sha256 = 2;
+}
+
+message Dependencies {
+  optional int32 unknown = 1;
+  optional int64 size = 2;
+  repeated Dependency dependency = 3;
+  optional int32 targetSdk = 4;
+  optional int32  unknown2 = 5;
+  repeated string splitApks = 11;
+  repeated LibraryDependency libraryDependency = 13;
+}
+
+message Dependency {
+  optional string packageName = 1;
+  optional int32 version = 2;
+  optional int32 unknown4 = 4;
+}
+
+message LibraryDependency {
+  optional string packageName = 1;
+  optional int32 versionCode = 2;
+}
+
+
+message TestingProgramInfo {
+  optional bool subscribed = 2;
+  optional bool subscribedAndInstalled = 3;
+  optional string email = 5;
+  optional string displayName = 7;
+  optional Image image = 6;
+}
+
+message EarlyAccessInfo {
+  optional string email = 3;
+}
+
+message DocumentDetails {
+  optional AppDetails appDetails = 1;
+  optional SubscriptionDetails subscriptionDetails = 7;
+}
+
+message PatchDetails {
+  optional int32 baseVersionCode = 1;
+  optional int64 size = 2;
+}
+
+message FileMetadata {
+  optional int32 fileType = 1;
+  optional int32 versionCode = 2;
+  optional int64 size = 3;
+  optional string splitId = 4;
+  optional int64 compressedSize = 5;
+  repeated PatchDetails patchDetails = 6;
+}
+
+message SubscriptionDetails {
+  optional int32 subscriptionPeriod = 1;
+}
+
+message Bucket {
+  optional bool multiCorpus = 2;
+  optional string title = 3;
+  optional string iconUrl = 4;
+  optional string fullContentsUrl = 5;
+  optional double relevance = 6;
+  optional int64 estimatedResults = 7;
+  optional string analyticsCookie = 8;
+  optional string fullContentsListUrl = 9;
+  optional string nextPageUrl = 10;
+  optional bool ordered = 11;
+}
+
+message ListResponse {
+  repeated Bucket bucket = 1;
+  repeated Item item = 2;
+}
+
+message Item {
+  optional string id = 1;
+  optional string subId = 2;
+  optional int32 type = 3;
+  optional int32 categoryId = 4;
+  optional string title = 5;
+  optional string creator = 6;
+  optional string descriptionHtml = 7;
+  repeated Offer offer = 8;
+  optional Availability availability = 9;
+  repeated Image image = 10;
+  repeated Item subItem = 11;
+  optional ContainerMetadata containerMetadata = 12;
+  optional DocumentDetails details = 13;
+  optional AggregateRating aggregateRating = 14;
+  optional Annotations annotations = 15;
+  optional string detailsUrl = 16;
+  optional string shareUrl = 17;
+  optional string reviewsUrl = 18;
+  optional string backendUrl = 19;
+  optional string purchaseDetailsUrl = 20;
+  optional bool detailsReusable = 21;
+  optional string subtitle = 22;
+  optional string translatedDescriptionHtml = 23;
+  optional bytes serverLogsCookie = 24;
+  optional AppInfo appInfo = 25;
+  optional bool mature = 26;
+  optional string promotionalDescription = 27;
+  optional bool availableForPreregistration = 29;
+  repeated ReviewTip tip = 30;
+  optional string reviewSnippetsUrl = 31;
+  optional bool forceShareability = 32;
+  optional bool useWishlistAsPrimaryAction = 33;
+  optional string reviewQuestionsUrl = 34;
+  optional string reviewSummaryUrl = 39;
+  optional ContentRating contentRating = 50;
+}
+
+message ContentRating {
+  message ContentRatingImage {
+    message Dimension {
+      optional int32 width = 3;
+      optional int32 height = 4;
+    }
+    message Image {
+      optional string url = 1;
+    }
+    optional Dimension dimension = 3;
+    optional Image image = 6;
+  }
+  optional string title = 1;
+  optional string recommendationAndDescriptionHtml = 2;
+  optional ContentRatingImage contentRatingImage = 3;
+  optional string recommendation = 5;
+  optional string description = 6;
+}
+
+message AppInfo {
+  optional string title = 1;
+  repeated AppInfoSection section = 2;
+}
+
+message AppInfoSection {
+  optional string label = 1;
+  optional AppInfoContainer container = 3;
+}
+
+message AppInfoContainer {
+  optional Image image = 1;
+  optional string description = 2;
+}
+
+message Annotations {
+  optional SectionMetaData sectionRelated = 1;
+  optional SectionMetaData sectionMoreBy = 2;
+  repeated Warning warning = 4;
+  optional SectionMetaData sectionBodyOfWork = 5;
+  optional SectionMetaData sectionCoreContent = 6;
+  optional OverlayMetaData overlayMetaData = 7;
+  repeated Badge badgeForCreator = 8;
+  repeated Badge infoBadge = 9;
+  optional AnnotationLink annotationLink = 10;
+  optional SectionMetaData sectionCrossSell = 11;
+  optional SectionMetaData sectionRelatedItemType = 12;
+  repeated PromotedDoc promotedDoc = 13;
+  optional string offerNote = 14;
+  optional string privacyPolicyUrl = 18;
+  optional SuggestionReasons suggestion_reasons = 19;
+  optional Warning optimalDeviceClassWarning = 20;
+  repeated BadgeContainer badgeContainer = 21;
+  optional SectionMetaData sectionSuggestForRating = 22;
+  optional SectionMetaData sectionPurchaseCrossSell = 24;
+  repeated OverflowLink overflowLink = 25;
+  optional string attributionHtml = 27;
+  optional PurchaseHistoryDetails purchaseHistoryDetails = 28;
+  optional Badge badgeForLegacyRating = 29;
+  repeated VoucherInfo voucherInfo = 30;
+  optional SectionMetaData sectionFeaturedApps = 32;
+  repeated SectionMetaData detailsPageCluster = 34;
+  optional VideoAnnotations videoAnnotations = 35;
+  optional SectionMetaData sectionPurchaseRelatedTopics = 36;
+  optional MySubscriptionDetails mySubscriptionDetails = 37;
+  optional MyRewardDetails myRewardDetails = 38;
+  repeated Badge featureBadge = 39;
+  optional Snippet snippet = 42;
+  optional string downloadsLabel = 48;
+  optional Badge badgeForRating = 50;
+  optional CategoryInfo categoryInfo = 53;
+  optional EditorReason reasons = 60;
+  optional Stream topChartStream = 65;
+  optional string categoryName = 66;
+  repeated Chip chip = 71;
+  repeated Badge displayBadge = 72;
+  optional string liveStreamUrl = 80;
+  optional string promotionStreamUrl = 85;
+  optional OverlayMetaData overlayMetaDataExtra = 91;
+  optional SectionImage sectionImage = 94;
+  optional SubStream categoryStream = 97;
+}
+
+message EditorReason {
+  repeated string bulletin = 1;
+  optional string description = 2;
+}
+
+message SectionMetaData {
+  optional string header = 1;
+  optional string listUrl = 2;
+  optional string browseUrl = 3;
+  optional string description = 4;
+}
+
+message OverlayMetaData{
+  optional OverlayHeader overlayHeader = 1;
+  optional OverlayTitle overlayTitle = 181;
+  optional OverlayDescription overlayDescription = 182;
+}
+
+message OverlayHeader{
+
+}
+
+message OverlayTitle{
+  optional string title = 1;
+  optional CompositeImage compositeImage = 3;
+}
+
+message CompositeImage{
+  optional int32 type = 1;
+  optional string url = 5;
+  optional int32 typeAlt = 9;
+  optional string title = 24;
+  optional string urlAlt = 28;
+}
+
+message OverlayDescription{
+  optional string description = 2;
+}
+
+message SuggestionReasons {
+  repeated Reason reason = 2;
+  optional Dismissal neutralDismissal = 4;
+  optional Dismissal positiveDismissal = 5;
+}
+
+message Reason {
+  optional string descriptionHtml = 3;
+  optional ReasonPlusOne reasonPlusOne = 4;
+  optional ReasonReview reasonReview = 5;
+  optional Dismissal dismissal = 7;
+  optional ReasonUserAction reasonUserAction = 9;
+}
+
+message ReasonPlusOne {
+  optional string localizedDescriptionHtml = 1;
+  repeated UserProfile userProfile = 3;
+}
+
+message ReasonReview {
+  optional Review review = 1;
+}
+
+message ReasonUserAction {
+  optional UserProfile userProfile = 1;
+  optional string localizedDescriptionHtml = 2;
+}
+
+message Dismissal {
+  optional string url = 1;
+  optional string descriptionHtml = 2;
+}
+
+message Snippet {
+  optional string snippetHtml = 1;
+}
+
+message MyRewardDetails {
+  optional int64 expirationTimeMillis = 1;
+  optional string expirationDescription = 2;
+  optional string buttonLabel = 3;
+  optional Link linkAction = 4;
+}
+
+message MySubscriptionDetails {
+  optional string subscriptionStatusHtml = 1;
+  optional string title = 2;
+  optional string titleByLineHtml = 3;
+  optional string formattedPrice = 4;
+  optional string priceByLineHtml = 5;
+  optional bool cancelSubscription = 6;
+  optional Link paymentDeclinedLearnMoreLink = 7;
+  optional bool inTrialPeriod = 8;
+  optional Image titleByLineIcon = 9;
+}
+
+message VideoAnnotations {
+  optional bool bundle = 1;
+  optional string bundleContentListUrl = 2;
+  optional string extrasContentListUrl = 3;
+  optional string alsoAvailableInListUrl = 4;
+  repeated DocId bundleDocId = 5;
+}
+
+message VoucherInfo {
+  optional Item item = 1;
+  repeated Offer offer = 2;
+}
+
+message BadgeContainer {
+  optional string title = 1;
+  repeated Image image = 2;
+  repeated Badge badge = 3;
+}
+
+message OverflowLink {
+  optional string title = 1;
+  optional Link link = 2;
+}
+
+message PromotedDoc {
+  optional string title = 1;
+  optional string subtitle = 2;
+  repeated Image image = 3;
+  optional string description = 4;
+  optional string detailsUrl = 5;
+}
+
+message Warning {
+  optional string localizedMessage = 1;
+}
+
+message AnnotationLink {
+  optional string uri = 1;
+  optional ResolvedLink resolvedLink = 2;
+  optional int32 uriBackend = 3;
+}
+
+message Rated {
+  optional string label = 1;
+  optional Image image = 2;
+  optional string learnMoreHtmlLink = 4;
+}
+
+message Badge {
+  optional string major = 1;
+  optional Image image = 2;
+  optional string minor = 3;
+  optional string minorHtml = 4;
+  optional SubBadge subBadge = 6;
+  optional StreamLink link = 7;
+  optional string description = 8;
+  optional SubStream stream = 12;
+}
+
+message SubBadge {
+  optional Image image = 1;
+  optional string description = 4;
+  optional StreamLink link = 5;
+}
+
+message Stream{
+  optional string title = 1;
+  optional SubStream stream = 2;
+  optional string subtitle = 3;
+}
+
+message SubStream{
+  optional StreamLink link = 2;
+}
+
+message Link {
+  optional string uri = 1;
+  optional ResolvedLink resolvedLink = 2;
+  optional int32 uriBackend = 3;
+}
+
+message StreamLink{
+  optional string url = 1;
+  optional string streamUrl = 2;
+  optional string searchUrl = 3;
+  optional string subCategoryUrl = 5;
+  optional string searchQuery = 11;
+}
+
+message Chip{
+  optional string title = 1;
+  optional SubStream stream = 2;
+}
+
+message CategoryInfo {
+  optional string category = 1;
+  optional string appCategory = 2;
+}
+
+message EncryptedSubscriberInfo {
+  optional string data = 1;
+  optional string encryptedKey = 2;
+  optional string signature = 3;
+  optional string initVector = 4;
+  optional int32 googleKeyVersion = 5;
+  optional int32 carrierKeyVersion = 6;
+}
+
+message Availability {
+  optional int32 restriction = 5;
+  optional int32 offerType = 6;
+  optional Rule rule = 7;
+  repeated group PerDeviceAvailabilityRestriction = 9 {
+    optional fixed64 androidId = 10;
+    optional int32 deviceRestriction = 11;
+    optional int64 channelId = 12;
+    optional FilterEvaluationInfo filterInfo = 15;
+  }
+  optional bool availableIfOwned = 13;
+  repeated Install install = 14;
+  optional FilterEvaluationInfo filterInfo = 16;
+  optional OwnershipInfo ownershipInfo = 17;
+  repeated AvailabilityProblem availabilityProblem = 18;
+  optional bool hidden = 21;
+}
+
+message AvailabilityProblem {
+  optional int32 problemType = 1;
+  repeated string missingValue = 2;
+}
+
+message FilterEvaluationInfo {
+  repeated RuleEvaluation ruleEvaluation = 1;
+}
+
+message Rule {
+  optional bool negate = 1;
+  optional int32 operator = 2;
+  optional int32 key = 3;
+  repeated string stringArg = 4;
+  repeated int64 longArg = 5;
+  repeated double doubleArg = 6;
+  repeated Rule subRule = 7;
+  optional int32 responseCode = 8;
+  optional string comment = 9;
+  repeated fixed64 stringArgHash = 10;
+  repeated int32 constArg = 11;
+  optional int32 availabilityProblemType = 12;
+  optional bool includeMissingValues = 13;
+}
+
+message RuleEvaluation {
+  optional Rule rule = 1;
+  repeated string actualStringValue = 2;
+  repeated int64 actualLongValue = 3;
+  repeated bool actualBoolValue = 4;
+  repeated double actualDoubleValue = 5;
+}
+
+message LibraryAppDetails {
+  optional string certificateHash = 2;
+  optional int64 refundTimeoutTimestamp = 3;
+  optional int64 postDeliveryRefundWindowMillis = 4;
+}
+
+message LibraryInAppDetails {
+  optional string signedPurchaseData = 1;
+  optional string signature = 2;
+}
+
+message LibraryMutation {
+  optional DocId DocId = 1;
+  optional int32 offerType = 2;
+  optional int64 documentHash = 3;
+  optional bool deleted = 4;
+  optional LibraryAppDetails appDetails = 5;
+  optional LibrarySubscriptionDetails subscriptionDetails = 6;
+  optional LibraryInAppDetails inAppDetails = 7;
+}
+
+message LibrarySubscriptionDetails {
+  optional int64 initiationTimestamp = 1;
+  optional int64 validUntilTimestamp = 2;
+  optional bool autoRenewing = 3;
+  optional int64 trialUntilTimestamp = 4;
+  optional string signedPurchaseData = 5;
+  optional string signature = 6;
+}
+
+message LibraryUpdate {
+  optional int32 status = 1;
+  optional int32 corpus = 2;
+  optional bytes serverToken = 3;
+  repeated LibraryMutation mutation = 4;
+  optional bool hasMore = 5;
+  optional string libraryId = 6;
+}
+
+message AndroidAppNotificationData {
+  optional int32 versionCode = 1;
+  optional string assetId = 2;
+}
+
+message InAppNotificationData {
+  optional string checkoutOrderId = 1;
+  optional string inAppNotificationId = 2;
+}
+
+message LibraryDirtyData {
+  optional int32 backend = 1;
+  optional string libraryId = 2;
+}
+
+message Notification {
+  optional int32 notificationType = 1;
+  optional int64 timestamp = 3;
+  optional DocId DocId = 4;
+  optional string docTitle = 5;
+  optional string userEmail = 6;
+  optional AndroidAppNotificationData appData = 7;
+  optional AndroidAppDeliveryData appDeliveryData = 8;
+  optional PurchaseRemovalData purchaseRemovalData = 9;
+  optional UserNotificationData userNotificationData = 10;
+  optional InAppNotificationData inAppNotificationData = 11;
+  optional PurchaseDeclinedData purchaseDeclinedData = 12;
+  optional string notificationId = 13;
+  optional LibraryUpdate libraryUpdate = 14;
+  optional LibraryDirtyData libraryDirtyData = 15;
+}
+
+message PurchaseDeclinedData {
+  optional int32 reason = 1;
+  optional bool showNotification = 2;
+}
+
+message PurchaseRemovalData {
+  optional bool malicious = 1;
+}
+
+message UserNotificationData {
+  optional string notificationTitle = 1;
+  optional string notificationText = 2;
+  optional string tickerText = 3;
+  optional string dialogTitle = 4;
+  optional string dialogText = 5;
+}
+
+message AggregateRating {
+  optional int32 type = 1[default = 1];
+  optional float starRating = 2;
+  optional uint64 ratingsCount = 3;
+  optional uint64 oneStarRatings = 4;
+  optional uint64 twoStarRatings = 5;
+  optional uint64 threeStarRatings = 6;
+  optional uint64 fourStarRatings = 7;
+  optional uint64 fiveStarRatings = 8;
+  optional uint64 thumbsUpCount = 9;
+  optional uint64 thumbsDownCount = 10;
+  optional uint64 commentCount = 11;
+  optional double bayesianMeanRating = 12;
+  repeated Tip tip = 13;
+  optional string ratingLabel = 17;
+  optional string ratingCountLabelAbbreviated = 18;
+  optional string ratingCountLabel = 19;
+}
+
+message Tip {
+  optional string tipId = 1;
+  optional string text = 2;
+  optional int32 polarity = 3;
+  optional int64 reviewCount = 4;
+  optional string language = 5;
+  repeated string snippetReviewId = 6;
+}
+
+message ReviewTip {
+  optional string tipUrl = 1;
+  optional string text = 2;
+  optional int32 polarity = 3;
+  optional int64 reviewCount = 4;
+}
+
+message AcceptTosResponse {
+}
+
+message CarrierBillingConfig {
+  optional string id = 1;
+  optional string name = 2;
+  optional int32 apiVersion = 3;
+  optional string provisioningUrl = 4;
+  optional string credentialsUrl = 5;
+  optional bool tosRequired = 6;
+  optional bool perTransactionCredentialsRequired = 7;
+  optional bool sendSubscriberIdWithCarrierBillingRequests = 8;
+}
+
+message BillingConfig {
+  optional CarrierBillingConfig carrierBillingConfig = 1;
+  optional int32 maxIabApiVersion = 2;
+}
+
+message CorpusMetadata {
+  optional int32 backend = 1;
+  optional string name = 2;
+  optional string landingUrl = 3;
+  optional string libraryName = 4;
+  optional string recsWidgetUrl = 6;
+  optional string shopName = 7;
+}
+
+message Experiments {
+  repeated string experimentId = 1;
+}
+
+message SelfUpdateConfig {
+  optional int32 latestClientVersionCode = 1;
+}
+
+message TocResponse {
+  repeated CorpusMetadata corpus = 1;
+  optional int32 tosVersionDeprecated = 2;
+  optional string tosContent = 3;
+  optional string homeUrl = 4;
+  optional Experiments experiments = 5;
+  optional string tosCheckboxTextMarketingEmails = 6;
+  optional string tosToken = 7;
+  optional UserSettings userSettings = 8;
+  optional string iconOverrideUrl = 9;
+  optional SelfUpdateConfig selfUpdateConfig = 10;
+  optional bool requiresUploadDeviceConfig = 11;
+  optional BillingConfig billingConfig = 12;
+  optional string recsWidgetUrl = 13;
+  optional string socialHomeUrl = 15;
+  optional bool ageVerificationRequired = 16;
+  optional bool gPlusSignupEnabled = 17;
+  optional bool redeemEnabled = 18;
+  optional string helpUrl = 19;
+  optional int32 themeId = 20;
+  optional string entertainmentHomeUrl = 21;
+  optional string cookie = 22;
+}
+
+message UserSettings {
+  optional bool tosCheckboxMarketingEmailsOptedIn = 1;
+  optional PrivacySetting privacySetting = 2;
+}
+
+message PrivacySetting {
+  optional int32 type = 1;
+  optional int32 currentStatus = 2;
+  optional bool enabledByDefault = 3;
+}
+
+message Payload {
+  optional ListResponse listResponse = 1;
+  optional DetailsResponse detailsResponse = 2;
+  optional ReviewResponse reviewResponse = 3;
+  optional BuyResponse buyResponse = 4;
+  optional SearchResponse searchResponse = 5;
+  optional TocResponse tocResponse = 6;
+  optional BrowseResponse browseResponse = 7;
+  optional PurchaseStatusResponse purchaseStatusResponse = 8;
+  optional string logResponse = 10;
+  optional string flagContentResponse = 13;
+  optional BulkDetailsResponse bulkDetailsResponse = 19;
+  optional DeliveryResponse deliveryResponse = 21;
+  optional AcceptTosResponse acceptTosResponse = 22;
+  optional CheckPromoOfferResponse checkPromoOfferResponse = 24;
+  optional InstrumentSetupInfoResponse instrumentSetupInfoResponse = 25;
+  optional AndroidCheckinResponse androidCheckinResponse = 26;
+  optional UploadDeviceConfigResponse uploadDeviceConfigResponse = 28;
+  optional SearchSuggestResponse searchSuggestResponse = 40;
+  optional ConsumePurchaseResponse consumePurchaseResponse = 30;
+  optional BillingProfileResponse billingProfileResponse = 31;
+  optional DebugSettingsResponse debugSettingsResponse = 34;
+  optional CheckIabPromoResponse checkIabPromoResponse = 35;
+  optional UserActivitySettingsResponse userActivitySettingsResponse = 36;
+  optional RecordUserActivityResponse recordUserActivityResponse = 37;
+  optional RedeemCodeResponse redeemCodeResponse = 38;
+  optional SelfUpdateResponse selfUpdateResponse = 39;
+  optional GetInitialInstrumentFlowStateResponse getInitialInstrumentFlowStateResponse = 41;
+  optional CreateInstrumentResponse createInstrumentResponse = 42;
+  optional ChallengeResponse challengeResponse = 43;
+  optional BackDeviceChoicesResponse backupDeviceChoicesResponse = 44;
+  optional BackupDocumentChoicesResponse backupDocumentChoicesResponse = 45;
+  optional EarlyUpdateResponse earlyUpdateResponse = 46;
+  optional PreloadsResponse preloadsResponse = 47;
+  optional MyAccountsResponse myAccountsResponse = 48;
+  optional ContentFilterResponse contentFilterResponse = 49;
+  optional ExperimentsResponse experimentsResponse = 50;
+  optional SurveyResponse surveyResponse = 51;
+  optional PingResponse pingResponse = 52;
+  optional UpdateUserSettingResponse updateUserSettingResponse = 53;
+  optional GetUserSettingsResponse getUserSettingsResponse = 54;
+  optional GetSharingSettingsResponse getSharingSettingsResponse = 56;
+  optional UpdateSharingSettingsResponse updateSharingSettingsResponse = 57;
+  optional ReviewSnippetsResponse reviewSnippetsResponse = 58;
+  optional DocumentSharingStateResponse documentSharingStateResponse = 59;
+  optional ModuleDeliveryResponse moduleDeliveryResponse = 70;
+  optional TestingProgramResponse testingProgramResponse = 80;
+  optional ReviewResponse reviewSummaryResponse = 129;
+}
+
+message CheckIabPromoResponse {
+}
+
+message UserActivitySettingsResponse {
+}
+
+message RecordUserActivityResponse {
+}
+
+message RedeemCodeResponse {
+}
+
+message SelfUpdateResponse {
+}
+
+message GetInitialInstrumentFlowStateResponse {
+}
+
+message CreateInstrumentResponse {
+}
+
+message ChallengeResponse {
+}
+
+message BackDeviceChoicesResponse {
+}
+
+message BackupDocumentChoicesResponse {
+}
+
+message EarlyUpdateResponse {
+}
+
+message PreloadsResponse {
+  optional Preload configPreload = 1;
+  message Preload {
+    optional DocId DocId = 1;
+    optional int32 versionCode = 2;
+    optional string title = 3;
+    optional Image icon = 4;
+    optional string deliveryToken = 5;
+    optional int32 installLocation = 6;
+    optional int64 size = 7;
+  }
+  repeated Preload appPreload = 2;
+}
+
+message MyAccountsResponse {
+}
+
+message ContentFilterResponse {
+}
+
+message ExperimentsResponse {
+}
+
+message SurveyResponse {
+}
+
+message PingResponse {
+}
+
+message UpdateUserSettingResponse {
+}
+
+message GetUserSettingsResponse {
+}
+
+message GetSharingSettingsResponse {
+}
+
+message UpdateSharingSettingsResponse {
+}
+
+message ReviewSnippetsResponse {
+}
+
+message DocumentSharingStateResponse {
+}
+
+message ModuleDeliveryResponse {
+}
+
+message PreFetch {
+  optional string url = 1;
+  optional ResponseWrapper response = 2;
+  optional string etag = 3;
+  optional int64 ttl = 4;
+  optional int64 softTtl = 5;
+}
+
+message ServerMetadata {
+  optional int64 latencyMillis = 1;
+}
+
+message Targets {
+  repeated int64 targetId = 1;
+  optional bytes signature = 2;
+}
+
+message ServerCookie {
+  optional int32 type = 1;
+  optional bytes token = 2;
+}
+
+message ServerCookies {
+  repeated ServerCookie serverCookie = 1;
+}
+
+message ResponseWrapper {
+  optional Payload payload = 1;
+  optional ServerCommands commands = 2;
+  repeated PreFetch preFetch = 3;
+  repeated Notification notification = 4;
+  optional ServerMetadata serverMetadata = 5;
+  optional Targets targets = 6;
+  optional ServerCookies serverCookies = 7;
+  optional bytes serverLogsCookie = 9;
+}
+
+message ResponseWrapperApi {
+  optional PayloadApi payload = 1;
+}
+
+message PayloadApi {
+  optional UserProfileResponse userProfileResponse = 5;
+}
+
+message UserProfileResponse {
+  optional UserProfile userProfile = 1;
+}
+
+message ServerCommands {
+  optional bool clearCache = 1;
+  optional string displayErrorMessage = 2;
+  optional string logErrorStacktrace = 3;
+}
+
+message GetReviewsResponse {
+  repeated Review review = 1;
+  optional int64 matchingCount = 2;
+}
+
+message Review {
+  optional string authorName = 1;
+  optional string url = 2;
+  optional string source = 3;
+  optional string version = 4;
+  optional int64 timestamp = 5;
+  optional int32 starRating = 6;
+  optional string title = 7;
+  optional string comment = 8;
+  optional string commentId = 9;
+  optional string deviceName = 19;
+  optional string replyText = 29;
+  optional int64 replyTimeStamp = 30;
+  optional ReviewAuthor author = 31;
+  optional UserProfile userProfile = 33;
+  optional Image sentiment = 34;
+  optional int32 helpfulCount = 35;
+  optional int64 thumbsUpCount = 38;
+}
+
+message CriticReviewsResponse {
+  optional string title = 1;
+  optional Image image = 2;
+  optional uint32 totalNumReviews = 3;
+  optional uint32 percentFavorable = 4;
+  optional string sourceText = 5;
+  optional Link source = 6;
+  repeated Review review = 7;
+}
+
+message ReviewAuthor {
+  optional string name = 2;
+  optional Image avatar = 5;
+}
+
+message UserProfile {
+  optional string profileId = 1;
+  optional string personId = 2;
+  optional int32 profileType = 3;
+  optional int32 personType = 4;
+  optional string name = 5;
+  repeated Image image = 10;
+  optional string profileUrl = 19;
+  optional string profileDescription = 22;
+}
+
+message ReviewResponse {
+  optional GetReviewsResponse userReviewsResponse = 1;
+  optional string nextPageUrl = 2;
+  optional Review userReview = 3;
+  optional string suggestionsListUrl = 4;
+  optional CriticReviewsResponse criticReviewsResponse = 5;
+}
+
+message RelatedSearch {
+  optional string searchUrl = 1;
+  optional string header = 2;
+  optional int32 backendId = 3;
+  optional int32 docType = 4[default = 1];
+  optional bool current = 5;
+}
+
+message SearchResponse {
+  optional string originalQuery = 1;
+  optional string suggestedQuery = 2;
+  optional bool aggregateQuery = 3;
+  repeated Bucket bucket = 4;
+  repeated Item item = 5;
+  repeated RelatedSearch relatedSearch = 6;
+  optional bytes serverLogsCookie = 7;
+  optional bool fullPageReplaced = 8;
+  optional bool containsSnow = 9;
+  optional string nextPageUrl = 10;
+}
+
+message SearchSuggestResponse {
+  repeated SearchSuggestEntry entry = 1;
+}
+
+message SearchSuggestEntry {
+  optional int32 type = 1;
+  optional string suggestedQuery = 2;
+  optional ImageContainer imageContainer = 5;
+  message ImageContainer {
+    optional string imageUrl = 5;
+  }
+  optional string title = 6;
+  optional PackageNameContainer packageNameContainer = 8;
+  message PackageNameContainer {
+    optional string packageName = 1;
+  }
+}
+
+message TestingProgramResponse {
+  optional TestingProgramResult result = 2;
+}
+
+message TestingProgramResult {
+  optional TestingProgramDetails details = 4;
+}
+
+message TestingProgramDetails {
+  optional bool subscribed = 2;
+  optional int64 id = 3;
+  optional bool unsubscribed = 4;
+}
+
+message LogRequest {
+  optional int64 timestamp = 1;
+  optional string downloadConfirmationQuery = 2;
+}
+
+message TestingProgramRequest {
+  optional string packageName = 1;
+  optional bool subscribe = 2;
+}
+
+message UploadDeviceConfigRequest {
+  optional DeviceConfigurationProto deviceConfiguration = 1;
+  optional string manufacturer = 2;
+  optional string gcmRegistrationId = 3;
+}
+
+message UploadDeviceConfigResponse {
+  optional string uploadDeviceConfigToken = 1;
+}
+
+message AndroidCheckinRequest {
+  optional string imei = 1;
+  optional int64 id = 2[default = 0];
+  optional string digest = 3;
+  optional AndroidCheckinProto checkin = 4;
+  optional string desiredBuild = 5;
+  optional string locale = 6;
+  optional int64 loggingId = 7;
+  optional string marketCheckin = 8;
+  repeated string macAddr = 9;
+  optional string meid = 10;
+  repeated string accountCookie = 11;
+  optional string timeZone = 12;
+  optional fixed64 securityToken = 13;
+  optional int32 version = 14;
+  repeated string otaCert = 15;
+  optional string serialNumber = 16;
+  optional string esn = 17;
+  optional DeviceConfigurationProto deviceConfiguration = 18;
+  repeated string macAddrType = 19;
+  optional int32 fragment = 20;
+  optional string userName = 21;
+  optional int32 userSerialNumber = 22;
+}
+
+message AndroidCheckinResponse {
+  optional bool statsOk = 1;
+  repeated AndroidIntentProto intent = 2;
+  optional int64 timeMsec = 3;
+  optional string digest = 4;
+  repeated GservicesSetting setting = 5;
+  optional bool marketOk = 6;
+  optional fixed64 androidId = 7;
+  optional fixed64 securityToken = 8;
+  optional bool settingsDiff = 9;
+  repeated string deleteSetting = 10;
+  optional string deviceCheckinConsistencyToken = 12;
+}
+
+message GservicesSetting {
+  optional bytes name = 1;
+  optional bytes value = 2;
+}
+
+message AndroidBuildProto {
+  optional string id = 1;
+  optional string product = 2;
+  optional string carrier = 3;
+  optional string radio = 4;
+  optional string bootloader = 5;
+  optional string client = 6;
+  optional int64 timestamp = 7;
+  optional int32 googleServices = 8;
+  optional string device = 9;
+  optional int32 sdkVersion = 10;
+  optional string model = 11;
+  optional string manufacturer = 12;
+  optional string buildProduct = 13;
+  optional bool otaInstalled = 14;
+}
+
+message AndroidCheckinProto {
+  optional AndroidBuildProto build = 1;
+  optional int64 lastCheckinMsec = 2;
+  repeated AndroidEventProto event = 3;
+  repeated AndroidStatisticProto stat = 4;
+  repeated string requestedGroup = 5;
+  optional string cellOperator = 6;
+  optional string simOperator = 7;
+  optional string roaming = 8;
+  optional int32 userNumber = 9;
+}
+
+message AndroidEventProto {
+  optional string tag = 1;
+  optional string value = 2;
+  optional int64 timeMsec = 3;
+}
+
+message AndroidIntentProto {
+  optional string action = 1;
+  optional string dataUri = 2;
+  optional string mimeType = 3;
+  optional string javaClass = 4;
+  repeated group Extra = 5 {
+    optional string name = 6;
+    optional string value = 7;
+  }
+}
+
+message AndroidStatisticProto {
+  optional string tag = 1;
+  optional int32 count = 2;
+  optional float sum = 3;
+}
+
+message ClientLibraryState {
+  optional int32 corpus = 1;
+  optional bytes serverToken = 2;
+  optional int64 hashCodeSum = 3;
+  optional int32 librarySize = 4;
+  optional string libraryId = 5;
+}
+
+message AndroidDataUsageProto {
+  optional int32 version = 1;
+  optional int64 currentReportMsec = 2;
+  repeated KeyToPackageNameMapping keyToPackageNameMapping = 3;
+  repeated PayloadLevelAppStat payloadLevelAppStat = 4;
+  repeated IpLayerNetworkStat ipLayerNetworkStat = 5;
+}
+
+message AndroidUsageStatsReport {
+  optional int64 androidId = 1;
+  optional int64 loggingId = 2;
+  optional UsageStatsExtensionProto usageStats = 3;
+}
+
+message AppBucket {
+  optional int64 bucketStartMsec = 1;
+  optional int64 bucketDurationMsec = 2;
+  repeated StatCounters statCounters = 3;
+  optional int64 operationCount = 4;
+}
+
+message CounterData {
+  optional int64 bytes = 1;
+  optional int64 packets = 2;
+}
+
+message IpLayerAppStat {
+  optional int32 packageKey = 1;
+  optional int32 applicationTag = 2;
+  repeated AppBucket ipLayerAppBucket = 3;
+}
+
+message IpLayerNetworkBucket {
+  optional int64 bucketStartMsec = 1;
+  optional int64 bucketDurationMsec = 2;
+  repeated StatCounters statCounters = 3;
+  optional int64 networkActiveDuration = 4;
+}
+
+message IpLayerNetworkStat {
+  optional string networkDetails = 1;
+  optional int32 type = 2;
+  repeated IpLayerNetworkBucket ipLayerNetworkBucket = 3;
+  repeated IpLayerAppStat ipLayerAppStat = 4;
+}
+
+message KeyToPackageNameMapping {
+  optional int32 packageKey = 1;
+  optional string uidName = 2;
+  repeated PackageInfo sharedPackage = 3;
+}
+
+message PackageInfo {
+  optional string pkgName = 1;
+  optional int32 versionCode = 2;
+}
+
+message PayloadLevelAppStat {
+  optional int32 packageKey = 1;
+  optional int32 applicationTag = 2;
+  repeated AppBucket payloadLevelAppBucket = 3;
+}
+
+message StatCounters {
+  optional int32 networkProto = 1;
+  optional int32 direction = 2;
+  optional CounterData counterData = 3;
+  optional int32 fgBg = 4;
+}
+
+message UsageStatsExtensionProto {
+  optional AndroidDataUsageProto dataUsage = 1;
+}
+
+message ModifyLibraryRequest {
+  optional string libraryId = 1;
+  repeated string addPackageName = 2;
+  repeated string removePackageName = 3;
+}

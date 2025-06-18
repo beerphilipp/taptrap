@@ -1,0 +1,58 @@
+{
+    "apk_path": "/home/experiments/apks/android/tapjacking/free_18_12_24_merged/com.kacera.zipextractor_merged.apk",
+    "target_sdk": 34,
+    "package_name": "com.kacera.zipextractor",
+    "is_enabled": true,
+    "permission": null,
+    "protected_confirmation": false,
+    "activities": [
+        {
+            "activity_name": "com.kacera.zipextractor.ExtractActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:mimeType=\"application/zip\" ns0:scheme=\"http\" /><data ns0:mimeType=\"application/x-zip\" ns0:scheme=\"http\" /><data ns0:mimeType=\"application/x-zip-compressed\" ns0:scheme=\"http\" /><data ns0:mimeType=\"application/zip\" ns0:scheme=\"https\" /><data ns0:mimeType=\"application/x-zip\" ns0:scheme=\"https\" /><data ns0:mimeType=\"application/x-zip-compressed\" ns0:scheme=\"https\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><data ns0:mimeType=\"application/zip\" ns0:scheme=\"content\" /><data ns0:mimeType=\"application/x-zip\" ns0:scheme=\"content\" /><data ns0:mimeType=\"application/x-zip-compressed\" ns0:scheme=\"content\" /><data ns0:mimeType=\"application/zip\" ns0:scheme=\"file\" /><data ns0:mimeType=\"application/x-zip\" ns0:scheme=\"file\" /><data ns0:mimeType=\"application/x-zip-compressed\" ns0:scheme=\"file\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><data ns0:scheme=\"file\" /><data ns0:scheme=\"content\" /><data ns0:mimeType=\"*/*\" /><data ns0:host=\"*\" /><data ns0:pathPattern=\".*\\.zipx\" /><data ns0:pathPattern=\".*\\.zipX\" /><data ns0:pathPattern=\".*\\.ziPx\" /><data ns0:pathPattern=\".*\\.ziPX\" /><data ns0:pathPattern=\".*\\.zIpx\" /><data ns0:pathPattern=\".*\\.zIpX\" /><data ns0:pathPattern=\".*\\.zIPx\" /><data ns0:pathPattern=\".*\\.zIPX\" /><data ns0:pathPattern=\".*\\.Zipx\" /><data ns0:pathPattern=\".*\\.ZipX\" /><data ns0:pathPattern=\".*\\.ZiPx\" /><data ns0:pathPattern=\".*\\.ZiPX\" /><data ns0:pathPattern=\".*\\.ZIpx\" /><data ns0:pathPattern=\".*\\.ZIpX\" /><data ns0:pathPattern=\".*\\.ZIPx\" /><data ns0:pathPattern=\".*\\.ZIPX\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.obsez.android.lib.filechooser.permissions.PermissionActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        }
+    ],
+    "not_found_activities": [],
+    "override_animation_calls": [
+        "Lq4/h; onClick (Landroid/content/DialogInterface; I)V",
+        "Lcom/kacera/zipextractor/ExtractActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lq4/i; onCancel (Landroid/content/DialogInterface;)V",
+        "Lj1/k; b (Ljava/lang/String; Ljava/io/File; Z)V",
+        "Lcom/kacera/zipextractor/ExtractActivity$a; j (Ljava/lang/Object;)Ljava/lang/Object;"
+    ],
+    "start_time": 1747784799.60685,
+    "end_time": 1747784807.3182206,
+    "exception": false
+}

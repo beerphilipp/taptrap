@@ -1,0 +1,115 @@
+{
+    "apk_path": "/home/experiments/apks/android/tapjacking/free_18_12_24_merged/com.siemens.sifinitydepotdrive_merged.apk",
+    "target_sdk": 34,
+    "package_name": "com.siemens.sifinitydepotdrive",
+    "is_enabled": true,
+    "permission": null,
+    "protected_confirmation": false,
+    "activities": [
+        {
+            "activity_name": "com.siemens.sifinitydepotdrive.MainActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.LAUNCHER\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.frontegg.android.EmbeddedAuthActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTop",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:autoVerify=\"true\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"https\" /><data ns0:host=\"us.identityportal.emobility.io\" ns0:pathPrefix=\"/oauth/account/activate\" /><data ns0:host=\"us.identityportal.emobility.io\" ns0:pathPrefix=\"/oauth/account/invitation/accept\" /><data ns0:host=\"us.identityportal.emobility.io\" ns0:pathPrefix=\"/oauth/account/reset-password\" /><data ns0:host=\"us.identityportal.emobility.io\" ns0:pathPrefix=\"/oauth/account/login/magic-link\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:autoVerify=\"true\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"https\" /><data ns0:host=\"eu.identityportal.emobility.io\" /><data ns0:pathPrefix=\"/oauth/account/activate\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:autoVerify=\"true\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"https\" /><data ns0:host=\"eu.identityportal.emobility.io\" /><data ns0:pathPrefix=\"/oauth/account/invitation/accept\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:autoVerify=\"true\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"https\" /><data ns0:host=\"eu.identityportal.emobility.io\" /><data ns0:pathPrefix=\"/oauth/account/reset-password\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:autoVerify=\"true\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"https\" /><data ns0:host=\"eu.identityportal.emobility.io\" /><data ns0:pathPrefix=\"/oauth/account/login/magic-link\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/frontegg/android/EmbeddedAuthActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.frontegg.android.AuthenticationActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTop",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"com.siemens.sifinitydepotdrive\" ns0:host=\"us.identityportal.emobility.io\" /><data ns0:scheme=\"https\" ns0:host=\"us.identityportal.emobility.io\" ns0:pathPrefix=\"/oauth/account/redirect/android/com.siemens.sifinitydepotdrive\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:autoVerify=\"true\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"https\" ns0:host=\"eu.identityportal.emobility.io\" ns0:pathPrefix=\"/oauth/account/redirect/android/com.siemens.sifinitydepotdrive\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"com.siemens.sifinitydepotdrive\" ns0:host=\"eu.identityportal.emobility.io\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.gms.common.api.GoogleApiActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.frontegg.android.HostedAuthActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": false,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:autoVerify=\"true\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"https\" ns0:host=\"eu.identityportal.emobility.io\" ns0:pathPrefix=\"/frontegg\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:autoVerify=\"true\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"https\" ns0:host=\"eu.identityportal.emobility.io\" ns0:pathPrefix=\"/oauth\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": true,
+            "on_enter_animation_override": "Lcom/google/androidbrowserhelper/trusted/LauncherActivity;\n\n    public void onEnterAnimationComplete()\n    {\n        super.onEnterAnimationComplete();\n        com.google.androidbrowserhelper.trusted.splashscreens.PwaWrapperSplashScreenStrategy v0 = this.mSplashScreenStrategy;\n        if (v0 != null) {\n            v0.onActivityEnterAnimationComplete();\n        }\n        return;\n    }\n",
+            "animation_override_methods": []
+        }
+    ],
+    "not_found_activities": [],
+    "override_animation_calls": [
+        "Lcom/frontegg/android/EmbeddedAuthActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lcom/google/androidbrowserhelper/trusted/splashscreens/PwaWrapperSplashScreenStrategy; lambda$onSplashImageTransferred$1$com-google-androidbrowserhelper-trusted-splashscreens-PwaWrapperSplashScreenStrategy (Ljava/lang/Runnable;)V"
+    ],
+    "start_time": 1747876896.0580745,
+    "end_time": 1747876923.1473937,
+    "exception": false
+}

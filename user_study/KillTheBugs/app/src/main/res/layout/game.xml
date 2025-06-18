@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:background="@color/cam_green"
+    android:id="@+id/gameview">
+
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="42sp"
+        android:layout_height="42sp"
+        android:src="@drawable/circle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4sp"/>
+
+    <TextView
+        android:id="@+id/levelText"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Level 1"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="24dp"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/pointsText"
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="0 Points"
+        android:textSize="32sp"
+        android:layout_marginBottom="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/looseText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginBottom="24dp"
+        android:text="You Lost!"
+        android:textSize="64sp"
+        android:layout_marginTop="300dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/killImage"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:contentDescription="Kill"
+        android:src="@drawable/kill"
+        android:visibility="invisible"
+        android:x="50dp" />
+
+    <ImageButton
+        android:id="@+id/bugButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/bug_fill_svgrepo_com_black"
+        android:contentDescription="Bug"
+        android:visibility="invisible"
+        android:x="50dp" />
+
+</RelativeLayout>

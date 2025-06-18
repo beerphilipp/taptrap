@@ -1,0 +1,103 @@
+{
+    "apk_path": "/home/experiments/apks/android/tapjacking/free_18_12_24_merged/com.conena.logcat.reader.apk",
+    "target_sdk": 34,
+    "package_name": "com.conena.logcat.reader",
+    "is_enabled": true,
+    "permission": null,
+    "protected_confirmation": false,
+    "activities": [
+        {
+            "activity_name": "com.conena.logcat.reader.ui.TutActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.conena.logcat.reader.ui.ConsentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.conena.logcat.reader.ui.LicenseViewer",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.conena.lrp.licenses\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.conena.logcat.reader.ui.settings.Settings",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.conena.logcat.reader.ui.main.MainActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.LAUNCHER\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:mimeType=\"text/plain\" ns0:scheme=\"file\" /><data ns0:mimeType=\"text/plain\" ns0:scheme=\"content\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:mimeType=\"*/*\" ns0:scheme=\"content\" ns0:host=\"*\" ns0:pathPattern=\".*.log\" /><data ns0:mimeType=\"*/*\" ns0:scheme=\"content\" ns0:host=\"*\" ns0:pathPattern=\".*..*.log\" /><data ns0:mimeType=\"*/*\" ns0:scheme=\"content\" ns0:host=\"*\" ns0:pathPattern=\".*..*..*.log\" /><data ns0:mimeType=\"*/*\" ns0:scheme=\"content\" ns0:host=\"*\" ns0:pathPattern=\".*..*..*..*.log\" /><data ns0:mimeType=\"*/*\" ns0:scheme=\"content\" ns0:host=\"*\" ns0:pathPattern=\".*..*..*..*..*.log\" /><data ns0:mimeType=\"*/*\" ns0:scheme=\"content\" ns0:host=\"*\" ns0:pathPattern=\".*..*..*..*..*..*.log\" /><data ns0:mimeType=\"*/*\" ns0:scheme=\"content\" ns0:host=\"*\" ns0:pathPattern=\".*..*..*..*..*..*..*.log\" /><data ns0:mimeType=\"*/*\" ns0:scheme=\"content\" ns0:host=\"*\" ns0:pathPattern=\".*..*..*..*..*..*..*..*.log\" /><data ns0:mimeType=\"*/*\" ns0:scheme=\"content\" ns0:host=\"*\" ns0:pathPattern=\".*..*..*..*..*..*..*..*..*.log\" /><data ns0:mimeType=\"*/*\" ns0:scheme=\"content\" ns0:host=\"*\" ns0:pathPattern=\".*..*..*..*..*..*..*..*..*..*.log\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:mimeType=\"*/*\" ns0:scheme=\"file\" ns0:host=\"*\" ns0:pathPattern=\".*.log\" /><data ns0:mimeType=\"*/*\" ns0:scheme=\"file\" ns0:host=\"*\" ns0:pathPattern=\".*..*.log\" /><data ns0:mimeType=\"*/*\" ns0:scheme=\"file\" ns0:host=\"*\" ns0:pathPattern=\".*..*..*.log\" /><data ns0:mimeType=\"*/*\" ns0:scheme=\"file\" ns0:host=\"*\" ns0:pathPattern=\".*..*..*..*.log\" /><data ns0:mimeType=\"*/*\" ns0:scheme=\"file\" ns0:host=\"*\" ns0:pathPattern=\".*..*..*..*..*.log\" /><data ns0:mimeType=\"*/*\" ns0:scheme=\"file\" ns0:host=\"*\" ns0:pathPattern=\".*..*..*..*..*..*.log\" /><data ns0:mimeType=\"*/*\" ns0:scheme=\"file\" ns0:host=\"*\" ns0:pathPattern=\".*..*..*..*..*..*..*.log\" /><data ns0:mimeType=\"*/*\" ns0:scheme=\"file\" ns0:host=\"*\" ns0:pathPattern=\".*..*..*..*..*..*..*..*.log\" /><data ns0:mimeType=\"*/*\" ns0:scheme=\"file\" ns0:host=\"*\" ns0:pathPattern=\".*..*..*..*..*..*..*..*..*.log\" /><data ns0:mimeType=\"*/*\" ns0:scheme=\"file\" ns0:host=\"*\" ns0:pathPattern=\".*..*..*..*..*..*..*..*..*..*.log\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"file\" ns0:host=\"*\" ns0:pathPattern=\".*.log\" /><data ns0:scheme=\"file\" ns0:host=\"*\" ns0:pathPattern=\".*..*.log\" /><data ns0:scheme=\"file\" ns0:host=\"*\" ns0:pathPattern=\".*..*..*.log\" /><data ns0:scheme=\"file\" ns0:host=\"*\" ns0:pathPattern=\".*..*..*..*.log\" /><data ns0:scheme=\"file\" ns0:host=\"*\" ns0:pathPattern=\".*..*..*..*..*.log\" /><data ns0:scheme=\"file\" ns0:host=\"*\" ns0:pathPattern=\".*..*..*..*..*..*.log\" /><data ns0:scheme=\"file\" ns0:host=\"*\" ns0:pathPattern=\".*..*..*..*..*..*..*.log\" /><data ns0:scheme=\"file\" ns0:host=\"*\" ns0:pathPattern=\".*..*..*..*..*..*..*..*.log\" /><data ns0:scheme=\"file\" ns0:host=\"*\" ns0:pathPattern=\".*..*..*..*..*..*..*..*..*.log\" /><data ns0:scheme=\"file\" ns0:host=\"*\" ns0:pathPattern=\".*..*..*..*..*..*..*..*..*..*.log\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        }
+    ],
+    "not_found_activities": [],
+    "override_animation_calls": [],
+    "start_time": 1747819193.5393646,
+    "end_time": 1747819199.9826133,
+    "exception": false
+}

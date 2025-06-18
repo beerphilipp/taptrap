@@ -1,0 +1,1842 @@
+{
+    "apk_path": "/home/experiments/apks/android/tapjacking/free_18_12_24_merged/com.barrons.barronsmulti.apk",
+    "target_sdk": 28,
+    "package_name": "com.barrons.barronsmulti",
+    "is_enabled": true,
+    "permission": null,
+    "protected_confirmation": false,
+    "activities": [
+        {
+            "activity_name": "com.quickmobile.conference.ApplicationInitialLoadActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.LAUNCHER\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/conference/ApplicationInitialLoadActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.core.conference.navigation.QMDeepLinkActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": "android.permission.INTERNET",
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"com.barrons.barronsmulti\" /><data ns0:scheme=\"qmlink\" ns0:host=\"component\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.quickmobile.qmactivity.TestQMActionBarFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.start.AppStartupFlowActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/conference/start/AppStartupFlowActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.start.ContainerStartupDisclaimerUpdateActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V",
+                "Lcom/quickmobile/conference/start/ContainerStartupDisclaimerUpdateActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.start.ForceUpgradeCheckActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V",
+                "Lcom/quickmobile/conference/start/ForceUpgradeCheckActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.start.MainEventActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTop",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V",
+                "Lcom/quickmobile/conference/start/MainEventActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.start.MainDrawerActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTop",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.common.VideoPlayActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleInstance",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.qmactivity.QMAboutActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.qmactivity.QMWebActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.sso.view.QMSSOWebActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.SplashActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V",
+                "Lcom/quickmobile/conference/SplashActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.SplashSnapEventLoadingActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V",
+                "Lcom/quickmobile/conference/SplashSnapEventLoadingActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.tellafriend.view.TellAFriendActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.settings.view.details.MyProfileDetailsFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.settings.view.MyProfileEditPhotoActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.developer.QMDeveloperSettingsFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.leadgeneration.view.details.LeadGenerationNotesActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.qmactivity.QMStandardListFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.qmactivity.tabs.QMFragmentPagerActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.activityfeed.view.ActivityFeedFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.articles.view.details.ArticleDetailsFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.attendees.likeminded.view.QMLikeMindedAttendeeFragmentPagerActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.attendees.view.details.AttendeeDetailsFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.community.view.CommunityViewPagerActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.disclaimer.view.details.DisclaimerDetailsFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.documents.view.search.DocumentSearchActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.quickmobile.conference.pdfannotation.view.details.PDFAnnotationActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.events.view.details.EventDetailsFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.events.view.search.EventSearchActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.quickmobile.conference.exhibitors.view.details.ExhibitorDetailsFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.contactexchange.view.ContactExchangeFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.leadgeneration.view.LeadGenerationFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.sessioncheckin.view.SessionCheckInFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.sessioncheckin.view.details.SessionCheckInNotesActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.gallery.view.details.GalleryDetailsFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.gallery.view.GalleryThumbnailsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.gamification.view.GameCenterViewPagerActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.htmlpageview.view.details.HtmlPageDetailsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.infobooths.view.details.InfoBoothDetailsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.interactivemaps.view.details.InteractiveMapDetailsFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.interactivemaps.view.ObjectsLinkedToLandmarkFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.interactivemaps.view.search.LandmarkSearchActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.likeminded.view.LikeMindedSetFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.likeminded.view.details.LikeMindedInterestFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.logon.view.LogonFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.logon.view.SignupFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.logon.view.PasswordRequestFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.logon.view.PasswordChangeFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.messaging.view.MessageBoxActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.messaging.view.details.MessageComposeFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.messaging.view.details.MessageDetailsFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.mynotes.view.details.MyNotesDetailsViewFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.mynotes.view.details.MyNotesDetailsEditFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.messaging.view.search.MessageSearchActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.quickmobile.conference.optin.view.details.OptInDetailsFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.attendees.view.privacysettings.PrivacySettingsFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.sessionqa.view.details.SessionQADetailsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.quickmeetings.view.details.QuickMeetingNewMeetingDetailsFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.quickmeetings.view.details.QuickMeetingOwnerDetailsFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.quickmeetings.view.details.QuickMeetingInviteeDetailsFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.speakers.view.details.SpeakerDetailsFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.authors.view.AuthorDetailsFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.sponsors.view.details.SponsorWebActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.sponsors.view.details.SponsorDetailsFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.sso.view.SingleSignOnFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.attendees.view.search.AttendeeSearchActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.quickmobile.conference.attendees.category.view.search.CategorizedAttendeeSearchActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.quickmobile.conference.exhibitors.view.search.ExhibitorSearchActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.quickmobile.conference.exhibitors.category.view.search.CategorizedExhibitorSearchActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.quickmobile.conference.sponsors.view.search.SponsorSearchActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.quickmobile.conference.sessionqa.view.search.SessionQASearchActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.quickmobile.conference.speakers.view.search.SpeakerSearchActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.quickmobile.conference.surveys.view.details.QuizScoreActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.surveys.view.details.SurveyDetailsFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.surveys.view.SurveyQuizPagerActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.surveys.view.details.SurveyOpenEndedFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.venues.view.details.VenueDetailsFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.snap.ContainerMainFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTop",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.snap.SingleEventFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.qmactivity.WidgetDetailsFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.social.view.QMSocialCommentPostActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.twitter.view.details.TwitterDetailFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.MandatoryUpdateActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.languages.AvailableLanguagesFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.languages.ContainerLanguagesFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.networkstatus.CheckOnlineActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V",
+                "Lcom/quickmobile/conference/networkstatus/CheckOnlineActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.qmactivity.QMCommonPostActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.utility.RuntimePermissionActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.quickmobile.conference.logon.view.fingerprint.FingerprintDetailsFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.abouttheapp.view.AboutTheAppDetailsFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.conference.contactexchange.view.QRCodeActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.quickmobile.core.conference.navigation.QMComponentNavigationActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.quickmobile.conference.beacons.view.BeaconMessageActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.quickmobile.conference.start.RootedDeviceActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/quickmobile/qmactivity/QMBaseActivity; overridePendingTransition (I I)V",
+                "Lcom/quickmobile/conference/SplashActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.journeyapps.barcodescanner.CaptureActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.gms.common.api.GoogleApiActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.lumi.sdkui.polling.LumiSdkPollActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.lumi.sdkui.messaging.LumiSdkMessagingActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.lumi.sdkui.messaging.LumiSdkDiscussionsListActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.lumi.sdkui.polling.OpenTextPollResultsListActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        }
+    ],
+    "not_found_activities": [],
+    "override_animation_calls": [
+        "Lcom/quickmobile/conference/ApplicationInitialLoadActivity; goToApplicationStart ()V",
+        "Lcom/quickmobile/conference/ApplicationInitialLoadActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lcom/quickmobile/conference/start/AppStartupFlowActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lcom/quickmobile/core/conference/navigation/QMDeepLinkActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lcom/quickmobile/qmactivity/QMBaseActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lcom/quickmobile/qmactivity/QMBaseActivity; requestReturnToPreviousState ()V",
+        "Lcom/quickmobile/conference/SplashActivity$1; handleMessage (Landroid/os/Message;)V",
+        "Lcom/quickmobile/conference/SplashActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lcom/quickmobile/conference/SplashActivity$1; handleMessage (Landroid/os/Message;)V",
+        "Lcom/quickmobile/conference/SplashSnapEventLoadingActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lcom/quickmobile/conference/networkstatus/CheckOnlineActivity; isConnected (Lcom/quickmobile/conference/networkstatus/OnNetworkConnectedEvent;)V",
+        "Lcom/quickmobile/conference/start/ContainerStartupDisclaimerUpdateActivity; finishActivity ()V",
+        "Lcom/quickmobile/conference/start/ContainerStartupDisclaimerUpdateActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lcom/quickmobile/conference/start/ForceUpgradeCheckActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lcom/quickmobile/conference/start/ForceUpgradeCheckActivity; finishActivity ()V",
+        "Lcom/quickmobile/conference/start/MainEventActivity; launchComponent (Lcom/quickmobile/quickstart/configuration/QMComponent;)V",
+        "Lcom/quickmobile/conference/languages/ContainerLanguagesFragmentActivity; setupActivity ()V",
+        "Lcom/quickmobile/core/view/search/SearchActivity; finishSearchView ()V",
+        "Lcom/quickmobile/conference/SplashSnapEventLoadingActivity$SplashAdHandler; handleMessage (Landroid/os/Message;)V"
+    ],
+    "start_time": 1747833843.6439848,
+    "end_time": 1747833893.4382799,
+    "exception": false
+}

@@ -1,0 +1,785 @@
+{
+    "apk_path": "/home/experiments/apks/android/tapjacking/free_18_12_24_merged/org.leetzone.android.yatsewidgetfree.apk",
+    "target_sdk": 34,
+    "package_name": "org.leetzone.android.yatsewidgetfree",
+    "is_enabled": true,
+    "permission": null,
+    "protected_confirmation": false,
+    "activities": [
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.StartActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><action ns0:name=\"android.intent.action.MUSIC_PLAYER\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.LAUNCHER\" /><category ns0:name=\"android.intent.category.APP_MUSIC\" /><category ns0:name=\"android.intent.category.MULTIWINDOW_LAUNCHER\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"yatse\" ns0:host=\"command\" ns0:path=\"/show/remote\" /><data ns0:scheme=\"yatse\" ns0:host=\"command\" ns0:path=\"/show/nowplaying\" /><data ns0:scheme=\"yatse\" ns0:host=\"command\" ns0:path=\"/browse/tvshows\" /><data ns0:scheme=\"yatse\" ns0:host=\"command\" ns0:path=\"/browse/movies\" /><data ns0:scheme=\"yatse\" ns0:host=\"command\" ns0:path=\"/browse/music\" /><data ns0:scheme=\"yatse\" ns0:host=\"command\" ns0:path=\"/browse/files\" /><data ns0:scheme=\"yatse\" ns0:host=\"command\" ns0:path=\"/browse/pictures\" /><data ns0:scheme=\"yatse\" ns0:host=\"command\" ns0:path=\"/browse/pvr_tv\" /><data ns0:scheme=\"yatse\" ns0:host=\"command\" ns0:path=\"/browse/pvr_radio\" /><data ns0:scheme=\"yatse\" ns0:host=\"command\" ns0:path=\"/browse/addons\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.media.action.MEDIA_PLAY_FROM_SEARCH\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.HTTPCCPluginActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.FirstRunActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.AutoNextActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.CloudSaveActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.QuickRestoreActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.OfflineFilesActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.StreamActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.GlobalSearchActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.SEARCH\" /><action ns0:name=\"org.leetzone.android.yatsewidget.ACTION_MEDIA_DETAILS\" /><action ns0:name=\"org.leetzone.android.yatsewidget.ACTION_MEDIA_START\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.google.android.gms.actions.SEARCH_ACTION\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.HostChooserActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"yatse\" ns0:host=\"command\" ns0:path=\"/show/select_host\" /><data ns0:scheme=\"yatse\" ns0:host=\"command\" ns0:path=\"/select/media_center\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.ChangeVolumeActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"yatse\" ns0:host=\"command\" ns0:path=\"/show/volume_slider\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.VoiceAssistActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleInstance",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"org.leetzone.android.yatsewidget.ACTION_APP_VOICECOMMAND_START\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"yatse\" ns0:host=\"command\" ns0:path=\"/voicecommand/start\" /><data ns0:scheme=\"yatse\" ns0:host=\"command\" ns0:pathPrefix=\"/play\" /><data ns0:scheme=\"yatse\" ns0:host=\"command\" ns0:pathPrefix=\"/search\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.ASSIST\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.tasker.screen.TaskerScreenActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.twofortyfouram.locale.intent.action.EDIT_SETTING\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.tasker.command.TaskerCommandActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.twofortyfouram.locale.intent.action.EDIT_SETTING\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.tasker.event.TaskerEventActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"net.dinglisch.android.tasker.ACTION_EDIT_EVENT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.DimmerActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.PhotosViewActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.PlexServerConnectActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.NetworkServerDetectActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.NetworkServerAddActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.NetworkServerEditActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.KodiHostAddActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.KodiHostEditActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.FragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.PreferencesActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.APPLICATION_PREFERENCES\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.PreferencesFragmentActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.HostsListActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.HostsAddActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.AboutActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.RendererSelectionActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.ChangeLogActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.MuzeiSettings",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.UnlockerActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.SupporterActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.SendToActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><data ns0:mimeType=\"image/*\" /><data ns0:mimeType=\"video/*\" /><data ns0:mimeType=\"audio/*\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"http\" /><data ns0:scheme=\"https\" /><data ns0:mimeType=\"image/*\" /><data ns0:mimeType=\"video/*\" /><data ns0:mimeType=\"audio/*\" /><data ns0:mimeType=\"*/avi\" /><data ns0:mimeType=\"*/mkv\" /><data ns0:mimeType=\"application/mp4\" /><data ns0:mimeType=\"application/mp3\" /><data ns0:mimeType=\"application/mpeg*\" /><data ns0:mimeType=\"application/ogg\" /><data ns0:mimeType=\"application/vnd.rn-realmedia*\" /><data ns0:mimeType=\"application/3gpp*\" /><data ns0:mimeType=\"application/vnd.3gp*\" /><data ns0:mimeType=\"application/vnd.dvd*\" /><data ns0:mimeType=\"application/vnd.dolby*\" /><data ns0:mimeType=\"application/x-mpegURL\" /><data ns0:mimeType=\"application/vnd.apple.mpegurl\" /><data ns0:mimeType=\"application/x-quicktimeplayer\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"http\" /><data ns0:scheme=\"https\" /><data ns0:host=\"*\" /><data ns0:pathPattern=\".*.avi\" /><data ns0:pathPattern=\".*.asf\" /><data ns0:pathPattern=\".*.divx\" /><data ns0:pathPattern=\".*.f4v\" /><data ns0:pathPattern=\".*.flv\" /><data ns0:pathPattern=\".*.m2v\" /><data ns0:pathPattern=\".*.m2ts\" /><data ns0:pathPattern=\".*.m3u\" /><data ns0:pathPattern=\".*.m3u8\" /><data ns0:pathPattern=\".*.mkv\" /><data ns0:pathPattern=\".*.mp3\" /><data ns0:pathPattern=\".*.m4v\" /><data ns0:pathPattern=\".*.mp4\" /><data ns0:pathPattern=\".*.mpeg\" /><data ns0:pathPattern=\".*.mpg\" /><data ns0:pathPattern=\".*.mov\" /><data ns0:pathPattern=\".*.mts\" /><data ns0:pathPattern=\".*.ogg\" /><data ns0:pathPattern=\".*.rm\" /><data ns0:pathPattern=\".*.rmvb\" /><data ns0:pathPattern=\".*.ts\" /><data ns0:pathPattern=\".*.vob\" /><data ns0:pathPattern=\".*.webm\" /><data ns0:pathPattern=\".*.wmv\" /><data ns0:pathPattern=\".*.wtv\" /><data ns0:pathPattern=\".*avi\" /><data ns0:pathPattern=\".*asf\" /><data ns0:pathPattern=\".*divx\" /><data ns0:pathPattern=\".*f4v\" /><data ns0:pathPattern=\".*flv\" /><data ns0:pathPattern=\".*m2v\" /><data ns0:pathPattern=\".*m2ts\" /><data ns0:pathPattern=\".*m3u\" /><data ns0:pathPattern=\".*m3u8\" /><data ns0:pathPattern=\".*mkv\" /><data ns0:pathPattern=\".*mp3\" /><data ns0:pathPattern=\".*mp4\" /><data ns0:pathPattern=\".*m4v\" /><data ns0:pathPattern=\".*mpeg\" /><data ns0:pathPattern=\".*mpg\" /><data ns0:pathPattern=\".*mov\" /><data ns0:pathPattern=\".*ogg\" /><data ns0:pathPattern=\".*oga\" /><data ns0:pathPattern=\".*mts\" /><data ns0:pathPattern=\".*rm\" /><data ns0:pathPattern=\".*rmvb\" /><data ns0:pathPattern=\".*ts\" /><data ns0:pathPattern=\".*vob\" /><data ns0:pathPattern=\".*webm\" /><data ns0:pathPattern=\".*wmv\" /><data ns0:pathPattern=\".*wtv\" /><data ns0:pathPattern=\".*.AVI\" /><data ns0:pathPattern=\".*.ASF\" /><data ns0:pathPattern=\".*.DIVX\" /><data ns0:pathPattern=\".*.F4V\" /><data ns0:pathPattern=\".*.FLV\" /><data ns0:pathPattern=\".*.M2V\" /><data ns0:pathPattern=\".*.M2TS\" /><data ns0:pathPattern=\".*.M3U\" /><data ns0:pathPattern=\".*.M3U8\" /><data ns0:pathPattern=\".*.MKV\" /><data ns0:pathPattern=\".*.MP3\" /><data ns0:pathPattern=\".*.MP4\" /><data ns0:pathPattern=\".*.M4V\" /><data ns0:pathPattern=\".*.MPEG\" /><data ns0:pathPattern=\".*.MPG\" /><data ns0:pathPattern=\".*.MOV\" /><data ns0:pathPattern=\".*.MTS\" /><data ns0:pathPattern=\".*.OGG\" /><data ns0:pathPattern=\".*.OGA\" /><data ns0:pathPattern=\".*.RM\" /><data ns0:pathPattern=\".*.RMVB\" /><data ns0:pathPattern=\".*.TS\" /><data ns0:pathPattern=\".*.VOB\" /><data ns0:pathPattern=\".*.WEBM\" /><data ns0:pathPattern=\".*.WMV\" /><data ns0:pathPattern=\".*.WTV\" /><data ns0:pathPattern=\".*AVI\" /><data ns0:pathPattern=\".*ASF\" /><data ns0:pathPattern=\".*DIVX\" /><data ns0:pathPattern=\".*F4V\" /><data ns0:pathPattern=\".*FLV\" /><data ns0:pathPattern=\".*M2V\" /><data ns0:pathPattern=\".*M2TS\" /><data ns0:pathPattern=\".*M3U\" /><data ns0:pathPattern=\".*M3U8\" /><data ns0:pathPattern=\".*MKV\" /><data ns0:pathPattern=\".*MP3\" /><data ns0:pathPattern=\".*MP4\" /><data ns0:pathPattern=\".*M4V\" /><data ns0:pathPattern=\".*MPEG\" /><data ns0:pathPattern=\".*MPG\" /><data ns0:pathPattern=\".*MOV\" /><data ns0:pathPattern=\".*MTS\" /><data ns0:pathPattern=\".*OGG\" /><data ns0:pathPattern=\".*OGA\" /><data ns0:pathPattern=\".*RM\" /><data ns0:pathPattern=\".*RMVB\" /><data ns0:pathPattern=\".*TS\" /><data ns0:pathPattern=\".*VOB\" /><data ns0:pathPattern=\".*WEBM\" /><data ns0:pathPattern=\".*WMV\" /><data ns0:pathPattern=\".*WTV\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"http\" /><data ns0:scheme=\"https\" /><data ns0:host=\"youtube.com\" /><data ns0:host=\"youtu.be\" /><data ns0:host=\"*.youtu.be\" /><data ns0:host=\"*.youtube.com\" /><data ns0:host=\"www.vimeo.com\" /><data ns0:host=\"vimeo.com\" /><data ns0:host=\"*.vimeo.com\" /><data ns0:host=\"www.twitch.tv\" /><data ns0:host=\"twitch.tv\" /><data ns0:host=\"*.twitch.tv\" /><data ns0:host=\"www.dailymotion.com\" /><data ns0:host=\"dailymotion.com\" /><data ns0:host=\"*.dailymotion.com\" /><data ns0:host=\"www.myvideo.de\" /><data ns0:host=\"myvideo.de\" /><data ns0:host=\"*.myvideo.de\" /><data ns0:host=\"soundcloud.com\" /><data ns0:host=\"*.soundcloud.com\" /><data ns0:host=\"drive.google.com\" /><data ns0:host=\"docs.google.com\" /><data ns0:host=\"ted.com\" /><data ns0:host=\"*.ted.com\" /><data ns0:host=\"svtplay.se\" /><data ns0:host=\"*.svtplay.se\" /><data ns0:host=\"bandcamp.com\" /><data ns0:host=\"*.bandcamp.com\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"magnet\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><data ns0:scheme=\"file\" /><data ns0:scheme=\"content\" /><data ns0:mimeType=\"image/*\" /><data ns0:mimeType=\"video/*\" /><data ns0:mimeType=\"audio/*\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.SEND\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><data ns0:mimeType=\"*/*\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.SEND\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><data ns0:mimeType=\"image/*\" /><data ns0:mimeType=\"video/*\" /><data ns0:mimeType=\"audio/*\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "org.leetzone.android.yatsewidget.ui.activity.SendToUPnPActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><data ns0:mimeType=\"image/*\" /><data ns0:mimeType=\"video/*\" /><data ns0:mimeType=\"audio/*\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"http\" /><data ns0:scheme=\"https\" /><data ns0:mimeType=\"image/*\" /><data ns0:mimeType=\"video/*\" /><data ns0:mimeType=\"audio/*\" /><data ns0:mimeType=\"*/avi\" /><data ns0:mimeType=\"*/mkv\" /><data ns0:mimeType=\"application/mp4\" /><data ns0:mimeType=\"application/mp3\" /><data ns0:mimeType=\"application/mpeg*\" /><data ns0:mimeType=\"application/ogg\" /><data ns0:mimeType=\"application/vnd.rn-realmedia*\" /><data ns0:mimeType=\"application/3gpp*\" /><data ns0:mimeType=\"application/vnd.3gp*\" /><data ns0:mimeType=\"application/vnd.dvd*\" /><data ns0:mimeType=\"application/vnd.dolby*\" /><data ns0:mimeType=\"application/x-mpegURL\" /><data ns0:mimeType=\"application/vnd.apple.mpegurl\" /><data ns0:mimeType=\"application/x-quicktimeplayer\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"http\" /><data ns0:scheme=\"https\" /><data ns0:host=\"*\" /><data ns0:pathPattern=\".*.avi\" /><data ns0:pathPattern=\".*.asf\" /><data ns0:pathPattern=\".*.divx\" /><data ns0:pathPattern=\".*.f4v\" /><data ns0:pathPattern=\".*.flv\" /><data ns0:pathPattern=\".*.m2v\" /><data ns0:pathPattern=\".*.m2ts\" /><data ns0:pathPattern=\".*.m3u\" /><data ns0:pathPattern=\".*.m3u8\" /><data ns0:pathPattern=\".*.mkv\" /><data ns0:pathPattern=\".*.mp3\" /><data ns0:pathPattern=\".*.m4v\" /><data ns0:pathPattern=\".*.mp4\" /><data ns0:pathPattern=\".*.mpeg\" /><data ns0:pathPattern=\".*.mpg\" /><data ns0:pathPattern=\".*.mov\" /><data ns0:pathPattern=\".*.mts\" /><data ns0:pathPattern=\".*.ogg\" /><data ns0:pathPattern=\".*.oga\" /><data ns0:pathPattern=\".*.rm\" /><data ns0:pathPattern=\".*.rmvb\" /><data ns0:pathPattern=\".*.ts\" /><data ns0:pathPattern=\".*.vob\" /><data ns0:pathPattern=\".*.webm\" /><data ns0:pathPattern=\".*.wmv\" /><data ns0:pathPattern=\".*.wtv\" /><data ns0:pathPattern=\".*avi\" /><data ns0:pathPattern=\".*asf\" /><data ns0:pathPattern=\".*divx\" /><data ns0:pathPattern=\".*f4v\" /><data ns0:pathPattern=\".*flv\" /><data ns0:pathPattern=\".*m2v\" /><data ns0:pathPattern=\".*m2ts\" /><data ns0:pathPattern=\".*m3u\" /><data ns0:pathPattern=\".*m3u8\" /><data ns0:pathPattern=\".*mkv\" /><data ns0:pathPattern=\".*mp3\" /><data ns0:pathPattern=\".*mp4\" /><data ns0:pathPattern=\".*m4v\" /><data ns0:pathPattern=\".*mpeg\" /><data ns0:pathPattern=\".*mpg\" /><data ns0:pathPattern=\".*mov\" /><data ns0:pathPattern=\".*ogg\" /><data ns0:pathPattern=\".*mts\" /><data ns0:pathPattern=\".*rm\" /><data ns0:pathPattern=\".*rmvb\" /><data ns0:pathPattern=\".*ts\" /><data ns0:pathPattern=\".*vob\" /><data ns0:pathPattern=\".*webm\" /><data ns0:pathPattern=\".*wmv\" /><data ns0:pathPattern=\".*wtv\" /><data ns0:pathPattern=\".*.AVI\" /><data ns0:pathPattern=\".*.ASF\" /><data ns0:pathPattern=\".*.DIVX\" /><data ns0:pathPattern=\".*.F4V\" /><data ns0:pathPattern=\".*.FLV\" /><data ns0:pathPattern=\".*.M2V\" /><data ns0:pathPattern=\".*.M2TS\" /><data ns0:pathPattern=\".*.M3U\" /><data ns0:pathPattern=\".*.M3U8\" /><data ns0:pathPattern=\".*.MKV\" /><data ns0:pathPattern=\".*.MP3\" /><data ns0:pathPattern=\".*.MP4\" /><data ns0:pathPattern=\".*.M4V\" /><data ns0:pathPattern=\".*.MPEG\" /><data ns0:pathPattern=\".*.MPG\" /><data ns0:pathPattern=\".*.MOV\" /><data ns0:pathPattern=\".*.MTS\" /><data ns0:pathPattern=\".*.OGG\" /><data ns0:pathPattern=\".*.OGA\" /><data ns0:pathPattern=\".*.RM\" /><data ns0:pathPattern=\".*.RMVB\" /><data ns0:pathPattern=\".*.TS\" /><data ns0:pathPattern=\".*.VOB\" /><data ns0:pathPattern=\".*.WEBM\" /><data ns0:pathPattern=\".*.WMV\" /><data ns0:pathPattern=\".*.WTV\" /><data ns0:pathPattern=\".*AVI\" /><data ns0:pathPattern=\".*ASF\" /><data ns0:pathPattern=\".*DIVX\" /><data ns0:pathPattern=\".*F4V\" /><data ns0:pathPattern=\".*FLV\" /><data ns0:pathPattern=\".*M2V\" /><data ns0:pathPattern=\".*M2TS\" /><data ns0:pathPattern=\".*M3U\" /><data ns0:pathPattern=\".*M3U8\" /><data ns0:pathPattern=\".*MKV\" /><data ns0:pathPattern=\".*MP3\" /><data ns0:pathPattern=\".*MP4\" /><data ns0:pathPattern=\".*M4V\" /><data ns0:pathPattern=\".*MPEG\" /><data ns0:pathPattern=\".*MPG\" /><data ns0:pathPattern=\".*MOV\" /><data ns0:pathPattern=\".*MTS\" /><data ns0:pathPattern=\".*OGG\" /><data ns0:pathPattern=\".*OGA\" /><data ns0:pathPattern=\".*RM\" /><data ns0:pathPattern=\".*RMVB\" /><data ns0:pathPattern=\".*TS\" /><data ns0:pathPattern=\".*VOB\" /><data ns0:pathPattern=\".*WEBM\" /><data ns0:pathPattern=\".*WMV\" /><data ns0:pathPattern=\".*WTV\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"http\" /><data ns0:scheme=\"https\" /><data ns0:host=\"youtube.com\" /><data ns0:host=\"youtu.be\" /><data ns0:host=\"*.youtu.be\" /><data ns0:host=\"*.youtube.com\" /><data ns0:host=\"www.vimeo.com\" /><data ns0:host=\"vimeo.com\" /><data ns0:host=\"*.vimeo.com\" /><data ns0:host=\"www.twitch.tv\" /><data ns0:host=\"twitch.tv\" /><data ns0:host=\"*.twitch.tv\" /><data ns0:host=\"www.dailymotion.com\" /><data ns0:host=\"dailymotion.com\" /><data ns0:host=\"*.dailymotion.com\" /><data ns0:host=\"www.myvideo.de\" /><data ns0:host=\"myvideo.de\" /><data ns0:host=\"*.myvideo.de\" /><data ns0:host=\"soundcloud.com\" /><data ns0:host=\"*.soundcloud.com\" /><data ns0:host=\"drive.google.com\" /><data ns0:host=\"docs.google.com\" /><data ns0:host=\"ted.com\" /><data ns0:host=\"*.ted.com\" /><data ns0:host=\"svtplay.se\" /><data ns0:host=\"*.svtplay.se\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><data ns0:scheme=\"file\" /><data ns0:scheme=\"content\" /><data ns0:mimeType=\"image/*\" /><data ns0:mimeType=\"video/*\" /><data ns0:mimeType=\"audio/*\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.SEND\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><data ns0:mimeType=\"image/*\" /><data ns0:mimeType=\"video/*\" /><data ns0:mimeType=\"audio/*\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "tv.yatse.android.localdevice.AddSourceActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.gms.auth.api.signin.internal.SignInHubActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.android.billingclient.api.ProxyBillingActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.android.billingclient.api.ProxyBillingActivityV2",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.gms.common.api.GoogleApiActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        }
+    ],
+    "not_found_activities": [],
+    "override_animation_calls": [
+        "Lorg/leetzone/android/yatsewidget/ui/activity/PreferencesActivity; onBackPressed ()V",
+        "Lorg/leetzone/android/yatsewidget/ui/activity/AboutActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lorg/leetzone/android/yatsewidget/ui/activity/OfflineFilesActivity; finish ()V",
+        "Lle/e0; onCreate (Landroid/os/Bundle;)V",
+        "Lorg/leetzone/android/yatsewidget/ui/activity/ChangeVolumeActivity; onPause ()V",
+        "Lorg/leetzone/android/yatsewidget/ui/activity/PreferencesActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lorg/leetzone/android/yatsewidget/ui/activity/OfflineFilesActivity; onBackPressed ()V",
+        "Lorg/leetzone/android/yatsewidget/ui/activity/PreferencesFragmentActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lorg/leetzone/android/yatsewidget/ui/activity/AboutActivity; onBackPressed ()V",
+        "Lorg/leetzone/android/yatsewidget/ui/activity/PreferencesFragmentActivity; onBackPressed ()V",
+        "Lle/e0; h ()V",
+        "Lle/e0; h ()V",
+        "Lorg/leetzone/android/yatsewidget/ui/activity/AboutActivity; finish ()V",
+        "Lle/e0; onCreate (Landroid/os/Bundle;)V"
+    ],
+    "start_time": 1747812503.8042774,
+    "end_time": 1747812555.543711,
+    "exception": false
+}

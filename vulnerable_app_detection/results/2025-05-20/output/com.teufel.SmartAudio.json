@@ -1,0 +1,1036 @@
+{
+    "apk_path": "/home/experiments/apks/android/tapjacking/free_18_12_24_merged/com.teufel.SmartAudio.apk",
+    "target_sdk": 33,
+    "package_name": "com.teufel.SmartAudio",
+    "is_enabled": true,
+    "permission": null,
+    "protected_confirmation": false,
+    "activities": [
+        {
+            "activity_name": "com.teufel.smartaudio.SplashScreenActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.LAUNCHER\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"undok\" ns0:host=\"*\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.home.HomeActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.browse.bluetooth.settings.BluetoothSettingsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.browse.nav.AmazonLoginActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.connectedSpeaker.ConnectedSpeakerActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"undokairable\" ns0:host=\"auth_response\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.settings.avs.AvsLogoutTutorialActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.settings.about.AboutActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.connection.connectionLost.ConnectionLostActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.connection.noWiFi.NoWiFiActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.presets.PresetsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.settings.airableQuality.AirableQualitySoundActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.settings.dateTime.ClockSettingsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.settings.equalizer.EqualizerActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.settings.general.GeneralSettingsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.settings.groupedSpeakers.GroupedSpeakersSettingsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.settings.language.LanguageActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.settings.sleepTimer.SleepTimerActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.settings.speaker.SpeakerSettingsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.settings.speakerList.SpeakerListSettingsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.stereo.editSystem.EditStereoSystemActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.stereo.pairStereo.PairStereoActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.stereo.selectPrimary.SelectPrimarySpeakerActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.stereo.selectSecondary.SelectSecondarySpeakerActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.update.AllDevicesIsuActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.volume.multiroomVolume.MultiroomVolumeActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.webview.GoogleCastAppsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.settings.account.AccountWebviewActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.settings.account.FSDCAMainActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.settings.account.addDevice.FSDCAAddDeviceActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.setup.welcome.WelcomeActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.setup.location.LocationAccessActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.setup.accessPoint.listOfAP.ListOfAccessPointActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.setup.accessPoint.manualAPSelection.ManualAccessPointSelectionActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.setup.speakerName.NameYourSpeakerActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.setup.connectionType.SelectConnectionTypeActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.setup.connectionType.wps.ConfigureWPSActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.setup.connectionType.wifi.ConfigureWiFiActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.setup.connectionType.ethernet.ConfigureEthernetActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.setup.clock.ConfigureClockActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.setup.language.ConfigureLanguageActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.setup.finishing.FinishingSetupActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.setup.technologies.TechnologiesActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.setup.setupdone.SetupDoneActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.setup.fsdca.SetupFSDCAAssociationActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.settings.avs.AvsFinishActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.settings.gdpr.SettingsWebViewActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.settings.avs.LwaLoginActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.settings.account.FSDCALoginActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"undok2\" ns0:host=\"auth_response\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.amazon.identity.auth.device.workflow.WorkflowActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"amzn\" ns0:host=\"com.teufel.smartaudio\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.settings.avs.AvsSettingsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.gdpr.GDPRActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.settings.avs.locales.AvsLocaleActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.settings.staticRadioSearch.ActivityStaticRadio",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.setup.SetupSearchSpeakerActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.setup.connectivityAssistant.ConnectivityAssistantActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.teufel.smartaudio.settings.openSourceSoftware.OpenSourceSoftwareActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; overridePendingTransition (I I)V"
+            ]
+        }
+    ],
+    "not_found_activities": [],
+    "override_animation_calls": [
+        "Lcom/teufel/smartaudio/baseActivity/UndokActivityBase; onBackOrUp ()V",
+        "Lcom/teufel/smartaudio/NavigationHelper; setTransition (Landroid/app/Activity; Lcom/teufel/smartaudio/NavigationHelper$AnimationType;)V",
+        "Lcom/google/android/material/transition/platform/MaterialContainerTransformSharedElementCallback$2; onTransitionEnd (Landroid/transition/Transition;)V",
+        "Lcom/teufel/smartaudio/NavigationHelper; setTransition (Landroid/app/Activity; Lcom/teufel/smartaudio/NavigationHelper$AnimationType;)V",
+        "Lcom/teufel/smartaudio/NavigationHelper; goToHomeAndClearActivityStack (Landroid/app/Activity;)V",
+        "Lcom/teufel/smartaudio/NavigationHelper; setTransition (Landroid/app/Activity; Lcom/teufel/smartaudio/NavigationHelper$AnimationType;)V",
+        "Lcom/teufel/smartaudio/NavigationHelper; setTransition (Landroid/app/Activity; Lcom/teufel/smartaudio/NavigationHelper$AnimationType;)V"
+    ],
+    "start_time": 1747837124.059361,
+    "end_time": 1747837165.9484599,
+    "exception": false
+}

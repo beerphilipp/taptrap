@@ -1,0 +1,123 @@
+{
+    "apk_path": "/home/experiments/apks/android/tapjacking/free_18_12_24_merged/com.nailmall.app_merged.apk",
+    "target_sdk": 33,
+    "package_name": "com.nailmall.app",
+    "is_enabled": true,
+    "permission": null,
+    "protected_confirmation": false,
+    "activities": [
+        {
+            "activity_name": "org.io.apptile.ApptilePreviewDemo.MainActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.LAUNCHER\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"nailmall\" ns0:pathPrefix=\"/.*\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:autoVerify=\"true\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"https\" ns0:host=\"nailmall.com\" ns0:pathPrefix=\"/.*\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.storify.android_sdk.ui.slider.SliderActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Landroidx/appcompat/app/AppCompatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.storify.android_sdk.ui.view.WebViewActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.storify.android_sdk.ui.slider.HandlerActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:autoVerify=\"true\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"https\" ns0:host=\"stories.dev.storifyme.com\" ns0:pathPrefix=\"/stories\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": true,
+            "on_enter_animation_override": "Lcom/storify/android_sdk/ui/slider/HandlerActivity;\n\n    public void onEnterAnimationComplete()\n    {\n        super.onEnterAnimationComplete();\n        WebViewDismissAnimator v0_1 = new WebViewDismissAnimator();\n        int v1 = this.b;\n        int v2_0 = 0;\n        if (v1 == 0) {\n            kotlin.jvm.internal.Intrinsics.throwUninitializedPropertyAccessException(\"webView\");\n            v1 = 0;\n        }\n        int v5_0 = this.b;\n        if (v5_0 == 0) {\n            kotlin.jvm.internal.Intrinsics.throwUninitializedPropertyAccessException(\"webView\");\n            v5_0 = 0;\n        }\n        int v5_2 = ((float) v5_0.getWidth());\n        com.storify.android_sdk.ui.slider.HandlerActivity$b v6_0 = this.b;\n        if (v6_0 != null) {\n            v2_0 = v6_0;\n        } else {\n            kotlin.jvm.internal.Intrinsics.throwUninitializedPropertyAccessException(\"webView\");\n        }\n        v0_1.setupOnTouchListener(v1, 0, v5_2, ((float) v2_0.getHeight()), 0, new com.storify.android_sdk.ui.slider.HandlerActivity$b(this), new com.storify.android_sdk.ui.slider.HandlerActivity$c(this), new com.storify.android_sdk.ui.slider.HandlerActivity$d(this));\n        return;\n    }\n",
+            "animation_override_methods": [
+                "Landroidx/appcompat/app/AppCompatActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.google.android.gms.auth.api.signin.internal.SignInHubActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.gms.common.api.GoogleApiActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        }
+    ],
+    "not_found_activities": [],
+    "override_animation_calls": [
+        "Lcom/storify/android_sdk/ui/BaseActivity; onPause ()V"
+    ],
+    "start_time": 1747840145.6146684,
+    "end_time": 1747840227.686488,
+    "exception": false
+}

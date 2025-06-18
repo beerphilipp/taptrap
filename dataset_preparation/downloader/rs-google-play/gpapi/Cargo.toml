@@ -1,0 +1,36 @@
+[package]
+name = "gpapi"
+version = "5.4.0"
+authors = ["Bill Budington <bill@eff.org>"]
+build = "build.rs"
+license = "MIT"
+edition = "2021"
+description = "A library for interacting with the Google Play API"
+homepage = "https://github.com/EFForg/rs-google-play/tree/master/gpapi"
+repository = "https://github.com/EFForg/rs-google-play/tree/master/gpapi"
+
+[lib]
+doctest = false
+
+[dependencies]
+prost = "0.13"
+reqwest = "0.12"
+bytes = "1"
+#hyper = { version = "0.14", features = ["full"] }
+#hyper-tls = "0.5"
+googleplay-protobuf = "2"
+bincode = "1"
+futures = "0.3"
+tokio-dl-stream-to-disk = "1"
+serde = { version = "1", features = ["derive"] }
+
+[build-dependencies]
+googleplay-protobuf = "2"
+prost = "0.13"
+bincode = "1"
+configparser = "3"
+serde = { version = "1", features = ["derive"] }
+bytes = "1"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["full"] }

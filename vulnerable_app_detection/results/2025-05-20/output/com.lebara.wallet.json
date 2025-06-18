@@ -1,0 +1,143 @@
+{
+    "apk_path": "/home/experiments/apks/android/tapjacking/free_18_12_24_merged/com.lebara.wallet.apk",
+    "target_sdk": 34,
+    "package_name": "com.lebara.wallet",
+    "is_enabled": true,
+    "permission": null,
+    "protected_confirmation": false,
+    "activities": [
+        {
+            "activity_name": "com.storybookmobile.MainActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.LAUNCHER\" /><action ns0:name=\"android.intent.action.DOWNLOAD_COMPLETE\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"adyenreactnative\" ns0:path=\"/\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:autoVerify=\"true\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"http\" /><data ns0:scheme=\"https\" /><data ns0:host=\"www.lebara.co.uk\" /><data ns0:host=\"www.lebara.dk\" /><data ns0:host=\"www.lebara.nl\" /><data ns0:host=\"www.lebara.de\" /><data ns0:host=\"www.lebara.fr\" /><data ns0:pathPattern=\"/.*/mylebara/payment-method.html.*\" /><data ns0:pathPattern=\"/.*/mylebara/add-edit-debit-credit-card.html.*\" /><data ns0:pathPattern=\"/.*/mylebara/payment-history.html.*\" /><data ns0:pathPattern=\"/.*/mylebara/profile.html.*\" /><data ns0:pathPattern=\"/.*/mylebara/add-paypal.html.*\" /><data ns0:pathPattern=\"/.*/help.html.*\" /><data ns0:pathPattern=\"/.*/help/.*\" /><data ns0:pathPattern=\"/.*/mylebara.html.*\" /><data ns0:pathPattern=\"/.*/mylebara/postpaid-bills.html.*\" /><data ns0:pathPattern=\"/.*/service/veelgestelde-vragen.html.*\" /><data ns0:pathPattern=\"/.*/contact.html.*\" /><data ns0:pathPattern=\"/.*/kontakt-os.html.*\" /><data ns0:pathPattern=\"/.*/mylebara/auto-renew.html.*\" /><data ns0:pathPattern=\"/.*/mylebara/manage-sim.html.*\" /><data ns0:pathPattern=\"/.*/competition.html.*\" /><data ns0:pathPattern=\"/.*/reward.html.*\" /><data ns0:pathPattern=\"/.*/cart/empty-cart.html.*\" /><data ns0:pathPattern=\"/.*/terms-and-conditions.html.*\" /><data ns0:pathPattern=\"/.*/privacy-policy.html.*\" /><data ns0:pathPattern=\"/.*/nous-contacter.html.*\" /><data ns0:pathPattern=\"/.*/faq.html.*\" /><data ns0:pathPattern=\"/.*/mylebara/plan-management.html.*\" /><data ns0:pathPattern=\"/.*/enregistrement.html.*\" /><data ns0:pathPattern=\"/.*/parrainage.html.*\" /><data ns0:pathPattern=\"/.*/dl/.*\" /><data ns0:pathPattern=\"/.*/roaming/roaming-rate-finder.html.*\" /><data ns0:pathPattern=\"/.*/recharger.html.*\" /><data ns0:pathPattern=\"/.*/cart/change-plan.html.*\" /><data ns0:pathPattern=\"/.*/hilfe/.*\" /><data ns0:pathPattern=\"/.*/mylebara/usage.html.*\" /><data ns0:pathPattern=\"/.*/sim-migration.html.*\" /><data ns0:pathPattern=\"/.*/sim-migration/.*\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.adyen.checkout.dropin.internal.ui.DropInActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"adyencheckout\" ns0:host=\"com.lebara.wallet\" ns0:path=\"\" /><data ns0:scheme=\"adyencheckout\" ns0:host=\"com.lebara.wallet\" ns0:path=\"/\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/adyen/checkout/dropin/internal/ui/DropInActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.adyen.threeds2.internal.ui.activity.ChallengeActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"adyen3ds2\" ns0:host=\"com.lebara.wallet\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.gms.auth.api.signin.internal.SignInHubActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.gms.tagmanager.TagManagerPreviewActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><data ns0:scheme=\"tagmanager.c.com.lebara.wallet\" /><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.gms.common.api.GoogleApiActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.play.core.common.PlayCoreDialogWrapperActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        }
+    ],
+    "not_found_activities": [],
+    "override_animation_calls": [
+        "Lcom/adyen/checkout/dropin/internal/ui/DropInActivity; terminate ()V",
+        "Lcom/adyen/checkout/dropin/internal/ui/DropInActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lcom/google/android/material/transition/platform/MaterialContainerTransformSharedElementCallback$2; onTransitionEnd (Landroid/transition/Transition;)V"
+    ],
+    "start_time": 1747812210.792425,
+    "end_time": 1747812308.145398,
+    "exception": false
+}

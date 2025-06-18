@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" style="width: 100%;height: 100%;">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Permission Requester</title>
+</head>
+<body style="width: 100%;height: 100%;">
+  <h1>Permission Requester</h1>
+  <script>
+
+    async function requestGeoLocationPermission() {
+        if ('geolocation' in navigator) {
+            navigator.geolocation.getCurrentPosition((position) => {
+                // Access granted - process the location
+                try {
+                    const { latitude, longitude } = position.coords;
+                    console.log('Location access granted.');
+                    console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+                } catch (e) {
+                    console.log(e)
+                }
+                updatePermission();
+
+            }, (error) => {
+                // Access denied or error occurred
+                switch (error.code) {
+                    case error.PERMISSION_DENIED:
+                        console.log('Location access denied by the user.');
+                        break;
+                    case error.POSITION_UNAVAILABLE:
+                        console.log('Location information is unavailable.');
+                        break;
+                    case error.TIMEOUT:
+                        console.log('The request to get user location timed out.');
+                        break;
+                    default:
+                        console.log('An unknown error occurred.');
+                        break;
+                }
+            });
+        }
+    }
+
+    async function requestCameraPermission() {
+        try {
+            await navigator.mediaDevices.getUserMedia({ video: true });
+            console.log('Camera permission granted.');
+            updatePermission();
+        } catch (error) {
+            console.log('Camera permission denied.');
+        }
+    }
+
+    async function updatePermission() {
+        window.location = '/success';
+    }
+
+    function getQueryParams() {
+        const params = {};
+        const queryString = window.location.search;
+        if (queryString) {
+            const urlParams = new URLSearchParams(queryString);
+            for (const [key, value] of urlParams.entries()) {
+                params[key] = value;
+            }
+        }
+        return params;
+    }
+
+    window.onload = function() {
+        window.QUERY = getQueryParams();
+        if (window.QUERY['access'] == 'camera') {
+            requestCameraPermission();
+        }
+        if (window.QUERY['access'] == 'geolocation') {
+            requestGeoLocationPermission();
+        }
+        document.body.addEventListener('click', function () {
+            window.location = "/success";
+        }, true); 
+    }
+
+  </script>
+</body>
+</html>

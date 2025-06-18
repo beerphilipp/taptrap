@@ -1,0 +1,459 @@
+{
+    "apk_path": "/home/experiments/apks/android/tapjacking/free_18_12_24_merged/applock.fakecalculator.fingerlock.com_merged.apk",
+    "target_sdk": 34,
+    "package_name": "applock.fakecalculator.fingerlock.com",
+    "is_enabled": true,
+    "permission": null,
+    "protected_confirmation": false,
+    "activities": [
+        {
+            "activity_name": "fxc.dev.applock.ui.splash.SplashActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.LAUNCHER\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": true,
+            "on_enter_animation_override": "Lfxc/dev/applock/base/BaseActivity;\n\n    public void onEnterAnimationComplete()\n    {\n        super.onEnterAnimationComplete();\n        this.enterAnimationComplete = 1;\n        if (this.pendingShowProgress) {\n            fxc.dev.applock.base.BaseActivity.showLoadingDialog$default(this, 0, 1, 0);\n        }\n        return;\n    }\n",
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "fxc.dev.applock.ui.main.MainActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": true,
+            "on_enter_animation_override": "Lfxc/dev/applock/base/BaseActivity;\n\n    public void onEnterAnimationComplete()\n    {\n        super.onEnterAnimationComplete();\n        this.enterAnimationComplete = 1;\n        if (this.pendingShowProgress) {\n            fxc.dev.applock.base.BaseActivity.showLoadingDialog$default(this, 0, 1, 0);\n        }\n        return;\n    }\n",
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "fxc.dev.applock.ui.permission.PermissionActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": true,
+            "on_enter_animation_override": "Lfxc/dev/applock/base/BaseActivity;\n\n    public void onEnterAnimationComplete()\n    {\n        super.onEnterAnimationComplete();\n        this.enterAnimationComplete = 1;\n        if (this.pendingShowProgress) {\n            fxc.dev.applock.base.BaseActivity.showLoadingDialog$default(this, 0, 1, 0);\n        }\n        return;\n    }\n",
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "fxc.dev.applock.ui.overlay.OverlayPatternActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": true,
+            "on_enter_animation_override": "Lfxc/dev/applock/base/BaseActivity;\n\n    public void onEnterAnimationComplete()\n    {\n        super.onEnterAnimationComplete();\n        this.enterAnimationComplete = 1;\n        if (this.pendingShowProgress) {\n            fxc.dev.applock.base.BaseActivity.showLoadingDialog$default(this, 0, 1, 0);\n        }\n        return;\n    }\n",
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "fxc.dev.applock.ui.lockedapp.LockedAppActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": true,
+            "on_enter_animation_override": "Lfxc/dev/applock/base/BaseActivity;\n\n    public void onEnterAnimationComplete()\n    {\n        super.onEnterAnimationComplete();\n        this.enterAnimationComplete = 1;\n        if (this.pendingShowProgress) {\n            fxc.dev.applock.base.BaseActivity.showLoadingDialog$default(this, 0, 1, 0);\n        }\n        return;\n    }\n",
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "fxc.dev.applock.ui.theme.ThemeActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": true,
+            "on_enter_animation_override": "Lfxc/dev/applock/base/BaseActivity;\n\n    public void onEnterAnimationComplete()\n    {\n        super.onEnterAnimationComplete();\n        this.enterAnimationComplete = 1;\n        if (this.pendingShowProgress) {\n            fxc.dev.applock.base.BaseActivity.showLoadingDialog$default(this, 0, 1, 0);\n        }\n        return;\n    }\n",
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "fxc.dev.applock.ui.browser.BrowserActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": true,
+            "on_enter_animation_override": "Lfxc/dev/applock/base/BaseActivity;\n\n    public void onEnterAnimationComplete()\n    {\n        super.onEnterAnimationComplete();\n        this.enterAnimationComplete = 1;\n        if (this.pendingShowProgress) {\n            fxc.dev.applock.base.BaseActivity.showLoadingDialog$default(this, 0, 1, 0);\n        }\n        return;\n    }\n",
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "fxc.dev.applock.ui.browser.history.BHistoryActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": true,
+            "on_enter_animation_override": "Lfxc/dev/applock/base/BaseActivity;\n\n    public void onEnterAnimationComplete()\n    {\n        super.onEnterAnimationComplete();\n        this.enterAnimationComplete = 1;\n        if (this.pendingShowProgress) {\n            fxc.dev.applock.base.BaseActivity.showLoadingDialog$default(this, 0, 1, 0);\n        }\n        return;\n    }\n",
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "fxc.dev.applock.ui.vault.VaultActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": true,
+            "on_enter_animation_override": "Lfxc/dev/applock/base/BaseActivity;\n\n    public void onEnterAnimationComplete()\n    {\n        super.onEnterAnimationComplete();\n        this.enterAnimationComplete = 1;\n        if (this.pendingShowProgress) {\n            fxc.dev.applock.base.BaseActivity.showLoadingDialog$default(this, 0, 1, 0);\n        }\n        return;\n    }\n",
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "fxc.dev.applock.ui.vault.media.MediaListActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": true,
+            "on_enter_animation_override": "Lfxc/dev/applock/base/BaseActivity;\n\n    public void onEnterAnimationComplete()\n    {\n        super.onEnterAnimationComplete();\n        this.enterAnimationComplete = 1;\n        if (this.pendingShowProgress) {\n            fxc.dev.applock.base.BaseActivity.showLoadingDialog$default(this, 0, 1, 0);\n        }\n        return;\n    }\n",
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "fxc.dev.applock.ui.vault.media_view.MediaViewActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": true,
+            "on_enter_animation_override": "Lfxc/dev/applock/base/BaseActivity;\n\n    public void onEnterAnimationComplete()\n    {\n        super.onEnterAnimationComplete();\n        this.enterAnimationComplete = 1;\n        if (this.pendingShowProgress) {\n            fxc.dev.applock.base.BaseActivity.showLoadingDialog$default(this, 0, 1, 0);\n        }\n        return;\n    }\n",
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "fxc.dev.applock.ui.cleaner.CleanerActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": true,
+            "on_enter_animation_override": "Lfxc/dev/applock/base/BaseActivity;\n\n    public void onEnterAnimationComplete()\n    {\n        super.onEnterAnimationComplete();\n        this.enterAnimationComplete = 1;\n        if (this.pendingShowProgress) {\n            fxc.dev.applock.base.BaseActivity.showLoadingDialog$default(this, 0, 1, 0);\n        }\n        return;\n    }\n",
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "fxc.dev.applock.ui.cleaner.CleanerAnimationActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": true,
+            "on_enter_animation_override": "Lfxc/dev/applock/base/BaseActivity;\n\n    public void onEnterAnimationComplete()\n    {\n        super.onEnterAnimationComplete();\n        this.enterAnimationComplete = 1;\n        if (this.pendingShowProgress) {\n            fxc.dev.applock.base.BaseActivity.showLoadingDialog$default(this, 0, 1, 0);\n        }\n        return;\n    }\n",
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "fxc.dev.applock.ui.subscription.SubscriptionActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": true,
+            "on_enter_animation_override": "Lfxc/dev/applock/base/BaseActivity;\n\n    public void onEnterAnimationComplete()\n    {\n        super.onEnterAnimationComplete();\n        this.enterAnimationComplete = 1;\n        if (this.pendingShowProgress) {\n            fxc.dev.applock.base.BaseActivity.showLoadingDialog$default(this, 0, 1, 0);\n        }\n        return;\n    }\n",
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "fxc.dev.applock.ui.subscription.webview.WebViewActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "fxc.dev.applock.ui.introduction.IntroductionActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": true,
+            "on_enter_animation_override": "Lfxc/dev/applock/base/BaseActivity;\n\n    public void onEnterAnimationComplete()\n    {\n        super.onEnterAnimationComplete();\n        this.enterAnimationComplete = 1;\n        if (this.pendingShowProgress) {\n            fxc.dev.applock.base.BaseActivity.showLoadingDialog$default(this, 0, 1, 0);\n        }\n        return;\n    }\n",
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "fxc.dev.applock.ui.language.LanguageActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": true,
+            "on_enter_animation_override": "Lfxc/dev/applock/base/BaseActivity;\n\n    public void onEnterAnimationComplete()\n    {\n        super.onEnterAnimationComplete();\n        this.enterAnimationComplete = 1;\n        if (this.pendingShowProgress) {\n            fxc.dev.applock.base.BaseActivity.showLoadingDialog$default(this, 0, 1, 0);\n        }\n        return;\n    }\n",
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "fxc.dev.applock.ui.allow_notifications.AllowNotificationsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": true,
+            "on_enter_animation_override": "Lfxc/dev/applock/base/BaseActivity;\n\n    public void onEnterAnimationComplete()\n    {\n        super.onEnterAnimationComplete();\n        this.enterAnimationComplete = 1;\n        if (this.pendingShowProgress) {\n            fxc.dev.applock.base.BaseActivity.showLoadingDialog$default(this, 0, 1, 0);\n        }\n        return;\n    }\n",
+            "animation_override_methods": [
+                "Landroid/app/Activity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.markodevcic.peko.PekoActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.gms.ads.AdActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.gms.ads.OutOfContextTestingActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.gms.common.api.GoogleApiActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.android.billingclient.api.ProxyBillingActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleInstance",
+            "is_enabled": false,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.play.core.common.PlayCoreDialogWrapperActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        }
+    ],
+    "not_found_activities": [],
+    "override_animation_calls": [
+        "Lfxc/dev/applock/base/BaseActivity; applyTransitionOut (Lfxc/dev/applock/constants/Transaction;)V",
+        "Lfxc/dev/applock/base/BaseActivity; applyTransitionIn (Lfxc/dev/applock/constants/Transaction;)V",
+        "Landroidx/navigation/ActivityNavigator; navigate (Landroidx/navigation/ActivityNavigator$Destination; Landroid/os/Bundle; Landroidx/navigation/NavOptions; Landroidx/navigation/Navigator$Extras;)Landroidx/navigation/NavDestination;",
+        "Landroidx/navigation/ActivityNavigator$Companion; applyPopAnimationsToPendingTransition (Landroid/app/Activity;)V",
+        "Lcom/google/android/material/transition/platform/MaterialContainerTransformSharedElementCallback$2; onTransitionEnd (Landroid/transition/Transition;)V",
+        "Lcom/google/android/gms/ads/internal/overlay/zzl; zzb ()V",
+        "Landroidx/navigation/NavController; handleDeepLink (Landroid/content/Intent;)Z"
+    ],
+    "start_time": 1747790112.7034204,
+    "end_time": 1747790180.8148987,
+    "exception": false
+}

@@ -1,0 +1,36 @@
+[package]
+name = "apkeep"
+version = "0.17.0"
+authors = ["William Budington <bill@eff.org>"]
+edition = "2021"
+license = "MIT"
+description = "A command-line tool for downloading APK files from various sources"
+homepage = "https://github.com/EFForg/apkeep"
+repository = "https://github.com/EFForg/apkeep"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.12", features = ["stream"] }
+futures-util = { version = "0.3", features = ["io"] }
+regex = "1.11"
+clap = { version = "4", features = ["derive"] }
+gpapi = { path = "../rs-google-play/gpapi" }
+tokio-dl-stream-to-disk = { version = "1", features = ["sha256sum"] }
+tempfile = "3"
+dirs = "6"
+zip = "2"
+cryptographic-message-syntax = "0.27"
+ring = "0.17"
+x509-certificate = "0.24"
+simple-error = "0.3"
+sha1 = "0.10"
+sha2 = "0.10"
+base64 = "0.22"
+serde_json = "1"
+hex = "0.4"
+configparser = "3"
+serde = { version = "1", features = ["derive"] }
+indicatif = "0.17"
+
+[build-dependencies]
+clap = { version = "4", features = ["derive"] }

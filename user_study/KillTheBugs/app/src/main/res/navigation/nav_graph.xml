@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/gameFragment">
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.taptrap.userstudy.killthebugs.ui.main.GameFragment"
+        android:label="GameFragment">
+        <action
+            android:id="@+id/action_gameFragment_to_scoreFragment"
+            app:destination="@id/scoreFragment"
+            app:enterAnim="@anim/regular_fade_in"
+            app:exitAnim="@anim/regular_fade_out"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/scoreFragment"
+        android:name="com.taptrap.userstudy.killthebugs.ui.main.ScoreFragment"
+        android:label="fragment_score"
+        tools:layout="@layout/fragment_score">
+    </fragment>
+</navigation>

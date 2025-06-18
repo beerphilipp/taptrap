@@ -1,0 +1,68 @@
+{
+    "apk_path": "/home/experiments/apks/android/tapjacking/free_18_12_24_merged/com.bhphoto.apk",
+    "target_sdk": 33,
+    "package_name": "com.bhphoto",
+    "is_enabled": true,
+    "permission": null,
+    "protected_confirmation": false,
+    "activities": [
+        {
+            "activity_name": "com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.bhphoto.CustomLauncherActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.LAUNCHER\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:autoVerify=\"true\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"https\" ns0:host=\"@7F0E0034\" /><data ns0:scheme=\"https\" ns0:host=\"*.bhphotovideo.com\" ns0:pathPrefix=\"/\" /><data ns0:scheme=\"http\" ns0:host=\"*.bhphotovideo.com\" ns0:pathPrefix=\"/\" /><data ns0:scheme=\"bhphoto\" ns0:host=\"bhphoto\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": true,
+            "on_enter_animation_override": "Ll1/d;\n\n    public final void onEnterAnimationComplete()\n    {\n        super.onEnterAnimationComplete();\n        m1.b v0 = this.l;\n        if (v0 != null) {\n            v0.l = 1;\n            int v1_1 = v0.m;\n            if (v1_1 != 0) {\n                v1_1.run();\n                v0.m = 0;\n            }\n        }\n        return;\n    }\n",
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.androidbrowserhelper.trusted.WebViewFallbackActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        }
+    ],
+    "not_found_activities": [],
+    "override_animation_calls": [
+        "Le/f; run ()V"
+    ],
+    "start_time": 1747881515.9935765,
+    "end_time": 1747881524.8133614,
+    "exception": false
+}

@@ -1,0 +1,72 @@
+{
+    "apk_path": "/home/experiments/apks/android/tapjacking/free_18_12_24_merged/net.openvpn.openvpn_merged.apk",
+    "target_sdk": 34,
+    "package_name": "net.openvpn.openvpn",
+    "is_enabled": true,
+    "permission": null,
+    "protected_confirmation": false,
+    "activities": [
+        {
+            "activity_name": "net.openvpn.unified.MainActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "3",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.LAUNCHER\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:label=\"@7F10002A\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"openvpn-connect\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:label=\"@7F10002A\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"openvpn\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><data ns0:mimeType=\"application/octet-stream\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:label=\"OpenVPN Profile\" ns0:icon=\"@7F0E0000\" ns0:priority=\"1\"><action ns0:name=\"android.intent.action.VIEW\" /><action ns0:name=\"android.intent.action.MAIN\" /><action ns0:name=\"android.intent.action.SEND\" /><action ns0:name=\"android.intent.action.PICK\" /><action ns0:name=\"android.intent.action.PICK_ACTIVITY\" /><action ns0:name=\"android.intent.action.GET_CONTENT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><category ns0:name=\"android.intent.category.OPENABLE\" /><category ns0:name=\"android.intent.category.TYPED_OPENABLE\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><data ns0:scheme=\"http\" /><data ns0:host=\"*\" /><data ns0:mimeType=\"application/x-openvpn-profile\" /><data ns0:scheme=\"https\" /><data ns0:host=\"*\" /><data ns0:mimeType=\"application/x-openvpn-profile\" /><data ns0:scheme=\"file\" /><data ns0:host=\"*\" /><data ns0:mimeType=\"application/x-openvpn-profile\" /><data ns0:scheme=\"content\" /><data ns0:host=\"*\" /><data ns0:mimeType=\"application/x-openvpn-profile\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:label=\"OpenVPN Profile\" ns0:icon=\"@7F0E0000\" ns0:priority=\"1\"><action ns0:name=\"android.intent.action.MAIN\" /><action ns0:name=\"android.intent.action.VIEW\" /><action ns0:name=\"android.intent.action.PICK\" /><action ns0:name=\"android.intent.action.SEND\" /><action ns0:name=\"android.intent.action.PICK_ACTIVITY\" /><action ns0:name=\"android.intent.action.GET_CONTENT\" /><category ns0:name=\"android.intent.category.OPENABLE\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><category ns0:name=\"android.intent.category.TYPED_OPENABLE\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><data ns0:scheme=\"file\" /><data ns0:host=\"*\" /><data ns0:pathPattern=\"/.*\\.ovpn\" /><data ns0:mimeType=\"*/*\" /><data ns0:scheme=\"content\" /><data ns0:host=\"*\" /><data ns0:pathPattern=\"/.*\\.ovpn\" /><data ns0:mimeType=\"*/*\" /><data ns0:scheme=\"resource\" /><data ns0:host=\"*\" /><data ns0:pathPattern=\"/.*\\.ovpn\" /><data ns0:mimeType=\"*/*\" /><data ns0:scheme=\"http\" /><data ns0:host=\"*\" /><data ns0:pathPattern=\"/.*\\.ovpn\" /><data ns0:mimeType=\"*/*\" /><data ns0:scheme=\"https\" /><data ns0:host=\"*\" /><data ns0:pathPattern=\"/.*\\.ovpn\" /><data ns0:mimeType=\"*/*\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.proyecto26.inappbrowser.ChromeTabsManagerActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.play.core.common.PlayCoreDialogWrapperActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        }
+    ],
+    "not_found_activities": [],
+    "override_animation_calls": [
+        "Lnet/openvpn/unified/MainActivity; restartActivity (Landroid/content/Intent;)V"
+    ],
+    "start_time": 1747773769.915495,
+    "end_time": 1747773799.9496584,
+    "exception": false
+}

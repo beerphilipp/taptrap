@@ -1,0 +1,89 @@
+{
+    "apk_path": "/home/experiments/apks/android/tapjacking/free_18_12_24_merged/de.rwth_aachen.phyphox_merged.apk",
+    "target_sdk": 34,
+    "package_name": "de.rwth_aachen.phyphox",
+    "is_enabled": true,
+    "permission": null,
+    "protected_confirmation": false,
+    "activities": [
+        {
+            "activity_name": "de.rwth_aachen.phyphox.ExperimentList",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.LAUNCHER\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:host=\"*\" /><data ns0:scheme=\"file\" /><data ns0:scheme=\"content\" /><data ns0:mimeType=\"*/*\" /><data ns0:pathPattern=\".*\\.phyphox\" /><data ns0:pathPattern=\".*\\..*\\.phyphox\" /><data ns0:pathPattern=\".*\\..*\\..*\\.phyphox\" /><data ns0:pathPattern=\".*\\..*\\..*\\..*\\.phyphox\" /><data ns0:pathPattern=\".*\\..*\\..*\\..*\\..*\\.phyphox\" /><data ns0:pathPattern=\".*\\.zip\" /><data ns0:pathPattern=\".*\\..*\\.zip\" /><data ns0:pathPattern=\".*\\..*\\..*\\.zip\" /><data ns0:pathPattern=\".*\\..*\\..*\\..*\\.zip\" /><data ns0:pathPattern=\".*\\..*\\..*\\..*\\..*\\.zip\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"phyphox\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:host=\"*\" /><data ns0:scheme=\"file\" /><data ns0:scheme=\"content\" /><data ns0:mimeType=\"application/phyphox\" /><data ns0:mimeType=\"application/octet-stream\" /><data ns0:mimeType=\"text/plain\" /><data ns0:mimeType=\"application/xml\" /><data ns0:mimeType=\"application/xhtml+xml\" /><data ns0:mimeType=\"text/xml\" /><data ns0:mimeType=\"text/html\" /><data ns0:mimeType=\"application/zip\" /><data ns0:mimeType=\"application/x-zip\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "de.rwth_aachen.phyphox.Experiment",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lde/rwth_aachen/phyphox/Experiment; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "de.rwth_aachen.phyphox.Settings",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.journeyapps.barcodescanner.CaptureActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        }
+    ],
+    "not_found_activities": [],
+    "override_animation_calls": [
+        "Lde/rwth_aachen/phyphox/Experiment; onStop ()V",
+        "Lcom/google/android/material/transition/platform/MaterialContainerTransformSharedElementCallback$2; onTransitionEnd (Landroid/transition/Transition;)V"
+    ],
+    "start_time": 1747858333.6376822,
+    "end_time": 1747858396.2099197,
+    "exception": false
+}

@@ -1,0 +1,41 @@
+{
+    "apk_path": "/home/experiments/apks/android/tapjacking/free_18_12_24_merged/com.sayhi.plugin.shakeshake_merged.apk",
+    "target_sdk": 35,
+    "package_name": "com.sayhi.plugin.shakeshake",
+    "is_enabled": true,
+    "permission": null,
+    "protected_confirmation": false,
+    "activities": [
+        {
+            "activity_name": "com.sayhi.plugin.shakeshake.ShakeShakeMainActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.INFO\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"com.sayhi.plugin.shakeshake\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:order=\"1\" ns0:autoVerify=\"true\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"https\" ns0:host=\"rb.unearby.com\" ns0:pathPattern=\"/shake\" /><data ns0:scheme=\"http\" ns0:host=\"rb.unearby.com\" ns0:pathPattern=\"/shake\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.LAUNCHER\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        }
+    ],
+    "not_found_activities": [],
+    "override_animation_calls": [
+        "Lcom/sayhi/plugin/shakeshake/ShakeShakeMainActivity; _bindEnterAnimation (Landroid/app/Activity;)V",
+        "Lcom/sayhi/plugin/shakeshake/ShakeShakeMainActivity; finish (Landroid/app/Activity;)V",
+        "Lcom/sayhi/plugin/shakeshake/ShakeShakeMainActivity; _bindEnterAnimation (Landroid/app/Activity;)V",
+        "Lcom/sayhi/plugin/shakeshake/ShakeShakeMainActivity; finish (Landroid/app/Activity;)V"
+    ],
+    "start_time": 1747786120.6852236,
+    "end_time": 1747786137.7550576,
+    "exception": false
+}

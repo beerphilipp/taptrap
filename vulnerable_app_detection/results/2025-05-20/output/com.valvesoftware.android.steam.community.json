@@ -1,0 +1,71 @@
+{
+    "apk_path": "/home/experiments/apks/android/tapjacking/free_18_12_24_merged/com.valvesoftware.android.steam.community.apk",
+    "target_sdk": 34,
+    "package_name": "com.valvesoftware.android.steam.community",
+    "is_enabled": true,
+    "permission": null,
+    "protected_confirmation": false,
+    "activities": [
+        {
+            "activity_name": "com.valvesoftware.android.steam.community.MainActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleTask",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.LAUNCHER\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"steammobile\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:autoVerify=\"true\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"http\" ns0:host=\"store.steampowered.com\" /><data ns0:scheme=\"https\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:autoVerify=\"true\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"http\" ns0:host=\"steamcommunity.com\" /><data ns0:scheme=\"https\" /><data ns0:path=\"/\" /><data ns0:pathPrefix=\"/home\" /><data ns0:pathPrefix=\"/login\" /><data ns0:pathPrefix=\"/prof\" /><data ns0:pathPrefix=\"/group\" /><data ns0:pathPrefix=\"/search\" /><data ns0:pathPrefix=\"/action\" /><data ns0:pathPrefix=\"/gid\" /><data ns0:pathPrefix=\"/news\" /><data ns0:pathPrefix=\"/game\" /><data ns0:pathPrefix=\"/ogg\" /><data ns0:pathPrefix=\"/app\" /><data ns0:pathPrefix=\"/id\" /><data ns0:pathPrefix=\"/friend\" /><data ns0:pathPrefix=\"/player\" /><data ns0:pathPrefix=\"/guide\" /><data ns0:pathPrefix=\"/gift\" /><data ns0:pathPrefix=\"/trad\" /><data ns0:pathPrefix=\"/market\" /><data ns0:pathPrefix=\"/discuss\" /><data ns0:pathPrefix=\"/comment\" /><data ns0:pathPrefix=\"/forum\" /><data ns0:pathPrefix=\"/stat\" /><data ns0:pathPrefix=\"/workshop\" /><data ns0:pathPrefix=\"/shared\" /><data ns0:pathPrefix=\"/user\" /><data ns0:pathPrefix=\"/library\" /><data ns0:pathPrefix=\"/faq\" /><data ns0:pathPrefix=\"/sale\" /><data ns0:pathPrefix=\"/hardware\" /><data ns0:pathPrefix=\"/sfm\" /><data ns0:pathPrefix=\"/saxxy\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:autoVerify=\"true\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"https\" ns0:host=\"s.team\" ns0:pathPrefix=\"/a/\" /><data ns0:pathPrefix=\"/q/\" /><data ns0:pathPrefix=\"/u/\" /><data ns0:pathPrefix=\"/c/\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "expo.modules.notifications.service.NotificationForwarderActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        },
+        {
+            "activity_name": "com.google.android.gms.common.api.GoogleApiActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": "false",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": []
+        }
+    ],
+    "not_found_activities": [],
+    "override_animation_calls": [
+        "Lcom/google/android/material/transition/platform/MaterialContainerTransformSharedElementCallback$2; onTransitionEnd (Landroid/transition/Transition;)V"
+    ],
+    "start_time": 1747798456.1791682,
+    "end_time": 1747798702.196353,
+    "exception": false
+}

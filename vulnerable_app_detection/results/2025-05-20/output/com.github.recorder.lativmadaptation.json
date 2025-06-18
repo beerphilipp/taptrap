@@ -1,0 +1,80 @@
+{
+    "apk_path": "/home/experiments/apks/android/tapjacking/free_18_12_24_merged/com.github.recorder.lativmadaptation_merged.apk",
+    "target_sdk": 33,
+    "package_name": "com.github.recorder.lativmadaptation",
+    "is_enabled": true,
+    "permission": null,
+    "protected_confirmation": false,
+    "activities": [
+        {
+            "activity_name": "com.github.axet.audiorecorder.activities.SettingsActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "standard",
+            "is_enabled": true,
+            "is_exported": null,
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/github/axet/androidlibrary/activities/AppCompatThemeActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.github.axet.audiorecorder.activities.MainActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleInstance",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.intent.action.MAIN\" /><category ns0:name=\"android.intent.category.LAUNCHER\" /></intent-filter>",
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\" ns0:label=\"filter_view_example_gizmos\"><action ns0:name=\"android.intent.action.VIEW\" /><category ns0:name=\"android.intent.category.DEFAULT\" /><category ns0:name=\"android.intent.category.BROWSABLE\" /><data ns0:scheme=\"rechqlativm\" ns0:host=\"recordingwav\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/github/axet/androidlibrary/activities/AppCompatThemeActivity; overridePendingTransition (I I)V"
+            ]
+        },
+        {
+            "activity_name": "com.github.axet.audiorecorder.activities.RecordingActivity",
+            "is_alias": false,
+            "alias_for": null,
+            "document_launch_mode": "none",
+            "launch_mode": "singleInstance",
+            "is_enabled": true,
+            "is_exported": "true",
+            "permission": null,
+            "declared_intent_filters": true,
+            "intent_filters": [
+                "<intent-filter xmlns:ns0=\"http://schemas.android.com/apk/res/android\"><action ns0:name=\"android.provider.MediaStore.RECORD_SOUND\" /><category ns0:name=\"android.intent.category.DEFAULT\" /></intent-filter>"
+            ],
+            "is_ignored": false,
+            "overrides_on_enter_animation_complete": false,
+            "on_enter_animation_override": null,
+            "animation_override_methods": [
+                "Lcom/github/axet/androidlibrary/activities/AppCompatThemeActivity; overridePendingTransition (I I)V"
+            ]
+        }
+    ],
+    "not_found_activities": [],
+    "override_animation_calls": [
+        "Lcom/github/axet/androidlibrary/activities/AppCompatThemeActivity; onCreate (Landroid/os/Bundle;)V",
+        "Lcom/github/axet/androidlibrary/activities/AppCompatThemeActivity; finish ()V",
+        "Lcom/github/axet/androidlibrary/activities/AppCompatThemeActivity; restartActivity (Landroid/content/Intent;)V",
+        "Lcom/github/axet/androidlibrary/activities/AppCompatThemeActivity; moveTaskToBack (Landroid/app/Activity;)V",
+        "Lcom/github/axet/androidlibrary/activities/AppCompatThemeActivity; startHome (Landroid/app/Activity;)V"
+    ],
+    "start_time": 1747879498.2344928,
+    "end_time": 1747879520.8867385,
+    "exception": false
+}
