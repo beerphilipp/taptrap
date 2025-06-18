@@ -61,17 +61,13 @@ This video demonstrates TapTrap. In the example, the user plays a game that secr
 To cite our work, please use the following BibTeX entry:
 
 ```bibtex
-% Final fields to be updated after publication
 @inproceedings{taptrap_beer,
   author    = {Philipp Beer and Marco Squarcina and Sebastian Roth and Martina Lindorfer},
   title     = {{TapTrap: Animation-Driven Tapjacking on Android}},
-  booktitle = {To appear in: 34th USENIX Security Symposium (USENIX Security 25)},
+  booktitle = {34th USENIX Security Symposium (USENIX Security 25)},
   year      = {2025},
   address   = {Seattle, WA},
-  pages     = {XXXX--XXXX},
   publisher = {USENIX Association},
-  url       = {XXXXXXXX},
-  isbn      = {XXX-X-XXXXXX-XX-X},
   month     = aug
 }
 ```
