@@ -34,6 +34,10 @@ The repository is organized as follows:
 
 To run a specific analysis pipeline, navigate to the corresponding folder (e.g., `vulnerable_app_detection`) and follow the steps in its `README.md`.
 
+>[!NOTE]
+> We support **Ubuntu 24.04** (x86) and **macOS 15** (ARM and x86).
+> While other Unix-based operating systems are expected to work out-of-the box, we do not guarantee it and adjustments may be necessary.
+
 ## Reproducibility
 
 To reproduce the experiments and results reported in the paper, please follow the instructions provided in the [Artifact Appendix](https://taptrap.click/artifact-appendix).
