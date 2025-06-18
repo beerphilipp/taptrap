@@ -15,7 +15,7 @@ This repository contains the artifacts of the paper "TapTrap: Animation-Driven T
 
 ## Abstract
 
-Users interact with mobile devices under the assumption that the graphical user interface (GUI) accurately reflects their actions, a trust fundamental to the user experience. In this work, we present TapTrap, a novel attack that enables zero-permission apps to exploit UI animations to undermine this trust relationship. TapTrap can be used by a malicious app to stealthily bypass Android’s permission system and gain access to sensitive data or execute destructive actions, such as wiping the device without user approval. Its impact extends beyond the Android ecosystem, enabling tapjacking and Web clickjacking. TapTrap is able to bypass existing tapjacking defenses, as those are targeted toward overlays. Our novel approach, instead, abuses activity transition animations and is effective even on the current Android version. We analyzed 99,705 apps from the Play Store to assess whether TapTrap is actively exploited in the wild. Our analysis found no evidence of such exploitation. Additionally, we conducted a large-scale study on these apps and discovered that 76.33% of apps are vulnerable to TapTrap. Finally, we evaluated the real-world feasibility of TapTrap through a user study with 20 participants, showing that all of them failed to notice at least one attack variant.
+Users interact with mobile devices under the assumption that the graphical user interface (GUI) accurately reflects their actions, a trust fundamental to the user experience. In this work, we present TapTrap, a novel attack that enables zeropermission apps to exploit UI animations to undermine this trust relationship. TapTrap can be used by a malicious app to stealthily bypass Android’s permission system and gain access to sensitive data or execute destructive actions, such as wiping the device without user approval. Its impact extends beyond the Android ecosystem, enabling tapjacking and Web clickjacking. TapTrap is able to bypass existing tapjacking defenses, as those are targeted toward overlays. Our novel approach, instead, abuses activity transition animations and is effective even on Android 15. We analyzed 99,705 apps from the Play Store to assess whether TapTrap is actively exploited in the wild. Our analysis found no evidence of such exploitation. Additionally, we conducted a large-scale study on these apps and discovered that 76.3% of apps are vulnerable to TapTrap. Finally, we evaluated the real-world feasibility of TapTrap through a user study with 20 participants, showing that all of them failed to notice at least one attack variant. Our findings have resulted in two assigned CVEs.
 
 ## File structure
 
@@ -28,7 +28,7 @@ The repository is organized as follows:
 - [`poc`](poc/README.md) – Proof-of-concept TapTrap implementation
 - [`reproducibility`](reproducibility/README.md) – Scripts for reproducing the paper results
 - [`paper_licenses`](paper_licenses/) – Licenses for third-party resources used in the paper
-- [`assets`](assets/) – Logo and demonstration video
+- [`assets`](assets/) – Logo and demonstration videos
 
 ## Getting Started
 
@@ -40,11 +40,9 @@ To reproduce the experiments and results reported in the paper, please follow th
 
 ## Demonstration
 
-This video demonstrates the *KillTheBugs* app used in our user study to assess the stealthiness of TapTrap:
-- **Levels 1–2:** The app opens [killthebugs.taptrap.click](https://killthebugs.taptrap.click) via a Chrome Custom Tab. The site requests location and camera permissions, respectively.
-- **Level 3:** The app requests device administrator access.
+This video demonstrates TapTrap. In the example, the user plays a game that secretly opens the browser and tricks them into granting camera permissions to a malicious website. The hidden screen is semi-transparent for demonstration purposes.
 
-[![Watch demo video](assets/demo_thumbnail.png)](assets/taptrap_demo.mp4)
+[![Watch demo video](assets/demo_thumbnail.png)](assets/taptrap_poc.mov)
 
 ## CVEs
 
