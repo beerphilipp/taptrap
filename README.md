@@ -40,7 +40,7 @@ To run a specific analysis pipeline, navigate to the corresponding folder (e.g.,
 
 ## Reproducibility
 
-To reproduce the experiments and results reported in the paper, please follow the instructions provided in the [Artifact Appendix](https://taptrap.click/artifact-appendix).
+To reproduce the experiments and results reported in the paper, please refer to [reproducibility/README.md](reproducibility/README.md) and follow the instructions provided in the [Artifact Appendix](https://taptrap.click/artifact-appendix).
 
 ## Demonstration
 
