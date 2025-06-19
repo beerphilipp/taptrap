@@ -92,16 +92,22 @@ docker build -t taptrap_killthebugs_web "$KILLTHEBUGS_WEB_DIR" 1>/dev/null; || a
 
 # ----------- Vulnerable App Detection -----------
 
-echo "Building Vulnerable App Detection pipeline"
+echo "Building Vulnerable App Detection pipeline (1/2)"
 docker build -t taptrap_vulntap "$VULNERABLE_DIR/code" 1>/dev/null; || abort "Failed to build Docker image 'taptrap_vulntap'"
+
+echo "Building Vulnerable App Detection pipeline (2/2)"
+docker build -t taptrap_vulntap_report "$VULNERABLE_DIR/report" 1>/dev/null; || abort "Failed to build Docker image 'taptrap_vulntap_report'"
 
 # ----------- Malicious App Detection -----------
 
-echo "Building Malicious App Detection pipeline (1/2)"
+echo "Building Malicious App Detection pipeline (1/3)"
 
 docker build -t taptrap_maltapextract "$MALICIOUS_DIR/code/MalTapExtract" 1>/dev/null; || abort "Failed to build Docker image 'taptrap_maltapextract'"
-echo "Building Malicious App Detection pipeline (2/2)"
+echo "Building Malicious App Detection pipeline (2/3)"
 docker build ${DOCKER_PLATFORM} -t taptrap_maltapanalyze "$MALICIOUS_DIR/code/MalTapAnalyze" 1>/dev/null; || abort "Failed to build Docker image 'taptrap_maltap'"
+
+echo "Building Malicious App Detection pipeline (3/3)"
+docker build -t taptrap_maltapreport "$MALICIOUS_DIR/report" 1>/dev/null; || abort "Failed to build Docker image 'taptrap_maltap_report'"
 
 ######### Check Google credentials #########
 
