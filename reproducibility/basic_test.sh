@@ -118,15 +118,20 @@ echo "Checking Google credentials..."
 # create a new temp file with the input "com.whatsapp" and save it to a temporary file
 TEMP_INPUT_FILE=$(mktemp)
 echo "com.whatsapp" > "${TEMP_INPUT_FILE}"
+mkdir -p "${OUTPUT_DIR}/logs"
+mkdir -p "${OUTPUT_DIR}/output"
 
 docker run --rm \
     -v "${TEMP_INPUT_FILE}:/data/input.csv" \
-    -v "${OUTPUT_DIR}:/data/output" \
-    -v "${OUTPUT_DIR}:/data/logs" \
+    -v "${OUTPUT_DIR}/output:/data/output" \
+    -v "${OUTPUT_DIR}/logs:/data/logs" \
     taptrap_downloader \
     /data/input.csv /data/output /data/logs "${GOOGLE_EMAIL}" "${GOOGLE_TOKEN}" \
     split_apk=1,device=pixel_6a,locale=at,include_additional_files=1
 
+if [ -z "$(ls -A "${OUTPUT_DIR}/output")" ]; then
+  abort "No app was downloaded. Your Google credentials might be invalid. Check the logs in ${OUTPUT_DIR}/logs for more details."
+fi
 
 
 ######### Check Android device #########
