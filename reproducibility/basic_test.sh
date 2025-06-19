@@ -17,7 +17,7 @@
 #   TOKEN       - Google account token (AAS token).
 
 abort() {
-  echo "ERROR: $1" >&2
+  echo "❌ ERROR: $1" >&2
   exit 1
 }
 
@@ -127,7 +127,7 @@ docker run --rm \
     /data/input.csv /data/output /data/logs "${GOOGLE_EMAIL}" "${GOOGLE_TOKEN}" \
     split_apk=1,device=pixel_6a,locale=at,include_additional_files=1
 
-if ! find "${OUTPUT_DIR}/output" -maxdepth 1 -type f ! -name '.*' | grep -q .; then
+if ! find "${OUTPUT_DIR}/output" -maxdepth 1 ! -name '.*' | grep -q .; then
   abort "No app was downloaded..."
 fi
 
