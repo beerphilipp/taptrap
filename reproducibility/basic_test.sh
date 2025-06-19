@@ -16,8 +16,6 @@
 #   EMAIL       - Google account email.
 #   TOKEN       - Google account token (AAS token).
 
-set -euo pipefail
-
 abort() {
   echo "ERROR: $1" >&2
   exit 1
