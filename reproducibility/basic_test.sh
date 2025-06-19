@@ -129,8 +129,8 @@ docker run --rm \
     /data/input.csv /data/output /data/logs "${GOOGLE_EMAIL}" "${GOOGLE_TOKEN}" \
     split_apk=1,device=pixel_6a,locale=at,include_additional_files=1
 
-if [ -z "$(ls "${OUTPUT_DIR}/output")" ]; then
-  abort "No app was downloaded. Your Google credentials might be invalid. Check the logs in ${OUTPUT_DIR}/logs for more details."
+if ! find "${OUTPUT_DIR}/output" -maxdepth 1 -type f ! -name '.*' | grep -q .; then
+  abort "No app was downloaded..."
 fi
 
 
