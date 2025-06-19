@@ -86,7 +86,7 @@ docker build ${DOCKER_PLATFORM} -t taptrap_poc "$POC_DIR" 1>/dev/null || abort "
 # ----------- KillTheBugs App Generation -----------
 
 echo "Building the KillTheBugs Docker image"
-docker build ${DOCKER_PLATFORM} -t taptrap_killthebugs "$KILLTHEBUGS_DIR" >/dev/null 2>&1 || abort "Failed to build Docker image 'taptrap_killthebugs'"
+docker build ${DOCKER_PLATFORM} -t taptrap_killthebugs "$KILLTHEBUGS_DIR" 1>/dev/null || abort "Failed to build Docker image 'taptrap_killthebugs'"
 
 echo "Building the KillTheBugs Web server Docker image"
 docker build -t taptrap_killthebugs_web "$KILLTHEBUGS_WEB_DIR" 1>/dev/null || abort "Failed to build Docker image 'taptrap_killthebugs_web'"
@@ -102,8 +102,8 @@ docker build -t taptrap_vulntap_report "$VULNERABLE_DIR/report" 1>/dev/null || a
 # ----------- Malicious App Detection -----------
 
 echo "Building Malicious App Detection pipeline (1/3)"
-
 docker build -t taptrap_maltapextract "$MALICIOUS_DIR/code/MalTapExtract" 1>/dev/null || abort "Failed to build Docker image 'taptrap_maltapextract'"
+
 echo "Building Malicious App Detection pipeline (2/3)"
 docker build ${DOCKER_PLATFORM} -t taptrap_maltapanalyze "$MALICIOUS_DIR/code/MalTapAnalyze" 1>/dev/null || abort "Failed to build Docker image 'taptrap_maltap'"
 
@@ -111,6 +111,21 @@ echo "Building Malicious App Detection pipeline (3/3)"
 docker build -t taptrap_maltapreport "$MALICIOUS_DIR/report" 1>/dev/null || abort "Failed to build Docker image 'taptrap_maltap_report'"
 
 ######### Check Google credentials #########
+
+echo "Checking Google credentials..."
+
+# Trying to download the 'com.whatsapp' to check if the credentials are valid
+# create a new temp file with the input "com.whatsapp" and save it to a temporary file
+TEMP_INPUT_FILE=$(mktemp)
+echo "com.whatsapp" > "${TEMP_INPUT_FILE}"
+
+docker run --rm \
+    -v "${TEMP_INPUT_FILE}:/data/input.csv" \
+    -v "${OUTPUT_DIR}:/data/output" \
+    -v "${OUTPUT_DIR}:/data/logs" \
+    taptrap_downloader \
+    /data/input.csv /data/output /data/logs "${GOOGLE_EMAIL}" "${GOOGLE_TOKEN}" \
+    split_apk=1,device=pixel_6a,locale=at,include_additional_files=1
 
 
 
