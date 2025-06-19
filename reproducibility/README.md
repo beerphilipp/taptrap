@@ -66,7 +66,7 @@ We recommend installing Android Studio to inspect the source code of the apps. F
   ```
 - Start Android Studio
   ```sh
-  /usr/local//android-studio/bin/studio.sh
+  /usr/local/android-studio/bin/studio.sh
   ```
 - Follow the Setup Wizard with default settings
 - Set the `ANDROID_HOME` environment variable:
@@ -85,6 +85,8 @@ We recommend installing Android Studio to inspect the source code of the apps. F
   source ~/.bashrc   # or 
   source ~/.zshrc
   ```
+- Install the Android Command Line Tools
+  - In Android Studio, go to "SDK Manager" > "SDK Tools" and install "Android SDK Command-line Tools"
 
 ### Run the Experiments
 
