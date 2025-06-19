@@ -57,20 +57,20 @@ fi
 
 echo "Building Preparation pipeline (1/3)"
 
-if ! docker build -t taptrap_crawler "${DATASET_PREPARATION_DIR}"/crawl/crawler 1>/dev/null; then
+if ! docker build -t taptrap_crawler "${DATASET_PREPARATION_DIR}"/crawler 1>/dev/null; then
         abort "Failed to build Docker image 'taptrap_crawler'"
     fi
 
 echo "Building Preparation pipeline (2/3)"
-if ! docker build -t taptrap_downloader "${DATASET_PREPARATION_DIR}"/download/downloader > /dev/null 2>&1; then
+if ! docker build -t taptrap_downloader "${DATASET_PREPARATION_DIR}"/downloader 1>/dev/null; then
         abort "Failed to build Docker image 'taptrap_downloader'"
     fi
 
 echo "Building Preparation pipeline (3/3)"
-    if ! docker build -t taptrap_merger "${DATASET_PREPARATION_DIR}"/merger > /dev/null 2>&1; then
+    if ! docker build -t taptrap_merger "${DATASET_PREPARATION_DIR}"/merger 1>/dev/null; then
         abort "Failed to build Docker image 'taptrap_merger'"
     fi
-
+abort "AA"
 # ----------- PoC APK Generation -----------
 
 DOCKER_PLATFORM=""
