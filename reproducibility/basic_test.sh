@@ -26,6 +26,7 @@ abort() {
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 OUTPUT_DIR="${SCRIPT_DIR}/test_output"
 DATASET_PREPARATION_DIR="${SCRIPT_DIR}/../dataset_preparation"
+POC_DIR="${SCRIPT_DIR}/../poc"
 VULNERABLE_DIR="${SCRIPT_DIR}/../vulnerable_app_detection"
 MALICIOUS_DIR="${SCRIPT_DIR}/../malicious_app_detection"
 KILLTHEBUGS_DIR="${SCRIPT_DIR}/../user_study/KillTheBugs"
