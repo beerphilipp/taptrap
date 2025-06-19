@@ -70,7 +70,7 @@ echo "Building Preparation pipeline (3/3)"
     if ! docker build -t taptrap_merger "${DATASET_PREPARATION_DIR}"/merger 1>/dev/null; then
         abort "Failed to build Docker image 'taptrap_merger'"
     fi
-abort "AA"
+
 # ----------- PoC APK Generation -----------
 
 DOCKER_PLATFORM=""
@@ -80,7 +80,7 @@ case "$(uname -m)" in
         ;;
 esac
 echo "Building the POC Docker image"
-docker build ${DOCKER_PLATFORM} -t taptrap_poc "$POC_DIR" >/dev/null 2>&1 || abort "Failed to build Docker image 'taptrap_poc'"
+docker build ${DOCKER_PLATFORM} -t taptrap_poc "$POC_DIR" 1>/dev/null; || abort "Failed to build Docker image 'taptrap_poc'"
 
 # ----------- KillTheBugs App Generation -----------
 
@@ -88,20 +88,20 @@ echo "Building the KillTheBugs Docker image"
 docker build ${DOCKER_PLATFORM} -t taptrap_killthebugs "$KILLTHEBUGS_DIR" >/dev/null 2>&1 || abort "Failed to build Docker image 'taptrap_killthebugs'"
 
 echo "Building the KillTheBugs Web server Docker image"
-docker build -t taptrap_killthebugs_web "$KILLTHEBUGS_WEB_DIR" >/dev/null 2>&1 || abort "Failed to build Docker image 'taptrap_killthebugs_web'"
+docker build -t taptrap_killthebugs_web "$KILLTHEBUGS_WEB_DIR" 1>/dev/null; || abort "Failed to build Docker image 'taptrap_killthebugs_web'"
 
 # ----------- Vulnerable App Detection -----------
 
 echo "Building Vulnerable App Detection pipeline"
-docker build -t taptrap_vulntap "$VULNERABLE_DIR/code" >/dev/null 2>&1 || abort "Failed to build Docker image 'taptrap_vulntap'"
+docker build -t taptrap_vulntap "$VULNERABLE_DIR/code" 1>/dev/null; || abort "Failed to build Docker image 'taptrap_vulntap'"
 
 # ----------- Malicious App Detection -----------
 
 echo "Building Malicious App Detection pipeline (1/2)"
 
-docker build -t taptrap_maltapextract "$MALICIOUS_DIR/code/MalTapExtract" >/dev/null 2>&1 || abort "Failed to build Docker image 'taptrap_maltapextract'"
+docker build -t taptrap_maltapextract "$MALICIOUS_DIR/code/MalTapExtract" 1>/dev/null; || abort "Failed to build Docker image 'taptrap_maltapextract'"
 echo "Building Malicious App Detection pipeline (2/2)"
-docker build ${DOCKER_PLATFORM} -t taptrap_maltapanalyze "$MALICIOUS_DIR/code/MalTapAnalyze" >/dev/null 2>&1 || abort "Failed to build Docker image 'taptrap_maltap'"
+docker build ${DOCKER_PLATFORM} -t taptrap_maltapanalyze "$MALICIOUS_DIR/code/MalTapAnalyze" 1>/dev/null; || abort "Failed to build Docker image 'taptrap_maltap'"
 
 ######### Check Google credentials #########
 
