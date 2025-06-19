@@ -57,7 +57,7 @@ fi
 
 echo "Building Preparation pipeline (1/3)"
 
-if ! docker build -t taptrap_crawler "${DATASET_PREPARATION_DIR}"/crawl/crawler > /dev/null 2>&1; then
+if ! docker build -t taptrap_crawler "${DATASET_PREPARATION_DIR}"/crawl/crawler 1>/dev/null; then
         abort "Failed to build Docker image 'taptrap_crawler'"
     fi
 
