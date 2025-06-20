@@ -10,8 +10,6 @@
 # Usage:
 #   ./e2.sh
 
-set -euo pipefail
-
 abort() {
     echo "ERROR: $1" >&2
     exit 1
@@ -35,8 +33,8 @@ if [ "$(adb devices | grep -w "device" | wc -l)" -eq 0 ]; then
     echo "(?) No device is connected. Do you want to start an emulator? (y/n)?"
     read -r start_emulator
     if [[ "$start_emulator" == "y" ]]; then
-        EMU_SCRIPT="$ROOT_DIR/start_emulator.sh"
-        [[ -x "$EMU_SCRIPT" ]] || abort "start_emulator.sh is not executable (chmod +x it)"
+        EMU_SCRIPT="$ROOT_DIR/reproducibility/start_emulator.sh"
+        [[ -x "$EMU_SCRIPT" ]] || abort "$ROOT_DIR/reproducibility/start_emulator.sh is not executable (chmod +x it)"
         "$EMU_SCRIPT" &
         disown
     else
