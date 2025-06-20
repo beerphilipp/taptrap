@@ -4,7 +4,7 @@ Pipeline to extract and analyze Android app animations for potentially malicious
 
 ## Folder Structure
 
-- [`code/`](/code) - contains the source code of the MalTapExtract tool to extract animations and the MalTapAnalyze tool to analyze animations
+- [`code/`](code/) - contains the source code of the MalTapExtract tool to extract animations and the MalTapAnalyze tool to analyze animations
 - [`results/`](results/) - contains the results of the pipeline produced in the paper
 - [`report/`](report/) - contains code to summarize the results of the analysis and produce a report
 
