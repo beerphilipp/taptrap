@@ -162,7 +162,7 @@ You can run the report generation with Docker or locally.
 
 - Build the Docker image:
 ```sh
-docker build -t taptrap_maltaptap_report report
+docker build -t taptrap_maltap_report report
 ```
 - Run the report generation:
 ```sh
