@@ -30,8 +30,6 @@ This folder contains utility scripts to run the experiments defined in the [arti
 
 The following instructions assume a device running Ubuntu 24.04. For other operating systems, please follow [the official instructions](https://docs.docker.com/get-docker/).
 
-Instructions on installing the prerequisites assume a device running Ubuntu 24.04. For other operating systems, follow the official instructions.
-
 #### Install Docker (necessary)
 
 - Download the installation script
@@ -47,46 +45,49 @@ Instructions on installing the prerequisites assume a device running Ubuntu 24.0
   dockerd-rootless-setuptool.sh install
   ```
 
-#### Android Studio (recommended)
+#### Android Dependencies
 
-The following instructions assume a device running Ubuntu 24.04. For other operating systems, please follow [the official instructions](https://developer.android.com/studio/install).
+##### Android Command Line Tools
 
-We recommend installing Android Studio to inspect the source code of the apps. Follow these steps:
+(for official instructions, see https://developer.android.com/tools/sdkmanager)
 
-- Install dependencies (if you are runnging on a 64-bit machine):
-  ```sh
-  sudo dpkg --add-architecture i386 && \
-  sudo apt-get update && \
-  sudo apt-get install libc6:i386 libncurses6:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
-  ```
-- Download Android Studio from https://developer.android.com/studio (`.tar.gz`)
-- Unpack the file and replace `<file>` with the downloaded file:
-  ```sh
-  tar -zxvf <file> && sudo mv android-studio /usr/local
-  ```
-- Start Android Studio
-  ```sh
-  /usr/local/android-studio/bin/studio.sh
-  ```
-- Follow the Setup Wizard with default settings
-- Set the `ANDROID_HOME` environment variable:
+- Download the latest command line tools by running `curl -O https://dl.google.com/android/repository/commandlinetools-linux-13114758_latest.zip`
+-  Run `unzip commandlinetools-linux-13114758_latest.zip` to extract the downloaded file.
+-  Run `mkdir -p $HOME/Android/Sdk/cmdline-tools/latest` to create the target directory.
+-  Run `mv cmdline-tools/* "$HOME/Android/Sdk/cmdline-tools/latest"` to move the command line tools to the Android SDK directory.
+- Set the `ANDROID_HOME` environment variable and add the command line tools to `$PATH`:
   - for Bash:
   ```sh
   echo 'export ANDROID_HOME="$HOME/Android/Sdk"' >> ~/.bashrc && \
-  echo 'export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:$PATH"' >> ~/.bashrc
+  echo 'export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$PATH"' >> ~/.bashrc && \
+  source ~/.bashrc
   ```
   - for Zsh:
   ```sh
   echo 'export ANDROID_HOME="$HOME/Android/Sdk"' >> ~/.zshrc && \
-  echo 'export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:$PATH"' >> ~/.zshrc
-  ```
-  - apply the changes
-  ```sh
-  source ~/.bashrc   # or 
+  echo 'export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$PATH"' >> ~/.zshrc && \
   source ~/.zshrc
   ```
-- Install the Android Command Line Tools
-  - In Android Studio, go to "SDK Manager" > "SDK Tools" and install "Android SDK Command-line Tools"
+
+##### Android Platform Tools
+
+(for official instructios, see https://developer.android.com/tools#tools-platform)
+
+- Install the platform tools via `sdkmanager´:
+  ```sh
+  sdkmanager "platform-tools"
+  ```
+- Add the platform tools to `$PATH`:
+  - for Bash:
+  ```sh
+  echo 'export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:$PATH"' >> ~/.bashrc && \
+  source ~/.bashrc
+  ```
+  - for Zsh:
+  ```sh
+  echo 'export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:$PATH"' >> ~/.zshrc && \
+  source ~/.zshrc
+  ```
 
 ### Run the Experiments
 
