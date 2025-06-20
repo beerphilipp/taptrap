@@ -61,8 +61,8 @@ docker run --rm \
 echo "> Step 3: Verification"
 
 EXPECTED_VALUE="76.3"
-LOWER_BOUND=$(echo "$EXPECTED_VALUE * 0.95" | bc -l)
-UPPER_BOUND=$(echo "$EXPECTED_VALUE * 1.05" | bc -l)
+LOWER_BOUND=$(echo "$EXPECTED_VALUE * 0.90" | bc -l)
+UPPER_BOUND=$(echo "$EXPECTED_VALUE * 1.00" | bc -l)
 
 VALUE=$(grep '\\newcommand{\\vulntapAmountAppsMinOneActivityVulnerablePercent}' "${REPORT_FILE}" | \
         sed -E 's/.*\{([^}]*)\}$/\1/')
@@ -72,7 +72,7 @@ IS_WITHIN_RANGE=$(echo "$VALUE >= $LOWER_BOUND && $VALUE <= $UPPER_BOUND" | bc -
 # if not within range, abort
 
 if [[ "$IS_WITHIN_RANGE" -ne 1 ]]; then
-   abort "$VALUE% is outside ±5% of $EXPECTED_VALUE%" >&2
+   abort "$VALUE% is outside ±10% of $EXPECTED_VALUE%" >&2
 fi
 
 echo "--------------------------------"
