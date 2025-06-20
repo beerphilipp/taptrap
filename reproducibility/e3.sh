@@ -46,30 +46,28 @@ DATABASE="${OUT_DIR}/animations.db"
 command -v docker >/dev/null || abort "Docker is not installed. Please install it to run this script."
 
 # Run MalTapExtract
-#echo "> Step 1: Run MalTapExtract"
-#echo "   Build the MalTapExtract Docker image"
-#docker build -t taptrap_maltapextract "${MALTAP_EXTRACT_DIR}" > /dev/null 2>&1 || abort "Failed to build Docker image 'taptrap_maltapextract'"
+echo "> Step 1: Run MalTapExtract"
+echo "   Build the MalTapExtract Docker image"
+docker build -t taptrap_maltapextract "${MALTAP_EXTRACT_DIR}" > /dev/null 2>&1 || abort "Failed to build Docker image 'taptrap_maltapextract'"
 # Re-use the framework-res.apk used in the paper
-#mkdir -p "$OUT_DIR" || abort "Failed to create output directory"
-#mkdir -p "$OUT_DIR/android_framework" || abort "Failed to create android_framework directory"
-#cp "$FRAMEWORK_RES_APK" "$OUT_DIR/android_framework/" || abort "Failed to copy framework-res.apk into output directory"
-#echo "   Run the MalTapExtract Docker container"
-#docker run --rm -v "$OUT_DIR:/output" -v "$APK_DIR:/apks" taptrap_maltapextract /output /apks 6
+mkdir -p "$OUT_DIR" || abort "Failed to create output directory"
+mkdir -p "$OUT_DIR/android_framework" || abort "Failed to create android_framework directory"
+cp "$FRAMEWORK_RES_APK" "$OUT_DIR/android_framework/" || abort "Failed to copy framework-res.apk into output directory"
+echo "   Run the MalTapExtract Docker container"
+docker run --rm -v "$OUT_DIR:/output" -v "$APK_DIR:/apks" taptrap_maltapextract /output /apks 6
 
 # Run MalTapAnalyze
-#echo "> Step 2: Run MalTapAnalyze"
-#echo "   Build the MalTapAnalyze Docker image"
-#docker build -t taptrap_maltapanalyze "${MALTAP_ANALYZE_DIR}" > /dev/null 2>&1 || abort "Failed to build Docker image 'taptrap_maltapanalyze'"
-#echo "   Run the MalTapAnalyze Docker container"
-#docker run --rm -v "$DATABASE:/animations.db" taptrap_maltapanalyze /animations.db || abort "Failed to run MalTapAnalyze"
+echo "> Step 2: Run MalTapAnalyze"
+echo "   Build the MalTapAnalyze Docker image"
+docker build -t taptrap_maltapanalyze "${MALTAP_ANALYZE_DIR}" > /dev/null 2>&1 || abort "Failed to build Docker image 'taptrap_maltapanalyze'"
+echo "   Run the MalTapAnalyze Docker container"
+docker run --rm -v "$DATABASE:/animations.db" taptrap_maltapanalyze /animations.db || abort "Failed to run MalTapAnalyze"
 
 
 echo "> Step 3: Generate the report"
 
 mkdir -p "${OUT_DIR}/report" || abort "Failed to create report directory"
-
 docker build -t taptrap_maltap_report "${MALTAP_DIR}/report" >/dev/null 2>&1 || abort "Failed to build Docker image 'taptrap_maltap_report'"
-
 docker run --rm \
     -v "${OUT_DIR}:/output" \
     -v "${OUT_DIR}/report:/report" \
