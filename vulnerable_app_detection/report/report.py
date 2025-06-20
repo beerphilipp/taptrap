@@ -3,6 +3,7 @@ import click
 import os
 import tqdm
 import json
+import re
 
 RESULT = {}
 
@@ -99,15 +100,22 @@ def check_failed_timeout(result_dir, df):
 
     # get all package names where joblog is successful
     successful_packages_joblog = joblog_df[joblog_df["Exitval"] == 0]["Command"].tolist()
-    successful_packages_joblog = [x.split("/")[-1] for x in successful_packages_joblog]
-    successful_packages_joblog = [x.split("_merged.apk ")[0] for x in successful_packages_joblog]
-    successful_packages_joblog = [x.split(".apk ")[0] for x in successful_packages_joblog]
+    
+    pattern = re.compile(r'/([^/]+)\.apk')
+
+    successful_packages_joblog = [match.group(1) for line in successful_packages_joblog if (match := pattern.search(line))]
+    successful_packages_joblog = [
+        x.split("_merged")[0] if x.endswith("_merged") else x for x in successful_packages_joblog
+    ]
     
     # get the packages that timed out
     timed_out_packages = joblog_df[joblog_df["Exitval"] == 124]["Command"].tolist()
-    timed_out_packages = [x.split("/")[-1] for x in timed_out_packages]
-    timed_out_packages = [x.split("_merged.apk ")[0] for x in timed_out_packages]
-    timed_out_packages = [x.split(".apk ")[0] for x in timed_out_packages]
+    timed_out_packages= [match.group(1) for line in timed_out_packages if (match := pattern.search(line))]
+    timed_out_packages = [
+        x.split("_merged")[0] if x.endswith("_merged") else x for x in timed_out_packages
+    ]
+    
+
     print(f"- Number of apps that timed out: {len(timed_out_packages)}")
     
     # in rare cases, the joblog might say it timed out, but the app had time to finish writing the results. exclude those from the timeout count and add them to the successful packages
