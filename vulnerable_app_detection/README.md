@@ -9,6 +9,14 @@ Pipeline to detect apps that are vulnerable to TapTrap.
 - [`report/`](report/) - contains code to summarize the results of the analysis and produce a report
 - [`validation/`](validation/) - information on the pipeline validation
 
+## Architecture of the Tool
+
+The tool consist of three broad modules:
+
+- **ManifestAnalyzer**: Responsible for analyzing the manifest of an app and determining the declared activities and information about those.
+- **CodeAnalyzer**: Builds a call graph of the app and analyzes the app for usage of functions used to overwrite animations and functions used to wait for animations to finish.
+- **ResultAggregator**: Writes the result for an app to a result file.
+
 ## Install and Run
 
 You can run the pipeline locally or via Docker.
