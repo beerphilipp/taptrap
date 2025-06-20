@@ -38,11 +38,11 @@ echo "> Step 1: Run vulnerability detection pipeline"
 
 docker build -t taptrap_vulntap "${VULN_APP_DIR}/code" || abort "Failed to build Docker image 'taptrap_vulntap'"
 
-#docker run -it --rm \
-#    -v "${APK_DIR}:/apks" \
-#    -v "${OUT_DIR}:/output" \
-#    taptrap_vulntap \
-#    /apks /output 4
+docker run -it --rm \
+    -v "${APK_DIR}:/apks" \
+    -v "${OUT_DIR}:/output" \
+    taptrap_vulntap \
+    /apks /output 4
 
 echo "> Step 2: Generate report"
 
