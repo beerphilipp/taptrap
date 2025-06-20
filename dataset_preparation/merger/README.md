@@ -33,7 +33,7 @@ docker build -t taptrap_merger .
 
 - Run the container:
 ```sh
-docker run --rm \
+docker run -it --rm \
   -v <APK_DIR>:/input/apks \
   -v <OUT_DIR>:/output/results \
   -v <APK_LIST>:/input/apk_list.txt \

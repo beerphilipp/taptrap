@@ -31,7 +31,7 @@ docker build -t taptrap_downloader .
 ```
 - Run the container:
 ```sh
-docker run --rm \
+docker run -it --rm \
   -v <APP_CSV>:/data/input.csv \
   -v <OUT_DIR>:/data/output \
   -v <LOG_DIR>:/data/logs \

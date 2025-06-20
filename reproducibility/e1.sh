@@ -87,7 +87,7 @@ echo " > Step 3: Merge split APKs"
 
 docker build -t taptrap_merger "${DATASET_PREPARATION_DIR}/merger" 1>/dev/null || abort "Failed to build merger image"
 
-docker run --rm \
+docker run -it --rm \
     -v "${OUTPUT_DOWNLOAD_APP_DIR}:/input/apks" \
     -v "${OUTPUT_MERGED_DIR}:/output/results" \
     -v "${SAMPLED_CSV}:/input/apk_list.txt" \

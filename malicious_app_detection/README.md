@@ -86,7 +86,7 @@ docker build -t taptrap_maltapextract code/MalTapExtract
 ```
 2. Run MalTapExtract to extract the animations:
 ```sh
-docker run --rm \
+docker run -it --rm \
       -v <OUTPUT_DIR>:/output \
       -v <APK_DIR>:/apks \
       taptrap_maltapextract \

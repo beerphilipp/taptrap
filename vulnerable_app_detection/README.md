@@ -33,7 +33,7 @@ docker build -t taptrap_vulntap code
 ```
 - Run the analysis:
 ```sh
-docker run --rm \
+docker run -it --rm \
 -v <APK_DIR>:/apks \
 -v <OUTPUT_DIR>:/output \
 taptrap_vulntap /apks /output <PARALELLISM>
