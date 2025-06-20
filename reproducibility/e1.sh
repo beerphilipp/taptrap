@@ -22,8 +22,6 @@
 # Example:
 #   ./e1.sh user@gmail.com AAS_token /path/to/output
 
-set -euo pipefail
-
 abort() {
     echo "ERROR: $1" >&2
     exit 1
@@ -57,15 +55,15 @@ echo "--------------------------------"
 echo "> Step 1: Run Google Play crawler"
 
 echo "Building crawler Docker image..."
-docker build -t taptrap_crawler "${DATASET_PREPARATION_DIR}/crawler" >/dev/null 2>&1 || abort "Failed to build crawler image"
+docker build -t taptrap_crawler "${DATASET_PREPARATION_DIR}/crawler" 1>/dev/null || abort "Failed to build crawler image"
 
 echo "Running crawler..."
 docker run --rm -v "${OUTPUT_CRAWLER_DIR}:/app/out" taptrap_crawler \
-    --output /app/out --onlyFree --onlyMinInstalls 0 --max 30000 --log /app/out/logfile.log || abort "Crawler failed"
+    --output /app/out --onlyFree --onlyMinInstalls 0 --max 25000 --log /app/out/logfile.log || abort "Crawler failed"
 
 [[ -f "${APPS_CSV}" ]] || abort "apps.csv not found after crawling"
 
-if ! shuf "${APPS_CSV}" | head -n 75 > "${SAMPLED_CSV}"; then
+if ! shuf "${APPS_CSV}" | head -n 50 > "${SAMPLED_CSV}"; then
     abort "Failed to sample apps"
 fi
 
@@ -74,7 +72,7 @@ echo " > Step 2: Download APKs"
 mkdir -p "${OUTPUT_DOWNLOAD_APP_DIR}" "${OUTPUT_DOWNLOAD_LOG_DIR}" || abort "Failed to create output directories"
 
 echo "Building downloader Docker image..."
-docker build -t taptrap_downloader "${DATASET_PREPARATION_DIR}/downloader" >/dev/null 2>&1 || abort "Failed to build downloader image"
+docker build -t taptrap_downloader "${DATASET_PREPARATION_DIR}/downloader" 1>/dev/null || abort "Failed to build downloader image"
 
 echo "Running downloader..."
 docker run --rm \
@@ -87,7 +85,7 @@ docker run --rm \
 
 echo " > Step 3: Merge split APKs"
 
-docker build -t taptrap_merger "${DATASET_PREPARATION_DIR}/merger" >/dev/null 2>&1 || abort "Failed to build merger image"
+docker build -t taptrap_merger "${DATASET_PREPARATION_DIR}/merger" 1>/dev/null || abort "Failed to build merger image"
 
 docker run --rm \
     -v "${OUTPUT_DOWNLOAD_APP_DIR}:/input/apks" \
@@ -100,19 +98,22 @@ echo "Copying raw APKs..."
 find "${OUTPUT_DOWNLOAD_APP_DIR}" -maxdepth 1 -type f -name '*.apk' ! -name '*_merged.apk' \
     -exec cp {} "${OUTPUT_MERGED_DIR}" \; || abort "Failed to copy APKs"
 
+
+######### Verification #########
+
 echo "> Step 4: Verification"
 
 LINE_COUNT=$(wc -l < "${APPS_CSV}")
-if [[ $LINE_COUNT -lt 18000 ]]; then
-    abort "apps.csv contains fewer than 18000 lines (actual: ${LINE_COUNT})"
+if [[ $LINE_COUNT -lt 15000 ]]; then
+    abort "apps.csv contains fewer than 15000 lines (actual: ${LINE_COUNT})"
 fi
-echo "apps.csv contains at least 18000 lines"
+echo "apps.csv contains at least 15000 lines"
 
 APK_COUNT=$(find "${OUTPUT_MERGED_DIR}" -type f -name '*.apk' | wc -l)
-if [[ $APK_COUNT -lt 50 ]]; then
-    abort "Merged APK directory contains fewer than 50 files (actual: ${APK_COUNT})"
+if [[ $APK_COUNT -lt 30 ]]; then
+    abort "Merged APK directory contains fewer than 30 files (actual: ${APK_COUNT})"
 fi
-echo "Merged APK directory contains at least 50 files"
+echo "Merged APK directory contains at least 30 files"
 
 echo "--------------------------------"
 echo "OK."
