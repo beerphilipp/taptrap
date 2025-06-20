@@ -10,7 +10,7 @@
 
 #
 # Usage:
-#   ./e1.sh <EMAIL> <TOKEN> <OUTPUT_DIR>
+#   ./basic_test.sh <EMAIL> <TOKEN>
 #
 # Arguments:
 #   EMAIL       - Google account email.
