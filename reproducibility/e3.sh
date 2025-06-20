@@ -54,7 +54,7 @@ mkdir -p "$OUT_DIR" || abort "Failed to create output directory"
 mkdir -p "$OUT_DIR/android_framework" || abort "Failed to create android_framework directory"
 cp "$FRAMEWORK_RES_APK" "$OUT_DIR/android_framework/" || abort "Failed to copy framework-res.apk into output directory"
 echo "   Run the MalTapExtract Docker container"
-docker run --rm -v "$OUT_DIR:/output" -v "$APK_DIR:/apks" taptrap_maltapextract /output /apks 6
+docker run -it --rm -v "$OUT_DIR:/output" -v "$APK_DIR:/apks" taptrap_maltapextract /output /apks 6
 
 # Run MalTapAnalyze
 echo "> Step 2: Run MalTapAnalyze"

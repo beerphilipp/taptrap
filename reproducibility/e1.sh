@@ -75,7 +75,7 @@ echo "Building downloader Docker image..."
 docker build -t taptrap_downloader "${DATASET_PREPARATION_DIR}/downloader" 1>/dev/null || abort "Failed to build downloader image"
 
 echo "Running downloader..."
-docker run --rm \
+docker run -it --rm \
     -v "${SAMPLED_CSV}:/data/input.csv" \
     -v "${OUTPUT_DOWNLOAD_APP_DIR}:/data/output" \
     -v "${OUTPUT_DOWNLOAD_LOG_DIR}:/data/logs" \
