@@ -43,6 +43,14 @@ if [ "$(adb devices | grep -w "device" | wc -l)" -eq 0 ]; then
 fi
 
 adb wait-for-device
+
+A=$(adb shell getprop sys.boot_completed | tr -d '\r')
+
+while [ "$A" != "1" ]; do
+        sleep 2
+        A=$(adb shell getprop sys.boot_completed | tr -d '\r')
+done
+
 echo "Device is ready."
 
 # Set platform flag for ARM hosts
