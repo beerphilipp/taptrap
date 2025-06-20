@@ -81,7 +81,7 @@ docker run --rm \
     -v "${OUTPUT_DOWNLOAD_LOG_DIR}:/data/logs" \
     taptrap_downloader \
     /data/input.csv /data/output /data/logs "${EMAIL}" "${TOKEN}" \
-    split_apk=1,device=pixel_6a,locale=at,include_additional_files=1 || abort "Downloader failed"
+    split_apk=1,device=pixel_6a,locale=at,include_additional_files=1
 
 echo " > Step 3: Merge split APKs"
 
@@ -92,7 +92,7 @@ docker run --rm \
     -v "${OUTPUT_MERGED_DIR}:/output/results" \
     -v "${SAMPLED_CSV}:/input/apk_list.txt" \
     taptrap_merger \
-    /input/apks /output/results /input/apk_list.txt || abort "Merger failed"
+    /input/apks /output/results /input/apk_list.txt
 
 echo "Copying raw APKs..."
 find "${OUTPUT_DOWNLOAD_APP_DIR}" -maxdepth 1 -type f -name '*.apk' ! -name '*_merged.apk' \
