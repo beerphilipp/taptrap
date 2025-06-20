@@ -7,12 +7,11 @@
 #   Runs the vulnerability detection pipeline on a subset of apps.
 #
 # Usage:
-#   ./e4.sh APK_DIR
+#   ./e4.sh APK_DIR OUT_DIR
 #
 # Arguments:
 #   APK_DIR - Path to the directory containing the APKs to be analyzed.
-
-set -euo pipefail
+#   OUT_DIR - Directory to store the output and report.
 
 abort() {
     echo "ERROR: $1" >&2
@@ -21,16 +20,17 @@ abort() {
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 VULN_APP_DIR="${SCRIPT_DIR}/../vulnerable_app_detection"
-OUT_DIR="${SCRIPT_DIR}/out/vulnerable_app_detection"
 REPORT_FILE="${OUT_DIR}/report/report.tex"
 
-if [[ $# -ne 1 ]]; then
-    echo "Usage: $0 <APK_DIR>"
+if [[ $# -ne 2 ]]; then
+    echo "Usage: $0 <APK_DIR> <OUT_DIR>"
     echo "  APK_DIR: Path to the directory containing the APKs to be analyzed."
+    echo "  OUT_DIR: Directory to store the output and report."
     exit 1
 fi
 
 APK_DIR="$(realpath "$1")"
+OUT_DIR="$(realpath "$2")"
 
 mkdir -p "${OUT_DIR}" || abort "Failed to create output directory"
 
@@ -55,6 +55,8 @@ docker run --rm \
     -v "${OUT_DIR}/report:/report" \
     taptrap_vulntap_report \
     --result_dir /output --report_dir /report || abort "Failed to generate the report"
+
+####### Verification #######
 
 echo "> Step 3: Verification"
 
