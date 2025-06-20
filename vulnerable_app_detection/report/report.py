@@ -130,7 +130,6 @@ def check_failed_timeout(result_dir, df):
     
     difference = list(set(successful_packages_results) - set(successful_packages_joblog))
     print(f"- Number of apps where the results are successful but the joblog is not: {len(difference)}")
-    print(difference)
 
     RESULT["vulntapAppsSuccess"] = f"{n_success:,}"
     RESULT["vulntapAppsSuccessPercent"] = f"{n_success/total_count*100:.2f}"

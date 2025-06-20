@@ -20,7 +20,6 @@ abort() {
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 VULN_APP_DIR="${SCRIPT_DIR}/../vulnerable_app_detection"
-REPORT_FILE="${OUT_DIR}/report/report.tex"
 
 if [[ $# -ne 2 ]]; then
     echo "Usage: $0 <APK_DIR> <OUT_DIR>"
@@ -31,18 +30,19 @@ fi
 
 APK_DIR="$(realpath "$1")"
 OUT_DIR="$(realpath "$2")"
+REPORT_FILE="${OUT_DIR}/report/report.tex"
 
 mkdir -p "${OUT_DIR}" || abort "Failed to create output directory"
 
 echo "> Step 1: Run vulnerability detection pipeline"
 
-docker build -t taptrap_vulntap "${VULN_APP_DIR}/code" >/dev/null 2>&1 || abort "Failed to build Docker image 'taptrap_vulntap'"
+docker build -t taptrap_vulntap "${VULN_APP_DIR}/code" || abort "Failed to build Docker image 'taptrap_vulntap'"
 
-docker run --rm \
-    -v "${APK_DIR}:/apks" \
-    -v "${OUT_DIR}:/output" \
-    taptrap_vulntap \
-    /apks /output 4
+#docker run -it --rm \
+#    -v "${APK_DIR}:/apks" \
+#    -v "${OUT_DIR}:/output" \
+#    taptrap_vulntap \
+#    /apks /output 4
 
 echo "> Step 2: Generate report"
 
@@ -50,11 +50,11 @@ mkdir -p "${OUT_DIR}/report" || abort "Failed to create report directory"
 
 docker build -t taptrap_vulntap_report "${VULN_APP_DIR}/report" >/dev/null 2>&1 || abort "Failed to build Docker image 'taptrap_vulntap_report'"
 
-docker run --rm \
-    -v "${OUT_DIR}:/output" \
-    -v "${OUT_DIR}/report:/report" \
-    taptrap_vulntap_report \
-    --result_dir /output --report_dir /report || abort "Failed to generate the report"
+#docker run --rm \
+#    -v "${OUT_DIR}:/output" \
+#    -v "${OUT_DIR}/report:/report" \
+#    taptrap_vulntap_report \
+#    --result_dir /output --report_dir /report || abort "Failed to generate the report"
 
 ####### Verification #######
 
