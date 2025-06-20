@@ -24,6 +24,7 @@ MALTAP_DIR="${ROOT_DIR}/malicious_app_detection"
 MALTAP_EXTRACT_DIR="${MALTAP_DIR}/code/MalTapExtract"
 MALTAP_ANALYZE_DIR="${MALTAP_DIR}/code/MalTapAnalyze"
 FRAMEWORK_RES_APK="${MALTAP_DIR}/results/2025-01-09/android_framework/framework-res.apk"
+REPORT_FILE="${OUT_DIR}/report/report.tex"
 
 if [[ $# -ne 2 ]]; then
     echo "Usage: $0 <APK_DIR> <OUT_DIR>"
