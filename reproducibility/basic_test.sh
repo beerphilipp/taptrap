@@ -112,8 +112,7 @@ docker build -t taptrap_maltapreport "$MALICIOUS_DIR/report" 1>/dev/null || abor
 
 echo "Checking Google credentials..."
 
-# Trying to download the 'com.whatsapp' to check if the credentials are valid
-# create a new temp file with the input "com.whatsapp" and save it to a temporary file
+# Try to download the 'com.whatsapp' to check if the credentials are valid
 TEMP_INPUT_FILE=$(mktemp)
 echo "com.whatsapp" > "${TEMP_INPUT_FILE}"
 mkdir -p "${OUTPUT_DIR}/logs"
@@ -128,9 +127,8 @@ docker run --rm \
     split_apk=1,device=pixel_6a,locale=at,include_additional_files=1
 
 if ! find "${OUTPUT_DIR}/output" -maxdepth 1 ! -name '.*' | grep -q .; then
-  abort "No app was downloaded..."
+  abort "No app was downloaded. Please check the logs in ${OUTPUT_DIR}/logs for more details."
 fi
-
 
 ######### Check Android device #########
 
