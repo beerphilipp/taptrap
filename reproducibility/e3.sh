@@ -56,15 +56,29 @@ command -v docker >/dev/null || abort "Docker is not installed. Please install i
 #docker run --rm -v "$OUT_DIR:/output" -v "$APK_DIR:/apks" taptrap_maltapextract /output /apks 6
 
 # Run MalTapAnalyze
-echo "> Step 2: Run MalTapAnalyze"
-echo "   Build the MalTapAnalyze Docker image"
-docker build -t taptrap_maltapanalyze "${MALTAP_ANALYZE_DIR}" > /dev/null 2>&1 || abort "Failed to build Docker image 'taptrap_maltapanalyze'"
-echo "   Run the MalTapAnalyze Docker container"
-docker run --rm -v "$DATABASE:/animations.db" taptrap_maltapanalyze /animations.db || abort "Failed to run MalTapAnalyze"
+#echo "> Step 2: Run MalTapAnalyze"
+#echo "   Build the MalTapAnalyze Docker image"
+#docker build -t taptrap_maltapanalyze "${MALTAP_ANALYZE_DIR}" > /dev/null 2>&1 || abort "Failed to build Docker image 'taptrap_maltapanalyze'"
+#echo "   Run the MalTapAnalyze Docker container"
+#docker run --rm -v "$DATABASE:/animations.db" taptrap_maltapanalyze /animations.db || abort "Failed to run MalTapAnalyze"
+
+
+echo "> Step 3: Generate the report"
+
+mkdir -p "${OUT_DIR}/report" || abort "Failed to create report directory"
+
+docker build -t taptrap_maltap_report "${VULN_APP_DIR}/report" >/dev/null 2>&1 || abort "Failed to build Docker image 'taptrap_maltap_report'"
+
+docker run --rm \
+    -v "${OUT_DIR}:/output" \
+    -v "${OUT_DIR}/report:/report" \
+    taptrap_maltap_report \
+    --result_dir /output --report_dir /report || abort "Failed to generate the report"
 
 ######## Verification ########
 
-echo "> Step 3: Gather the results"
+echo "> Step 4: Verification"
+
 EXPECTED_ANIMS_EXCEEDED="61"
 EXPECTED_APPS_SCORE="28"
 
