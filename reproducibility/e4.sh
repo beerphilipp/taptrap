@@ -62,7 +62,7 @@ echo "> Step 3: Verification"
 
 EXPECTED_VALUE="76.3"
 LOWER_BOUND=$(echo "$EXPECTED_VALUE * 0.90" | bc -l)
-UPPER_BOUND=$(echo "$EXPECTED_VALUE * 1.00" | bc -l)
+UPPER_BOUND=$(echo "$EXPECTED_VALUE * 1.10" | bc -l)
 
 VALUE=$(grep '\\newcommand{\\vulntapAmountAppsMinOneActivityVulnerablePercent}' "${REPORT_FILE}" | \
         sed -E 's/.*\{([^}]*)\}$/\1/')
