@@ -50,11 +50,11 @@ mkdir -p "${OUT_DIR}/report" || abort "Failed to create report directory"
 
 docker build -t taptrap_vulntap_report "${VULN_APP_DIR}/report" >/dev/null 2>&1 || abort "Failed to build Docker image 'taptrap_vulntap_report'"
 
-#docker run --rm \
-#    -v "${OUT_DIR}:/output" \
-#    -v "${OUT_DIR}/report:/report" \
-#    taptrap_vulntap_report \
-#    --result_dir /output --report_dir /report || abort "Failed to generate the report"
+docker run --rm \
+    -v "${OUT_DIR}:/output" \
+    -v "${OUT_DIR}/report:/report" \
+    taptrap_vulntap_report \
+    --result_dir /output --report_dir /report || abort "Failed to generate the report"
 
 ####### Verification #######
 
