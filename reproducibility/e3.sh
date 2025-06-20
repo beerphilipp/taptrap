@@ -42,7 +42,6 @@ OUT_DIR="$(realpath "$2")"
 DATABASE="${OUT_DIR}/animations.db"
 
 # Check if Docker is installed and running
-command -v adb >/dev/null || abort "ADB is not installed. Please install it to run this script."
 command -v docker >/dev/null || abort "Docker is not installed. Please install it to run this script."
 
 # Run MalTapExtract
